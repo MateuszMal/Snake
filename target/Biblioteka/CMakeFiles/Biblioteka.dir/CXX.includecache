@@ -1,0 +1,18 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+../Biblioteka/include/Snake.h
+SFML/Graphics.hpp
+-
+list
+-
+
+/home/student/CLionProjects/Snake2/Biblioteka/src/Snake.cpp
+Snake.h
+/home/student/CLionProjects/Snake2/Biblioteka/src/Snake.h
+

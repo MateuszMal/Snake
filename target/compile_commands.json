@@ -1,0 +1,32 @@
+[
+{
+  "directory": "/home/student/CLionProjects/Snake2/target/Biblioteka",
+  "command": "/usr/bin/g++   -I/home/student/CLionProjects/Snake2/Biblioteka/include   -std=c++14 -g3 -gdwarf-4   -std=gnu++11 -o CMakeFiles/Biblioteka.dir/src/Food.cpp.o -c /home/student/CLionProjects/Snake2/Biblioteka/src/Food.cpp",
+  "file": "/home/student/CLionProjects/Snake2/Biblioteka/src/Food.cpp"
+},
+{
+  "directory": "/home/student/CLionProjects/Snake2/target/Biblioteka",
+  "command": "/usr/bin/g++   -I/home/student/CLionProjects/Snake2/Biblioteka/include   -std=c++14 -g3 -gdwarf-4   -std=gnu++11 -o CMakeFiles/Biblioteka.dir/src/Snake.cpp.o -c /home/student/CLionProjects/Snake2/Biblioteka/src/Snake.cpp",
+  "file": "/home/student/CLionProjects/Snake2/Biblioteka/src/Snake.cpp"
+},
+{
+  "directory": "/home/student/CLionProjects/Snake2/target/Biblioteka",
+  "command": "/usr/bin/g++   -I/home/student/CLionProjects/Snake2/Biblioteka/include   -std=c++14 -g3 -gdwarf-4   -std=gnu++11 -o CMakeFiles/Biblioteka.dir/test/master.cpp.o -c /home/student/CLionProjects/Snake2/Biblioteka/test/master.cpp",
+  "file": "/home/student/CLionProjects/Snake2/Biblioteka/test/master.cpp"
+},
+{
+  "directory": "/home/student/CLionProjects/Snake2/target/Biblioteka",
+  "command": "/usr/bin/g++   -I/home/student/CLionProjects/Snake2/Biblioteka/include   -std=c++14 -g3 -gdwarf-4   -std=gnu++11 -o CMakeFiles/TestSnake.dir/test/master.cpp.o -c /home/student/CLionProjects/Snake2/Biblioteka/test/master.cpp",
+  "file": "/home/student/CLionProjects/Snake2/Biblioteka/test/master.cpp"
+},
+{
+  "directory": "/home/student/CLionProjects/Snake2/target/Biblioteka",
+  "command": "/usr/bin/g++   -I/home/student/CLionProjects/Snake2/Biblioteka/include   -std=c++14 -g3 -gdwarf-4   -std=gnu++11 -o CMakeFiles/TestSnake.dir/test/SnakeTest.cpp.o -c /home/student/CLionProjects/Snake2/Biblioteka/test/SnakeTest.cpp",
+  "file": "/home/student/CLionProjects/Snake2/Biblioteka/test/SnakeTest.cpp"
+},
+{
+  "directory": "/home/student/CLionProjects/Snake2/target/Program",
+  "command": "/usr/bin/g++   -I/home/student/CLionProjects/Snake2/Program/include -I/home/student/CLionProjects/Snake2/Biblioteka/include  -g3 -gdwarf-4   -std=gnu++14 -o CMakeFiles/Program.dir/src/main.cpp.o -c /home/student/CLionProjects/Snake2/Program/src/main.cpp",
+  "file": "/home/student/CLionProjects/Snake2/Program/src/main.cpp"
+}
+]

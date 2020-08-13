@@ -1,0 +1,1 @@
+/usr/bin/g++  -g3 -gdwarf-4   CMakeFiles/Program.dir/src/main.cpp.o  -o Program ../Biblioteka/libBiblioteka.a /usr/lib/x86_64-linux-gnu/libsfml-graphics.so.2.5.1 /usr/lib/x86_64-linux-gnu/libsfml-window.so.2.5.1 /usr/lib/x86_64-linux-gnu/libsfml-system.so.2.5.1 

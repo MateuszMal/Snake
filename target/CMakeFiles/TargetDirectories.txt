@@ -1,0 +1,13 @@
+/home/student/CLionProjects/Snake2/target/CMakeFiles/rebuild_cache.dir
+/home/student/CLionProjects/Snake2/target/CMakeFiles/test.dir
+/home/student/CLionProjects/Snake2/target/CMakeFiles/edit_cache.dir
+/home/student/CLionProjects/Snake2/target/Biblioteka/CMakeFiles/edit_cache.dir
+/home/student/CLionProjects/Snake2/target/Biblioteka/CMakeFiles/check.dir
+/home/student/CLionProjects/Snake2/target/Biblioteka/CMakeFiles/test.dir
+/home/student/CLionProjects/Snake2/target/Biblioteka/CMakeFiles/Biblioteka.dir
+/home/student/CLionProjects/Snake2/target/Biblioteka/CMakeFiles/rebuild_cache.dir
+/home/student/CLionProjects/Snake2/target/Biblioteka/CMakeFiles/TestSnake.dir
+/home/student/CLionProjects/Snake2/target/Program/CMakeFiles/rebuild_cache.dir
+/home/student/CLionProjects/Snake2/target/Program/CMakeFiles/edit_cache.dir
+/home/student/CLionProjects/Snake2/target/Program/CMakeFiles/Program.dir
+/home/student/CLionProjects/Snake2/target/Program/CMakeFiles/test.dir
