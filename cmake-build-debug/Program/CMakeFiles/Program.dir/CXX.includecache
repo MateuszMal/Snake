@@ -29,8 +29,6 @@ SFML/Graphics.hpp
 -
 list
 -
-vector
--
 memory
 -
 string

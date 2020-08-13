@@ -27,6 +27,8 @@ int main(){
     Okno.setVerticalSyncEnabled(true);
     Okno.setPosition(Vector2i(10,650));
 
+    bool game = true;
+
     //clock and accumulator time for timming
     Clock clock;
     Time remainingTime;
@@ -44,7 +46,7 @@ int main(){
 
     Event Zdarzenie;
 
-    while(Okno.isOpen()) {
+    while(Okno.isOpen() && game) {
         while (Okno.pollEvent(Zdarzenie)) {
             if(Zdarzenie.type == Event::Closed || Keyboard::isKeyPressed(Keyboard::Escape)) Okno.close();
             if(Zdarzenie.type == Event::KeyPressed && Zdarzenie.key.code == Keyboard::W) moveDirect=Vector2f(0,-20);
@@ -62,13 +64,8 @@ int main(){
                 weze.pop_back();
                 waz.setPosition(weze.begin()->getPosition());
                 weze.push_front(waz);
-
             }
             weze.begin()->move(moveDirect);
-//
-//            for(size_t i = 0; i < weze.size(); ++i){
-//                weze[i].setPosition(weze.begin()->getPosition()-moveDirect);
-//            }
 
             remainingTime -= milliseconds(200);
         }
@@ -78,13 +75,13 @@ int main(){
                 waz.setPosition(weze.back().getPosition().x - moveDirect.x,
                                 weze.back().getPosition().y - moveDirect.y);
                 weze.push_back(waz);
-                score += 1;
+                score += 100;
             }
 
-        //weze.begin()->wallColission();
-
         for(auto & w : weze){
-            w.wallColission(Okno);
+            if(w.wallColission(Okno)) game = false;
+            //Do przemyslenia
+            //if(weze.begin()->eatYourself(w)) game = false;
             Okno.draw(w);
         }
 

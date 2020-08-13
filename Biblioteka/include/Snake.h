@@ -6,15 +6,13 @@
 #include <vector>
 
 class Snake : public sf::RectangleShape{
-private:
-    int score = 0;
 public:
     Snake(int size);
     ~Snake();
-    bool eatFood(sf::CircleShape & S);
+    bool eatFood(sf::CircleShape & C);
     bool wallColission(sf::RenderWindow & Okno);
-
-    int getScore() const;
+    // Trzeba to inaczej napisać
+    bool eatYourself(Snake & S);
 };
 
 
