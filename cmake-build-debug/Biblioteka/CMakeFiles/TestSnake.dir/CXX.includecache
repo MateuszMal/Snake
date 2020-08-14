@@ -11,6 +11,16 @@ SFML/Graphics.hpp
 -
 list
 -
+vector
+-
+
+/home/student/CLionProjects/Snake2/Biblioteka/include/Food.h
+SFML/Graphics.hpp
+-
+list
+-
+memory
+-
 
 /home/student/CLionProjects/Snake2/Biblioteka/test/SnakeTest.cpp
 boost/test/unit_test.hpp
@@ -21,4 +31,6 @@ iostream
 -
 ../include/Snake.h
 -
+../include/Food.h
+/home/student/CLionProjects/Snake2/Biblioteka/include/Food.h
 

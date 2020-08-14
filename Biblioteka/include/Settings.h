@@ -3,6 +3,7 @@
 
 
 class Settings {
+    //Window and game settings
 private:
     unsigned int w_height = 640;
     unsigned int w_width = 560;

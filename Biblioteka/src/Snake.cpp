@@ -3,7 +3,7 @@
 
 using namespace sf;
 
-Snake::Snake(int size) :  RectangleShape(Vector2f(size,size)){
+Snake::Snake(unsigned int size) :  size(size), RectangleShape(Vector2f(size,size)){
 
     setOrigin(size/2,size/2);
     setFillColor(Color::Green);
@@ -22,7 +22,7 @@ bool Snake::eatFood(sf::CircleShape & C) {
     return false;
 }
 
-bool Snake::wallColission(sf::RenderWindow & Okno) {
+bool Snake::wallCollision(sf::RenderWindow & Okno) {
     if(getPosition().x >= Okno.getSize().x || getPosition().x <= 0
                     || getPosition().y <= 0 || getPosition().y >= Okno.getSize().y){
        setFillColor(Color::Red);
@@ -34,6 +34,10 @@ bool Snake::wallColission(sf::RenderWindow & Okno) {
 bool Snake::eatYourself(Snake & S) {
     if(S.getGlobalBounds().intersects(getGlobalBounds())) return true;
     return false;
+}
+
+unsigned int Snake::getSize1() const {
+    return size;
 }
 
 

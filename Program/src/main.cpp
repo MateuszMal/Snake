@@ -7,10 +7,7 @@
 #include "Snake.h"
 #include "Food.h"
 
-using namespace std;
 using namespace sf;
-
-
 
 int main(){
 
@@ -39,7 +36,7 @@ int main(){
     Time remainingTime;
 
     Snake waz(20);
-    list<Snake> weze;
+    std::list<Snake> weze;
     weze.push_back(waz);
 
     int score = 0;
@@ -80,15 +77,15 @@ int main(){
                                 weze.back().getPosition().y - moveDirect.y);
                 weze.push_back(waz);
                 score += 100;
-                //zwiekszanie predkosci weza gdy jego dlugosc rosnie
+                //Increasing snake when he's growing
                 settings.setSpeed(settings.getSpeed() - weze.size() * 2);
             }
 
 
 
         for(auto & w : weze){
-            if(w.wallColission(Okno)) game = false;
-            //Do przemyslenia
+            if(w.wallCollision(Okno)) game = false;
+            //Need to think about this
             //if(weze.begin()->eatYourself(w)) game = false;
             Okno.draw(w);
         }
