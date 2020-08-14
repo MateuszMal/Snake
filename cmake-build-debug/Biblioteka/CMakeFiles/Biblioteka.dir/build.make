@@ -99,11 +99,25 @@ Biblioteka/CMakeFiles/Biblioteka.dir/test/master.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Biblioteka.dir/test/master.cpp.s"
 	cd /home/student/CLionProjects/Snake2/cmake-build-debug/Biblioteka && /usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/student/CLionProjects/Snake2/Biblioteka/test/master.cpp -o CMakeFiles/Biblioteka.dir/test/master.cpp.s
 
+Biblioteka/CMakeFiles/Biblioteka.dir/src/Settings.cpp.o: Biblioteka/CMakeFiles/Biblioteka.dir/flags.make
+Biblioteka/CMakeFiles/Biblioteka.dir/src/Settings.cpp.o: ../Biblioteka/src/Settings.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/student/CLionProjects/Snake2/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object Biblioteka/CMakeFiles/Biblioteka.dir/src/Settings.cpp.o"
+	cd /home/student/CLionProjects/Snake2/cmake-build-debug/Biblioteka && /usr/bin/g++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Biblioteka.dir/src/Settings.cpp.o -c /home/student/CLionProjects/Snake2/Biblioteka/src/Settings.cpp
+
+Biblioteka/CMakeFiles/Biblioteka.dir/src/Settings.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Biblioteka.dir/src/Settings.cpp.i"
+	cd /home/student/CLionProjects/Snake2/cmake-build-debug/Biblioteka && /usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/student/CLionProjects/Snake2/Biblioteka/src/Settings.cpp > CMakeFiles/Biblioteka.dir/src/Settings.cpp.i
+
+Biblioteka/CMakeFiles/Biblioteka.dir/src/Settings.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Biblioteka.dir/src/Settings.cpp.s"
+	cd /home/student/CLionProjects/Snake2/cmake-build-debug/Biblioteka && /usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/student/CLionProjects/Snake2/Biblioteka/src/Settings.cpp -o CMakeFiles/Biblioteka.dir/src/Settings.cpp.s
+
 # Object files for target Biblioteka
 Biblioteka_OBJECTS = \
 "CMakeFiles/Biblioteka.dir/src/Food.cpp.o" \
 "CMakeFiles/Biblioteka.dir/src/Snake.cpp.o" \
-"CMakeFiles/Biblioteka.dir/test/master.cpp.o"
+"CMakeFiles/Biblioteka.dir/test/master.cpp.o" \
+"CMakeFiles/Biblioteka.dir/src/Settings.cpp.o"
 
 # External object files for target Biblioteka
 Biblioteka_EXTERNAL_OBJECTS =
@@ -111,9 +125,10 @@ Biblioteka_EXTERNAL_OBJECTS =
 Biblioteka/libBiblioteka.a: Biblioteka/CMakeFiles/Biblioteka.dir/src/Food.cpp.o
 Biblioteka/libBiblioteka.a: Biblioteka/CMakeFiles/Biblioteka.dir/src/Snake.cpp.o
 Biblioteka/libBiblioteka.a: Biblioteka/CMakeFiles/Biblioteka.dir/test/master.cpp.o
+Biblioteka/libBiblioteka.a: Biblioteka/CMakeFiles/Biblioteka.dir/src/Settings.cpp.o
 Biblioteka/libBiblioteka.a: Biblioteka/CMakeFiles/Biblioteka.dir/build.make
 Biblioteka/libBiblioteka.a: Biblioteka/CMakeFiles/Biblioteka.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/student/CLionProjects/Snake2/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Linking CXX static library libBiblioteka.a"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/student/CLionProjects/Snake2/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Linking CXX static library libBiblioteka.a"
 	cd /home/student/CLionProjects/Snake2/cmake-build-debug/Biblioteka && $(CMAKE_COMMAND) -P CMakeFiles/Biblioteka.dir/cmake_clean_target.cmake
 	cd /home/student/CLionProjects/Snake2/cmake-build-debug/Biblioteka && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/Biblioteka.dir/link.txt --verbose=$(VERBOSE)
 

@@ -5,6 +5,7 @@ set(CMAKE_DEPENDS_LANGUAGES
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
   "/home/student/CLionProjects/Snake2/Biblioteka/src/Food.cpp" "/home/student/CLionProjects/Snake2/cmake-build-debug/Biblioteka/CMakeFiles/Biblioteka.dir/src/Food.cpp.o"
+  "/home/student/CLionProjects/Snake2/Biblioteka/src/Settings.cpp" "/home/student/CLionProjects/Snake2/cmake-build-debug/Biblioteka/CMakeFiles/Biblioteka.dir/src/Settings.cpp.o"
   "/home/student/CLionProjects/Snake2/Biblioteka/src/Snake.cpp" "/home/student/CLionProjects/Snake2/cmake-build-debug/Biblioteka/CMakeFiles/Biblioteka.dir/src/Snake.cpp.o"
   "/home/student/CLionProjects/Snake2/Biblioteka/test/master.cpp" "/home/student/CLionProjects/Snake2/cmake-build-debug/Biblioteka/CMakeFiles/Biblioteka.dir/test/master.cpp.o"
   )

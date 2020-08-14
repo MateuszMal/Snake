@@ -14,6 +14,8 @@ list
 memory
 -
 
+../Biblioteka/include/Settings.h
+
 ../Biblioteka/include/Snake.h
 SFML/Graphics.hpp
 -
@@ -33,6 +35,8 @@ memory
 -
 string
 -
+Settings.h
+/home/student/CLionProjects/Snake2/Program/src/Settings.h
 Snake.h
 /home/student/CLionProjects/Snake2/Program/src/Snake.h
 Food.h

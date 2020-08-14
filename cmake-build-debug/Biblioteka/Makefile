@@ -196,6 +196,33 @@ src/Food.cpp.s:
 	cd /home/student/CLionProjects/Snake2/cmake-build-debug && $(MAKE) -f Biblioteka/CMakeFiles/Biblioteka.dir/build.make Biblioteka/CMakeFiles/Biblioteka.dir/src/Food.cpp.s
 .PHONY : src/Food.cpp.s
 
+src/Settings.o: src/Settings.cpp.o
+
+.PHONY : src/Settings.o
+
+# target to build an object file
+src/Settings.cpp.o:
+	cd /home/student/CLionProjects/Snake2/cmake-build-debug && $(MAKE) -f Biblioteka/CMakeFiles/Biblioteka.dir/build.make Biblioteka/CMakeFiles/Biblioteka.dir/src/Settings.cpp.o
+.PHONY : src/Settings.cpp.o
+
+src/Settings.i: src/Settings.cpp.i
+
+.PHONY : src/Settings.i
+
+# target to preprocess a source file
+src/Settings.cpp.i:
+	cd /home/student/CLionProjects/Snake2/cmake-build-debug && $(MAKE) -f Biblioteka/CMakeFiles/Biblioteka.dir/build.make Biblioteka/CMakeFiles/Biblioteka.dir/src/Settings.cpp.i
+.PHONY : src/Settings.cpp.i
+
+src/Settings.s: src/Settings.cpp.s
+
+.PHONY : src/Settings.s
+
+# target to generate assembly for a file
+src/Settings.cpp.s:
+	cd /home/student/CLionProjects/Snake2/cmake-build-debug && $(MAKE) -f Biblioteka/CMakeFiles/Biblioteka.dir/build.make Biblioteka/CMakeFiles/Biblioteka.dir/src/Settings.cpp.s
+.PHONY : src/Settings.cpp.s
+
 src/Snake.o: src/Snake.cpp.o
 
 .PHONY : src/Snake.o
@@ -295,6 +322,9 @@ help:
 	@echo "... src/Food.o"
 	@echo "... src/Food.i"
 	@echo "... src/Food.s"
+	@echo "... src/Settings.o"
+	@echo "... src/Settings.i"
+	@echo "... src/Settings.s"
 	@echo "... src/Snake.o"
 	@echo "... src/Snake.i"
 	@echo "... src/Snake.s"

@@ -3,7 +3,7 @@
 #include <list>
 #include <memory>
 #include <string>
-
+#include "Settings.h"
 #include "Snake.h"
 #include "Food.h"
 
@@ -20,10 +20,15 @@ int main(){
 
     setlocale(LC_ALL, "");
 
-    Okno.create(VideoMode(560,640,32), "Okno");
+    Settings settings;
+
+    Okno.create(VideoMode(settings.getWWidth(),
+            settings.getWHeight(),
+            settings.getWBitsPerPixel()),
+                    "Okno");
     Okno.setActive(true);
     Okno.setKeyRepeatEnabled(false);
-    Okno.setFramerateLimit(60);
+    Okno.setFramerateLimit(settings.getFrameLimit());
     Okno.setVerticalSyncEnabled(true);
     Okno.setPosition(Vector2i(10,650));
 
@@ -34,13 +39,12 @@ int main(){
     Time remainingTime;
 
     Snake waz(20);
+    list<Snake> weze;
+    weze.push_back(waz);
 
     int score = 0;
 
     FoodPtr jablko = std::make_shared<Food>(10);
-
-    list<Snake> weze;
-    weze.push_back(waz);
 
     Vector2f moveDirect(0,0);
 
@@ -58,7 +62,7 @@ int main(){
         // Add the time since the last update
         remainingTime += clock.restart();
 
-        while(remainingTime > milliseconds(200)) {
+        while(remainingTime > milliseconds(settings.getSpeed())) {
 
             if (weze.size() > 1) {
                 weze.pop_back();
@@ -67,7 +71,7 @@ int main(){
             }
             weze.begin()->move(moveDirect);
 
-            remainingTime -= milliseconds(200);
+            remainingTime -= milliseconds(settings.getSpeed());
         }
         Okno.clear(Color::Black);
 
@@ -76,7 +80,11 @@ int main(){
                                 weze.back().getPosition().y - moveDirect.y);
                 weze.push_back(waz);
                 score += 100;
+                //zwiekszanie predkosci weza gdy jego dlugosc rosnie
+                settings.setSpeed(settings.getSpeed() - weze.size() * 2);
             }
+
+
 
         for(auto & w : weze){
             if(w.wallColission(Okno)) game = false;
@@ -85,8 +93,8 @@ int main(){
             Okno.draw(w);
         }
 
-        std::cout << score << std::endl;
-
+        //std::cout << score << std::endl;
+        std::cout << settings.getSpeed() << std::endl;
         Okno.draw(*jablko);
         Okno.display();
     }

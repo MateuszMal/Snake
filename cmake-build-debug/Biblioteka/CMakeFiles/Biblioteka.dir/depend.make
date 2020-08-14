@@ -4,6 +4,9 @@
 Biblioteka/CMakeFiles/Biblioteka.dir/src/Food.cpp.o: ../Biblioteka/include/Food.h
 Biblioteka/CMakeFiles/Biblioteka.dir/src/Food.cpp.o: ../Biblioteka/src/Food.cpp
 
+Biblioteka/CMakeFiles/Biblioteka.dir/src/Settings.cpp.o: ../Biblioteka/include/Settings.h
+Biblioteka/CMakeFiles/Biblioteka.dir/src/Settings.cpp.o: ../Biblioteka/src/Settings.cpp
+
 Biblioteka/CMakeFiles/Biblioteka.dir/src/Snake.cpp.o: ../Biblioteka/include/Snake.h
 Biblioteka/CMakeFiles/Biblioteka.dir/src/Snake.cpp.o: ../Biblioteka/src/Snake.cpp
 

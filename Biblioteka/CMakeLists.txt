@@ -7,7 +7,7 @@ set(SOURCE_FILES
         include/Food.h src/Food.cpp
         include/Snake.h src/Snake.cpp
         test/master.cpp
-        )
+        src/Settings.cpp include/Settings.h)
 
 add_library(Biblioteka ${SOURCE_FILES})
 

@@ -6,15 +6,9 @@
 
 #IncludeRegexTransform: 
 
-../Biblioteka/include/Snake.h
-SFML/Graphics.hpp
--
-list
--
-vector
--
+../Biblioteka/include/Settings.h
 
-/home/student/CLionProjects/Snake2/Biblioteka/src/Snake.cpp
-Snake.h
-/home/student/CLionProjects/Snake2/Biblioteka/src/Snake.h
+/home/student/CLionProjects/Snake2/Biblioteka/src/Settings.cpp
+Settings.h
+/home/student/CLionProjects/Snake2/Biblioteka/src/Settings.h
 

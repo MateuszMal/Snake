@@ -1,6 +1,5 @@
 /home/student/clion-2019.3.4/bin/cmake/linux/bin/cmake -DCMAKE_BUILD_TYPE=Debug -G "CodeBlocks - Unix Makefiles" /home/student/CLionProjects/Snake2
 -- Found SFML 2.5.1 in /usr/lib/x86_64-linux-gnu/cmake/SFML
--- Found Boost: /usr/include (found suitable version "1.67.0", minimum required is "1.60.0") found components:  unit_test_framework 
 -- Configuring done
 -- Generating done
 -- Build files have been written to: /home/student/CLionProjects/Snake2/cmake-build-debug

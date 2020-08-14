@@ -16,6 +16,11 @@
 },
 {
   "directory": "/home/student/CLionProjects/Snake2/cmake-build-debug/Biblioteka",
+  "command": "/usr/bin/g++   -I/home/student/CLionProjects/Snake2/Biblioteka/include   -std=c++14 -g3 -gdwarf-4   -std=gnu++11 -o CMakeFiles/Biblioteka.dir/src/Settings.cpp.o -c /home/student/CLionProjects/Snake2/Biblioteka/src/Settings.cpp",
+  "file": "/home/student/CLionProjects/Snake2/Biblioteka/src/Settings.cpp"
+},
+{
+  "directory": "/home/student/CLionProjects/Snake2/cmake-build-debug/Biblioteka",
   "command": "/usr/bin/g++   -I/home/student/CLionProjects/Snake2/Biblioteka/include   -std=c++14 -g3 -gdwarf-4   -std=gnu++11 -o CMakeFiles/TestSnake.dir/test/master.cpp.o -c /home/student/CLionProjects/Snake2/Biblioteka/test/master.cpp",
   "file": "/home/student/CLionProjects/Snake2/Biblioteka/test/master.cpp"
 },
