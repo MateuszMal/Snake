@@ -11,7 +11,9 @@ Biblioteka/CMakeFiles/Biblioteka.dir/src/Snake.cpp.o
  ../Biblioteka/include/Snake.h
  /home/student/CLionProjects/Snake2/Biblioteka/src/Snake.cpp
 Biblioteka/CMakeFiles/Biblioteka.dir/src/gameFunctions.cpp.o
+ ../Biblioteka/include/Food.h
  ../Biblioteka/include/Settings.h
+ ../Biblioteka/include/Snake.h
  ../Biblioteka/include/gameFunctions.h
  /home/student/CLionProjects/Snake2/Biblioteka/src/gameFunctions.cpp
 Biblioteka/CMakeFiles/Biblioteka.dir/test/master.cpp.o

@@ -29,6 +29,12 @@ SFML/Graphics.hpp
 -
 Settings.h
 ../Biblioteka/include/Settings.h
+list
+-
+Snake.h
+../Biblioteka/include/Snake.h
+Food.h
+../Biblioteka/include/Food.h
 
 /home/student/CLionProjects/Snake2/Program/src/main.cpp
 iostream

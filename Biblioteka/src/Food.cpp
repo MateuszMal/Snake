@@ -9,7 +9,7 @@ using namespace sf;
 Food::Food(int size) : CircleShape(size){
     this->setFillColor(Color::Red);
     this->setOrigin(size/2,size/2);
-    this->setPosition(rand()%560,rand()%640);
+    this->setPosition(rand()%560 - size,rand()%640 - size);
 }
 
 bool Food::isColision(std::list<sf::RectangleShape> &waz) {

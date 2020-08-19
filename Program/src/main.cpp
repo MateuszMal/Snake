@@ -21,15 +21,14 @@ int main(){
     Clock clock;
     Time remainingTime;
 
-    Snake waz(20);
-    std::list<Snake> weze;
-    weze.push_back(waz);
-
     createWindow(Okno, settings);
 
     bool game = true;
     int score = 0;
 
+    Snake waz(20);
+    std::list<Snake> weze;
+    weze.push_back(waz);
     FoodPtr jablko = std::make_shared<Food>(10);
 
     Vector2f moveDirect(0,0);
@@ -40,42 +39,19 @@ int main(){
         while (Okno.pollEvent(Zdarzenie)) {
             checkEvents(Zdarzenie, Okno, moveDirect);
         }
+        Okno.clear(Color::Black);
 
         // Add the time since the last update
         remainingTime += clock.restart();
 
-        while(remainingTime > milliseconds(settings.getSpeed())) {
+        snakeMove(weze,remainingTime,settings,waz,moveDirect);
 
-            if (weze.size() > 1) {
-                weze.pop_back();
-                waz.setPosition(weze.begin()->getPosition());
-                weze.push_front(waz);
-            }
-            weze.begin()->move(moveDirect);
+        collisions(weze,jablko,moveDirect,settings,score,waz);
 
-            remainingTime -= milliseconds(settings.getSpeed());
-        }
-        Okno.clear(Color::Black);
+        checkWalls(weze,Okno,game);
 
-        if (weze.begin()->eatFood(*jablko)) {
-                waz.setPosition(weze.back().getPosition().x - moveDirect.x,
-                                weze.back().getPosition().y - moveDirect.y);
-                weze.push_back(waz);
-                score += 100;
-                //Increasing snake when he's growing
-                settings.setSpeed(settings.getSpeed() - weze.size() * 2);
-            }
-
-
-        for(auto & w : weze){
-            if(w.wallCollision(Okno)) game = false;
-            //Need to think about this
-            //if(weze.begin()->eatYourself(w)) game = false;
-            Okno.draw(w);
-        }
-
-        //std::cout << score << std::endl;
-        std::cout << settings.getSpeed() << std::endl;
+        std::cout << "Ilosc klatek: " <<settings.getSpeed() << std::endl;
+        std::cout << "Score: " << score << std::endl;
         Okno.draw(*jablko);
         Okno.display();
     }

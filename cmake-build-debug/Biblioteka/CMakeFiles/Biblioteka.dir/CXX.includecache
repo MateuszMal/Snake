@@ -6,13 +6,47 @@
 
 #IncludeRegexTransform: 
 
+../Biblioteka/include/Food.h
+SFML/Graphics.hpp
+-
+list
+-
+memory
+-
+
 ../Biblioteka/include/Settings.h
+
+../Biblioteka/include/Snake.h
+SFML/Graphics.hpp
+-
+list
+-
+vector
+-
 
 ../Biblioteka/include/gameFunctions.h
 SFML/Graphics.hpp
 -
 Settings.h
 ../Biblioteka/include/Settings.h
+list
+-
+Snake.h
+../Biblioteka/include/Snake.h
+Food.h
+../Biblioteka/include/Food.h
+
+/home/student/CLionProjects/Snake2/Biblioteka/include/Food.h
+SFML/Graphics.hpp
+-
+list
+-
+memory
+-
+
+/home/student/CLionProjects/Snake2/Biblioteka/src/Food.cpp
+../include/Food.h
+/home/student/CLionProjects/Snake2/Biblioteka/include/Food.h
 
 /home/student/CLionProjects/Snake2/Biblioteka/src/gameFunctions.cpp
 gameFunctions.h
