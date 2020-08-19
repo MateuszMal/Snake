@@ -1,7 +1,3 @@
-//
-// Created by student on 14.08.2020.
-//
-
 #include "Settings.h"
 
 unsigned int Settings::getWHeight() const {

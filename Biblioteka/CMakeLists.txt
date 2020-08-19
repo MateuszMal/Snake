@@ -7,7 +7,7 @@ set(SOURCE_FILES
         include/Food.h src/Food.cpp
         include/Snake.h src/Snake.cpp
         test/master.cpp
-        src/Settings.cpp include/Settings.h)
+        src/Settings.cpp include/Settings.h src/gameFunctions.cpp include/gameFunctions.h)
 
 add_library(Biblioteka ${SOURCE_FILES})
 
@@ -27,7 +27,7 @@ include_directories(
 set(SOURCE_TEST_Snake_FILES
         test/master.cpp
         test/SnakeTest.cpp
-        )
+        test/FoodTest.cpp)
 
 add_executable (TestSnake ${SOURCE_TEST_Snake_FILES} )
 

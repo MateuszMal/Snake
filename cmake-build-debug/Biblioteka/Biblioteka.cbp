@@ -133,6 +133,9 @@
 		<Unit filename="/home/student/CLionProjects/Snake2/Biblioteka/include/Snake.h">
 			<Option target="Biblioteka"/>
 		</Unit>
+		<Unit filename="/home/student/CLionProjects/Snake2/Biblioteka/include/gameFunctions.h">
+			<Option target="Biblioteka"/>
+		</Unit>
 		<Unit filename="/home/student/CLionProjects/Snake2/Biblioteka/src/Food.cpp">
 			<Option target="Biblioteka"/>
 		</Unit>
@@ -141,6 +144,12 @@
 		</Unit>
 		<Unit filename="/home/student/CLionProjects/Snake2/Biblioteka/src/Snake.cpp">
 			<Option target="Biblioteka"/>
+		</Unit>
+		<Unit filename="/home/student/CLionProjects/Snake2/Biblioteka/src/gameFunctions.cpp">
+			<Option target="Biblioteka"/>
+		</Unit>
+		<Unit filename="/home/student/CLionProjects/Snake2/Biblioteka/test/FoodTest.cpp">
+			<Option target="TestSnake"/>
 		</Unit>
 		<Unit filename="/home/student/CLionProjects/Snake2/Biblioteka/test/SnakeTest.cpp">
 			<Option target="TestSnake"/>

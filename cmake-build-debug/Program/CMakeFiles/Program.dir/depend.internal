@@ -5,4 +5,5 @@ Program/CMakeFiles/Program.dir/src/main.cpp.o
  ../Biblioteka/include/Food.h
  ../Biblioteka/include/Settings.h
  ../Biblioteka/include/Snake.h
+ ../Biblioteka/include/gameFunctions.h
  /home/student/CLionProjects/Snake2/Program/src/main.cpp

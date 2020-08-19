@@ -24,6 +24,12 @@ list
 vector
 -
 
+../Biblioteka/include/gameFunctions.h
+SFML/Graphics.hpp
+-
+Settings.h
+../Biblioteka/include/Settings.h
+
 /home/student/CLionProjects/Snake2/Program/src/main.cpp
 iostream
 -
@@ -41,4 +47,6 @@ Snake.h
 /home/student/CLionProjects/Snake2/Program/src/Snake.h
 Food.h
 /home/student/CLionProjects/Snake2/Program/src/Food.h
+gameFunctions.h
+/home/student/CLionProjects/Snake2/Program/src/gameFunctions.h
 

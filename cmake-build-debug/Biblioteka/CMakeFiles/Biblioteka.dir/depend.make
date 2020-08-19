@@ -10,5 +10,9 @@ Biblioteka/CMakeFiles/Biblioteka.dir/src/Settings.cpp.o: ../Biblioteka/src/Setti
 Biblioteka/CMakeFiles/Biblioteka.dir/src/Snake.cpp.o: ../Biblioteka/include/Snake.h
 Biblioteka/CMakeFiles/Biblioteka.dir/src/Snake.cpp.o: ../Biblioteka/src/Snake.cpp
 
+Biblioteka/CMakeFiles/Biblioteka.dir/src/gameFunctions.cpp.o: ../Biblioteka/include/Settings.h
+Biblioteka/CMakeFiles/Biblioteka.dir/src/gameFunctions.cpp.o: ../Biblioteka/include/gameFunctions.h
+Biblioteka/CMakeFiles/Biblioteka.dir/src/gameFunctions.cpp.o: ../Biblioteka/src/gameFunctions.cpp
+
 Biblioteka/CMakeFiles/Biblioteka.dir/test/master.cpp.o: ../Biblioteka/test/master.cpp
 

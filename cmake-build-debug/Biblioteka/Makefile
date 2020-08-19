@@ -250,6 +250,60 @@ src/Snake.cpp.s:
 	cd /home/student/CLionProjects/Snake2/cmake-build-debug && $(MAKE) -f Biblioteka/CMakeFiles/Biblioteka.dir/build.make Biblioteka/CMakeFiles/Biblioteka.dir/src/Snake.cpp.s
 .PHONY : src/Snake.cpp.s
 
+src/gameFunctions.o: src/gameFunctions.cpp.o
+
+.PHONY : src/gameFunctions.o
+
+# target to build an object file
+src/gameFunctions.cpp.o:
+	cd /home/student/CLionProjects/Snake2/cmake-build-debug && $(MAKE) -f Biblioteka/CMakeFiles/Biblioteka.dir/build.make Biblioteka/CMakeFiles/Biblioteka.dir/src/gameFunctions.cpp.o
+.PHONY : src/gameFunctions.cpp.o
+
+src/gameFunctions.i: src/gameFunctions.cpp.i
+
+.PHONY : src/gameFunctions.i
+
+# target to preprocess a source file
+src/gameFunctions.cpp.i:
+	cd /home/student/CLionProjects/Snake2/cmake-build-debug && $(MAKE) -f Biblioteka/CMakeFiles/Biblioteka.dir/build.make Biblioteka/CMakeFiles/Biblioteka.dir/src/gameFunctions.cpp.i
+.PHONY : src/gameFunctions.cpp.i
+
+src/gameFunctions.s: src/gameFunctions.cpp.s
+
+.PHONY : src/gameFunctions.s
+
+# target to generate assembly for a file
+src/gameFunctions.cpp.s:
+	cd /home/student/CLionProjects/Snake2/cmake-build-debug && $(MAKE) -f Biblioteka/CMakeFiles/Biblioteka.dir/build.make Biblioteka/CMakeFiles/Biblioteka.dir/src/gameFunctions.cpp.s
+.PHONY : src/gameFunctions.cpp.s
+
+test/FoodTest.o: test/FoodTest.cpp.o
+
+.PHONY : test/FoodTest.o
+
+# target to build an object file
+test/FoodTest.cpp.o:
+	cd /home/student/CLionProjects/Snake2/cmake-build-debug && $(MAKE) -f Biblioteka/CMakeFiles/TestSnake.dir/build.make Biblioteka/CMakeFiles/TestSnake.dir/test/FoodTest.cpp.o
+.PHONY : test/FoodTest.cpp.o
+
+test/FoodTest.i: test/FoodTest.cpp.i
+
+.PHONY : test/FoodTest.i
+
+# target to preprocess a source file
+test/FoodTest.cpp.i:
+	cd /home/student/CLionProjects/Snake2/cmake-build-debug && $(MAKE) -f Biblioteka/CMakeFiles/TestSnake.dir/build.make Biblioteka/CMakeFiles/TestSnake.dir/test/FoodTest.cpp.i
+.PHONY : test/FoodTest.cpp.i
+
+test/FoodTest.s: test/FoodTest.cpp.s
+
+.PHONY : test/FoodTest.s
+
+# target to generate assembly for a file
+test/FoodTest.cpp.s:
+	cd /home/student/CLionProjects/Snake2/cmake-build-debug && $(MAKE) -f Biblioteka/CMakeFiles/TestSnake.dir/build.make Biblioteka/CMakeFiles/TestSnake.dir/test/FoodTest.cpp.s
+.PHONY : test/FoodTest.cpp.s
+
 test/SnakeTest.o: test/SnakeTest.cpp.o
 
 .PHONY : test/SnakeTest.o
@@ -328,6 +382,12 @@ help:
 	@echo "... src/Snake.o"
 	@echo "... src/Snake.i"
 	@echo "... src/Snake.s"
+	@echo "... src/gameFunctions.o"
+	@echo "... src/gameFunctions.i"
+	@echo "... src/gameFunctions.s"
+	@echo "... test/FoodTest.o"
+	@echo "... test/FoodTest.i"
+	@echo "... test/FoodTest.s"
 	@echo "... test/SnakeTest.o"
 	@echo "... test/SnakeTest.i"
 	@echo "... test/SnakeTest.s"

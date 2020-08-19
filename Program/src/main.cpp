@@ -6,31 +6,17 @@
 #include "Settings.h"
 #include "Snake.h"
 #include "Food.h"
+#include "gameFunctions.h"
 
 using namespace sf;
 
 int main(){
 
-    RenderWindow Okno;
-
     srand(time(NULL));
-
     setlocale(LC_ALL, "");
 
+    RenderWindow Okno;
     Settings settings;
-
-    Okno.create(VideoMode(settings.getWWidth(),
-            settings.getWHeight(),
-            settings.getWBitsPerPixel()),
-                    "Okno");
-    Okno.setActive(true);
-    Okno.setKeyRepeatEnabled(false);
-    Okno.setFramerateLimit(settings.getFrameLimit());
-    Okno.setVerticalSyncEnabled(true);
-    Okno.setPosition(Vector2i(10,650));
-
-    bool game = true;
-
     //clock and accumulator time for timming
     Clock clock;
     Time remainingTime;
@@ -39,6 +25,9 @@ int main(){
     std::list<Snake> weze;
     weze.push_back(waz);
 
+    createWindow(Okno, settings);
+
+    bool game = true;
     int score = 0;
 
     FoodPtr jablko = std::make_shared<Food>(10);
@@ -49,11 +38,7 @@ int main(){
 
     while(Okno.isOpen() && game) {
         while (Okno.pollEvent(Zdarzenie)) {
-            if(Zdarzenie.type == Event::Closed || Keyboard::isKeyPressed(Keyboard::Escape)) Okno.close();
-            if(Zdarzenie.type == Event::KeyPressed && Zdarzenie.key.code == Keyboard::W) moveDirect=Vector2f(0,-20);
-            if(Zdarzenie.type == Event::KeyPressed && Zdarzenie.key.code == Keyboard::S) moveDirect=Vector2f(0,20);
-            if(Zdarzenie.type == Event::KeyPressed && Zdarzenie.key.code == Keyboard::A) moveDirect=Vector2f(-20,0);
-            if(Zdarzenie.type == Event::KeyPressed && Zdarzenie.key.code == Keyboard::D) moveDirect=Vector2f(20,0);
+            checkEvents(Zdarzenie, Okno, moveDirect);
         }
 
         // Add the time since the last update
@@ -80,7 +65,6 @@ int main(){
                 //Increasing snake when he's growing
                 settings.setSpeed(settings.getSpeed() - weze.size() * 2);
             }
-
 
 
         for(auto & w : weze){

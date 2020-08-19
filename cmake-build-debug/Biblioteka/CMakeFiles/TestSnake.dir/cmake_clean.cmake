@@ -1,4 +1,5 @@
 file(REMOVE_RECURSE
+  "CMakeFiles/TestSnake.dir/test/FoodTest.cpp.o"
   "CMakeFiles/TestSnake.dir/test/SnakeTest.cpp.o"
   "CMakeFiles/TestSnake.dir/test/master.cpp.o"
   "TestSnake"
