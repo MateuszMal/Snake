@@ -56,3 +56,19 @@ void checkWalls(std::list<Snake> & snake, sf::RenderWindow & window, bool & game
         window.draw(s);
     }
 }
+
+void menuEvents(sf::Event & event, Menu & menu, sf::RenderWindow & window, bool & game) {
+    if(event.type == sf::Event::KeyReleased && event.key.code == sf::Keyboard::W) menu.moveUp();
+    if(event.type == sf::Event::KeyReleased && event.key.code == sf::Keyboard::S) menu.moveDown();
+    if(event.type == sf::Event::KeyReleased && event.key.code == sf::Keyboard::Return){
+        switch (menu.getSelectedItem()){
+            case 0:
+                game = true;
+                break;
+            case 1:
+                break;
+            case 2:
+                window.close();
+        }
+    }
+}

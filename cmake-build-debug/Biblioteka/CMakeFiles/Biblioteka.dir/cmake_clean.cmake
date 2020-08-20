@@ -1,5 +1,6 @@
 file(REMOVE_RECURSE
   "CMakeFiles/Biblioteka.dir/src/Food.cpp.o"
+  "CMakeFiles/Biblioteka.dir/src/Menu.cpp.o"
   "CMakeFiles/Biblioteka.dir/src/Settings.cpp.o"
   "CMakeFiles/Biblioteka.dir/src/Snake.cpp.o"
   "CMakeFiles/Biblioteka.dir/src/gameFunctions.cpp.o"

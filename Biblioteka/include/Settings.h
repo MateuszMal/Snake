@@ -1,6 +1,7 @@
 #ifndef SNAKE_SETTINGS_H
 #define SNAKE_SETTINGS_H
 
+#include <SFML/Graphics.hpp>
 
 class Settings {
     //Window and game settings

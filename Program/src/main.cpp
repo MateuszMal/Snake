@@ -7,6 +7,7 @@
 #include "Snake.h"
 #include "Food.h"
 #include "gameFunctions.h"
+#include "Menu.h"
 
 using namespace sf;
 
@@ -17,13 +18,14 @@ int main(){
 
     RenderWindow Okno;
     Settings settings;
+    Menu menu(settings.getWWidth(), settings.getWHeight());
     //clock and accumulator time for timming
     Clock clock;
     Time remainingTime;
 
     createWindow(Okno, settings);
 
-    bool game = true;
+    bool game = false;
     int score = 0;
 
     Snake waz(20);
@@ -35,24 +37,32 @@ int main(){
 
     Event Zdarzenie;
 
-    while(Okno.isOpen() && game) {
+    while(Okno.isOpen()) {
         while (Okno.pollEvent(Zdarzenie)) {
             checkEvents(Zdarzenie, Okno, moveDirect);
+            menuEvents(Zdarzenie, menu, Okno, game);
         }
         Okno.clear(Color::Black);
 
-        // Add the time since the last update
-        remainingTime += clock.restart();
+        //Mozna by to wykorzystac do pauzy
+        if(!game) menu.draw(Okno);
+         else {
 
-        snakeMove(weze,remainingTime,settings,waz,moveDirect);
+             Okno.clear(Color::Black);
+            // Add the time since the last update
+            remainingTime += clock.restart();
 
-        collisions(weze,jablko,moveDirect,settings,score,waz);
+            snakeMove(weze,remainingTime,settings,waz,moveDirect);
 
-        checkWalls(weze,Okno,game);
+            collisions(weze,jablko,moveDirect,settings,score,waz);
 
-        std::cout << "Ilosc klatek: " <<settings.getSpeed() << std::endl;
-        std::cout << "Score: " << score << std::endl;
-        Okno.draw(*jablko);
+            checkWalls(weze,Okno,game);
+
+            std::cout << "Ilosc klatek: " <<settings.getSpeed() << std::endl;
+            std::cout << "Score: " << score << std::endl;
+            Okno.draw(*jablko);
+
+        }
         Okno.display();
     }
     return 0;

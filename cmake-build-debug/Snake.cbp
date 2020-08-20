@@ -207,6 +207,9 @@
 		<Unit filename="/home/student/CLionProjects/Snake2/Biblioteka/include/Food.h">
 			<Option target="Biblioteka"/>
 		</Unit>
+		<Unit filename="/home/student/CLionProjects/Snake2/Biblioteka/include/Menu.h">
+			<Option target="Biblioteka"/>
+		</Unit>
 		<Unit filename="/home/student/CLionProjects/Snake2/Biblioteka/include/Settings.h">
 			<Option target="Biblioteka"/>
 		</Unit>
@@ -217,6 +220,9 @@
 			<Option target="Biblioteka"/>
 		</Unit>
 		<Unit filename="/home/student/CLionProjects/Snake2/Biblioteka/src/Food.cpp">
+			<Option target="Biblioteka"/>
+		</Unit>
+		<Unit filename="/home/student/CLionProjects/Snake2/Biblioteka/src/Menu.cpp">
 			<Option target="Biblioteka"/>
 		</Unit>
 		<Unit filename="/home/student/CLionProjects/Snake2/Biblioteka/src/Settings.cpp">
