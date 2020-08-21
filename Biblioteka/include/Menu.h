@@ -2,6 +2,7 @@
 #define SNAKE_MENU_H
 
 #include <SFML/Graphics.hpp>
+#include "Settings.h"
 
 class Menu {
 private:
@@ -9,7 +10,7 @@ private:
     sf::Font font;
     sf::Text text[3];
 public:
-    Menu(float width, float height);
+    Menu(float width, float height, Settings &);
     ~Menu();
     void draw(sf::RenderWindow &window);
     void moveUp();

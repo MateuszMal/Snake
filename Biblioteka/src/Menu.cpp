@@ -1,8 +1,8 @@
 #include "Menu.h"
 
-Menu::Menu(float width, float height) {
+Menu::Menu(float width, float height, Settings & settings) {
     if(!font.loadFromFile("../../font/OpenSans-Bold.ttf")){
-        //Zlapac wyjatek
+//        //Zlapac wyjatek
     }
     text[0].setFont(font);
     text[0].setColor(sf::Color::Red);

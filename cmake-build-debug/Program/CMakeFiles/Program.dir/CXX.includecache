@@ -17,6 +17,8 @@ memory
 ../Biblioteka/include/Menu.h
 SFML/Graphics.hpp
 -
+Settings.h
+../Biblioteka/include/Settings.h
 
 ../Biblioteka/include/Settings.h
 SFML/Graphics.hpp

@@ -5,6 +5,7 @@ Biblioteka/CMakeFiles/Biblioteka.dir/src/Food.cpp.o: ../Biblioteka/include/Food.
 Biblioteka/CMakeFiles/Biblioteka.dir/src/Food.cpp.o: ../Biblioteka/src/Food.cpp
 
 Biblioteka/CMakeFiles/Biblioteka.dir/src/Menu.cpp.o: ../Biblioteka/include/Menu.h
+Biblioteka/CMakeFiles/Biblioteka.dir/src/Menu.cpp.o: ../Biblioteka/include/Settings.h
 Biblioteka/CMakeFiles/Biblioteka.dir/src/Menu.cpp.o: ../Biblioteka/src/Menu.cpp
 
 Biblioteka/CMakeFiles/Biblioteka.dir/src/Settings.cpp.o: ../Biblioteka/include/Settings.h

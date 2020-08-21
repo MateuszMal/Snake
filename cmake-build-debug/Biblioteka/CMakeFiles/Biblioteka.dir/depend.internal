@@ -6,6 +6,7 @@ Biblioteka/CMakeFiles/Biblioteka.dir/src/Food.cpp.o
  /home/student/CLionProjects/Snake2/Biblioteka/src/Food.cpp
 Biblioteka/CMakeFiles/Biblioteka.dir/src/Menu.cpp.o
  ../Biblioteka/include/Menu.h
+ ../Biblioteka/include/Settings.h
  /home/student/CLionProjects/Snake2/Biblioteka/src/Menu.cpp
 Biblioteka/CMakeFiles/Biblioteka.dir/src/Settings.cpp.o
  ../Biblioteka/include/Settings.h

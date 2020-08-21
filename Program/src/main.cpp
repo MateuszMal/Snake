@@ -18,7 +18,8 @@ int main(){
 
     RenderWindow Okno;
     Settings settings;
-    Menu menu(settings.getWWidth(), settings.getWHeight());
+    Menu menu(settings.getWWidth(), settings.getWHeight(), settings);
+
     //clock and accumulator time for timming
     Clock clock;
     Time remainingTime;
@@ -27,7 +28,7 @@ int main(){
 
     bool game = false;
     int score = 0;
-
+    Text text;
     Snake waz(20);
     std::list<Snake> weze;
     weze.push_back(waz);
@@ -49,6 +50,7 @@ int main(){
          else {
 
              Okno.clear(Color::Black);
+
             // Add the time since the last update
             remainingTime += clock.restart();
 
@@ -61,6 +63,9 @@ int main(){
             std::cout << "Ilosc klatek: " <<settings.getSpeed() << std::endl;
             std::cout << "Score: " << score << std::endl;
             Okno.draw(*jablko);
+
+            textScores(Okno,score,text, settings.getFont());
+            drawScores(Okno, text);
 
         }
         Okno.display();

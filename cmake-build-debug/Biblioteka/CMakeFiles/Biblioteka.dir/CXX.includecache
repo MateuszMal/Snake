@@ -17,6 +17,8 @@ memory
 ../Biblioteka/include/Menu.h
 SFML/Graphics.hpp
 -
+Settings.h
+../Biblioteka/include/Settings.h
 
 ../Biblioteka/include/Settings.h
 SFML/Graphics.hpp
@@ -43,6 +45,14 @@ Food.h
 ../Biblioteka/include/Food.h
 Menu.h
 ../Biblioteka/include/Menu.h
+
+/home/student/CLionProjects/Snake2/Biblioteka/src/Menu.cpp
+Menu.h
+/home/student/CLionProjects/Snake2/Biblioteka/src/Menu.h
+
+/home/student/CLionProjects/Snake2/Biblioteka/src/Settings.cpp
+Settings.h
+/home/student/CLionProjects/Snake2/Biblioteka/src/Settings.h
 
 /home/student/CLionProjects/Snake2/Biblioteka/src/gameFunctions.cpp
 gameFunctions.h

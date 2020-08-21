@@ -23,3 +23,10 @@ unsigned int Settings::getFrameLimit() const {
 void Settings::setSpeed(unsigned int speed) {
     Settings::speed = speed;
 }
+
+const sf::Font &Settings::getFont() {
+    std::string s = "../../font/OpenSans-Bold.ttf";
+    font.loadFromFile(s);
+    return font;
+}
+

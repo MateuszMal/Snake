@@ -51,6 +51,7 @@ void collisions(std::list<Snake> & snake, FoodPtr & food, sf::Vector2f & vector,
 }
 
 void checkWalls(std::list<Snake> & snake, sf::RenderWindow & window, bool & game) {
+    //Check collisions with walls
     for(auto & s : snake){
         if(s.wallCollision(window)) game = false;
         window.draw(s);
@@ -58,6 +59,7 @@ void checkWalls(std::list<Snake> & snake, sf::RenderWindow & window, bool & game
 }
 
 void menuEvents(sf::Event & event, Menu & menu, sf::RenderWindow & window, bool & game) {
+    //Reactions to events from keyboard in menu
     if(event.type == sf::Event::KeyReleased && event.key.code == sf::Keyboard::W) menu.moveUp();
     if(event.type == sf::Event::KeyReleased && event.key.code == sf::Keyboard::S) menu.moveDown();
     if(event.type == sf::Event::KeyReleased && event.key.code == sf::Keyboard::Return){
@@ -71,4 +73,17 @@ void menuEvents(sf::Event & event, Menu & menu, sf::RenderWindow & window, bool 
                 window.close();
         }
     }
+}
+
+void textScores(sf::RenderWindow & window, int & score, sf::Text & text, const sf::Font & font) {
+    //Prepare text to draw
+    text.setFont(font);
+    text.setColor(sf::Color::White);
+    text.setString(std::to_string(score));
+    text.setPosition(window.getSize().x/2,window.getSize().y - 35);
+    text.setCharacterSize(25);
+}
+
+void drawScores(sf::RenderWindow & window, sf::Text & text) {
+    window.draw(text);
 }

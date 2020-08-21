@@ -14,6 +14,7 @@ void snakeMove(std::list<Snake> &, sf::Time &, Settings &, Snake &, sf::Vector2f
 void collisions(std::list<Snake> &, FoodPtr &, sf::Vector2f &, Settings &, int &, Snake &);
 void checkWalls(std::list<Snake> &, sf::RenderWindow &, bool &);
 void menuEvents(sf::Event &, Menu &, sf::RenderWindow &, bool & game);
-void drawScores();
+void textScores(sf::RenderWindow &, int &, sf::Text &, const sf::Font &);
+void drawScores(sf::RenderWindow &, sf::Text &);
 
 #endif //SNAKE_GAMEFUNCTIONS_H

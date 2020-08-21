@@ -11,6 +11,8 @@ private:
     unsigned int w_bitsPerPixel = 32;
     unsigned int speed = 200;
     unsigned int frameLimit = 60;
+    sf::Font font;
+
 public:
     unsigned int getWHeight() const;
 
@@ -23,6 +25,7 @@ public:
     unsigned int getFrameLimit() const;
 
     void setSpeed(unsigned int speed);
+    const sf::Font &getFont();
 
 };
 
