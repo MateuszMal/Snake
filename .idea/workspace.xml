@@ -2,10 +2,10 @@
 <project version="4">
   <component name="CMakeRunConfigurationManager" shouldGenerate="true" shouldDeleteObsolete="true">
     <generated>
-      <config projectName="Snake" targetName="TestSnake" />
       <config projectName="Snake" targetName="Program" />
-      <config projectName="Snake" targetName="Biblioteka" />
+      <config projectName="Snake" targetName="TestSnake" />
       <config projectName="Snake" targetName="check" />
+      <config projectName="Snake" targetName="Biblioteka" />
     </generated>
   </component>
   <component name="CMakeSettings">
@@ -15,24 +15,36 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="6a9496a7-2ed9-46e9-a509-3604079a333d" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/Biblioteka/test/MenuTest.cpp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Biblioteka/CMakeLists.txt" beforeDir="false" afterPath="$PROJECT_DIR$/Biblioteka/CMakeLists.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Biblioteka/include/Menu.h" beforeDir="false" afterPath="$PROJECT_DIR$/Biblioteka/include/Menu.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Biblioteka/include/Settings.h" beforeDir="false" afterPath="$PROJECT_DIR$/Biblioteka/include/Settings.h" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Biblioteka/include/gameFunctions.h" beforeDir="false" afterPath="$PROJECT_DIR$/Biblioteka/include/gameFunctions.h" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Biblioteka/src/Menu.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Biblioteka/src/Menu.cpp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Biblioteka/src/Settings.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Biblioteka/src/Settings.cpp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Biblioteka/src/gameFunctions.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Biblioteka/src/gameFunctions.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Biblioteka/test/FoodTest.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Biblioteka/test/FoodTest.cpp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Program/src/main.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Program/src/main.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/Biblioteka/Biblioteka.cbp" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/Biblioteka/Biblioteka.cbp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/Biblioteka/CMakeFiles/Biblioteka.dir/CXX.includecache" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/Biblioteka/CMakeFiles/Biblioteka.dir/CXX.includecache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/Biblioteka/CMakeFiles/Biblioteka.dir/depend.internal" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/Biblioteka/CMakeFiles/Biblioteka.dir/depend.internal" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/Biblioteka/CMakeFiles/Biblioteka.dir/depend.make" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/Biblioteka/CMakeFiles/Biblioteka.dir/depend.make" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/Biblioteka/CMakeFiles/Biblioteka.dir/src/Menu.cpp.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/Biblioteka/CMakeFiles/Biblioteka.dir/src/Menu.cpp.o" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/Biblioteka/CMakeFiles/Biblioteka.dir/src/Settings.cpp.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/Biblioteka/CMakeFiles/Biblioteka.dir/src/Settings.cpp.o" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/Biblioteka/CMakeFiles/Biblioteka.dir/src/gameFunctions.cpp.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/Biblioteka/CMakeFiles/Biblioteka.dir/src/gameFunctions.cpp.o" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/Biblioteka/CMakeFiles/TestSnake.dir/DependInfo.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/Biblioteka/CMakeFiles/TestSnake.dir/DependInfo.cmake" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/Biblioteka/CMakeFiles/TestSnake.dir/build.make" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/Biblioteka/CMakeFiles/TestSnake.dir/build.make" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/Biblioteka/CMakeFiles/TestSnake.dir/cmake_clean.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/Biblioteka/CMakeFiles/TestSnake.dir/cmake_clean.cmake" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/Biblioteka/CMakeFiles/TestSnake.dir/link.txt" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/Biblioteka/CMakeFiles/TestSnake.dir/link.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/Biblioteka/CMakeFiles/TestSnake.dir/progress.make" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/Biblioteka/CMakeFiles/TestSnake.dir/progress.make" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/Biblioteka/CMakeFiles/progress.marks" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/Biblioteka/CMakeFiles/progress.marks" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/Biblioteka/Makefile" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/Biblioteka/Makefile" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/Biblioteka/TestSnake" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/Biblioteka/TestSnake" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/Biblioteka/libBiblioteka.a" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/Biblioteka/libBiblioteka.a" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/Program/CMakeFiles/Program.dir/CXX.includecache" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/Program/CMakeFiles/Program.dir/CXX.includecache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Makefile2" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Makefile2" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/progress.marks" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/progress.marks" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/Program/CMakeFiles/Program.dir/src/main.cpp.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/Program/CMakeFiles/Program.dir/src/main.cpp.o" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/Program/Program" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/Program/Program" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/Snake.cbp" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/Snake.cbp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/compile_commands.json" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/compile_commands.json" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -46,9 +58,6 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
     <option name="ROOT_SYNC" value="DONT_SYNC" />
-  </component>
-  <component name="OCResolveContextSettings">
-    <option name="configuration" value="0-Debug-Biblioteka" />
   </component>
   <component name="ProjectId" id="1fT2UQ8P5VtiYdYOYynBUSUjWFk" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
@@ -68,7 +77,7 @@
       <recent name="$PROJECT_DIR$/Biblioteka/src" />
     </key>
   </component>
-  <component name="RunManager" selected="CMake Application.Program">
+  <component name="RunManager" selected="CMake Application.TestSnake">
     <configuration name="Biblioteka" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="Snake" TARGET_NAME="Biblioteka" CONFIG_NAME="Debug">
       <method v="2">
         <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
@@ -118,7 +127,8 @@
       <workItem from="1597411710492" duration="3146000" />
       <workItem from="1597861155716" duration="12796000" />
       <workItem from="1597940437075" duration="10251000" />
-      <workItem from="1598032595698" duration="4754000" />
+      <workItem from="1598032595698" duration="9833000" />
+      <workItem from="1598090456488" duration="708000" />
     </task>
     <servers />
   </component>
@@ -135,50 +145,50 @@
       <screen x="0" y="0" width="1920" height="895" />
     </state>
     <state x="634" y="170" width="647" height="552" key="#Biblioteka/0.0.1920.895@0.0.1920.895" timestamp="1596228121605" />
-    <state x="767" y="166" width="475" height="560" key="#com.intellij.ide.util.MemberChooser" timestamp="1598039035141">
+    <state x="767" y="166" width="475" height="560" key="#com.intellij.ide.util.MemberChooser" timestamp="1598043867651">
       <screen x="0" y="0" width="1920" height="895" />
     </state>
-    <state x="767" y="166" width="475" height="560" key="#com.intellij.ide.util.MemberChooser/0.0.1920.895@0.0.1920.895" timestamp="1598039035141" />
+    <state x="767" y="166" width="475" height="560" key="#com.intellij.ide.util.MemberChooser/0.0.1920.895@0.0.1920.895" timestamp="1598043867651" />
     <state x="743" y="205" width="430" height="482" key="FileChooserDialogImpl" timestamp="1596971312859">
       <screen x="0" y="0" width="1920" height="895" />
     </state>
     <state x="743" y="205" width="430" height="482" key="FileChooserDialogImpl/0.0.1920.895@0.0.1920.895" timestamp="1596971312859" />
-    <state width="1868" height="226" key="GridCell.Tab.0.bottom" timestamp="1598039292619">
+    <state width="1868" height="226" key="GridCell.Tab.0.bottom" timestamp="1598091318948">
       <screen x="0" y="0" width="1920" height="895" />
     </state>
     <state width="1868" height="226" key="GridCell.Tab.0.bottom/0.0.1920.885@0.0.1920.885" timestamp="1597346433137" />
-    <state width="1868" height="226" key="GridCell.Tab.0.bottom/0.0.1920.895@0.0.1920.895" timestamp="1598039292619" />
-    <state width="1868" height="226" key="GridCell.Tab.0.center" timestamp="1598039292619">
+    <state width="1868" height="226" key="GridCell.Tab.0.bottom/0.0.1920.895@0.0.1920.895" timestamp="1598091318948" />
+    <state width="1868" height="226" key="GridCell.Tab.0.center" timestamp="1598091318946">
       <screen x="0" y="0" width="1920" height="895" />
     </state>
     <state width="1868" height="226" key="GridCell.Tab.0.center/0.0.1920.885@0.0.1920.885" timestamp="1597346433136" />
-    <state width="1868" height="226" key="GridCell.Tab.0.center/0.0.1920.895@0.0.1920.895" timestamp="1598039292619" />
-    <state width="1868" height="226" key="GridCell.Tab.0.left" timestamp="1598039292619">
+    <state width="1868" height="226" key="GridCell.Tab.0.center/0.0.1920.895@0.0.1920.895" timestamp="1598091318946" />
+    <state width="1868" height="226" key="GridCell.Tab.0.left" timestamp="1598091318945">
       <screen x="0" y="0" width="1920" height="895" />
     </state>
     <state width="1868" height="226" key="GridCell.Tab.0.left/0.0.1920.885@0.0.1920.885" timestamp="1597346433134" />
-    <state width="1868" height="226" key="GridCell.Tab.0.left/0.0.1920.895@0.0.1920.895" timestamp="1598039292619" />
-    <state width="1868" height="226" key="GridCell.Tab.0.right" timestamp="1598039292619">
+    <state width="1868" height="226" key="GridCell.Tab.0.left/0.0.1920.895@0.0.1920.895" timestamp="1598091318945" />
+    <state width="1868" height="226" key="GridCell.Tab.0.right" timestamp="1598091318947">
       <screen x="0" y="0" width="1920" height="895" />
     </state>
     <state width="1868" height="226" key="GridCell.Tab.0.right/0.0.1920.885@0.0.1920.885" timestamp="1597346433136" />
-    <state width="1868" height="226" key="GridCell.Tab.0.right/0.0.1920.895@0.0.1920.895" timestamp="1598039292619" />
-    <state width="1868" height="280" key="GridCell.Tab.1.bottom" timestamp="1598037887024">
+    <state width="1868" height="226" key="GridCell.Tab.0.right/0.0.1920.895@0.0.1920.895" timestamp="1598091318947" />
+    <state width="1868" height="280" key="GridCell.Tab.1.bottom" timestamp="1598040751006">
       <screen x="0" y="0" width="1920" height="895" />
     </state>
-    <state width="1868" height="280" key="GridCell.Tab.1.bottom/0.0.1920.895@0.0.1920.895" timestamp="1598037887024" />
-    <state width="1868" height="280" key="GridCell.Tab.1.center" timestamp="1598037887021">
+    <state width="1868" height="280" key="GridCell.Tab.1.bottom/0.0.1920.895@0.0.1920.895" timestamp="1598040751006" />
+    <state width="1868" height="280" key="GridCell.Tab.1.center" timestamp="1598040751000">
       <screen x="0" y="0" width="1920" height="895" />
     </state>
-    <state width="1868" height="280" key="GridCell.Tab.1.center/0.0.1920.895@0.0.1920.895" timestamp="1598037887021" />
-    <state width="1868" height="280" key="GridCell.Tab.1.left" timestamp="1598037887021">
+    <state width="1868" height="280" key="GridCell.Tab.1.center/0.0.1920.895@0.0.1920.895" timestamp="1598040751000" />
+    <state width="1868" height="280" key="GridCell.Tab.1.left" timestamp="1598040750999">
       <screen x="0" y="0" width="1920" height="895" />
     </state>
-    <state width="1868" height="280" key="GridCell.Tab.1.left/0.0.1920.895@0.0.1920.895" timestamp="1598037887021" />
-    <state width="1868" height="280" key="GridCell.Tab.1.right" timestamp="1598037887022">
+    <state width="1868" height="280" key="GridCell.Tab.1.left/0.0.1920.895@0.0.1920.895" timestamp="1598040750999" />
+    <state width="1868" height="280" key="GridCell.Tab.1.right" timestamp="1598040751001">
       <screen x="0" y="0" width="1920" height="895" />
     </state>
-    <state width="1868" height="280" key="GridCell.Tab.1.right/0.0.1920.895@0.0.1920.895" timestamp="1598037887022" />
+    <state width="1868" height="280" key="GridCell.Tab.1.right/0.0.1920.895@0.0.1920.895" timestamp="1598040751001" />
     <state x="449" y="82" key="SettingsEditor" timestamp="1597948844040">
       <screen x="0" y="0" width="1920" height="895" />
     </state>

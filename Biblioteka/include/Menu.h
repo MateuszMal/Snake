@@ -7,10 +7,9 @@
 class Menu {
 private:
     int selectedItem;
-    sf::Font font;
     sf::Text text[3];
 public:
-    Menu(float width, float height, Settings &);
+    Menu(float width, float height, const sf::Font &);
     ~Menu();
     void draw(sf::RenderWindow &window);
     void moveUp();

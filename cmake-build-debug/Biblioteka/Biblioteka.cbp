@@ -157,6 +157,9 @@
 		<Unit filename="/home/student/CLionProjects/Snake2/Biblioteka/test/FoodTest.cpp">
 			<Option target="TestSnake"/>
 		</Unit>
+		<Unit filename="/home/student/CLionProjects/Snake2/Biblioteka/test/MenuTest.cpp">
+			<Option target="TestSnake"/>
+		</Unit>
 		<Unit filename="/home/student/CLionProjects/Snake2/Biblioteka/test/SnakeTest.cpp">
 			<Option target="TestSnake"/>
 		</Unit>

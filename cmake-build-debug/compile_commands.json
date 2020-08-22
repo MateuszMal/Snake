@@ -45,6 +45,11 @@
   "file": "/home/student/CLionProjects/Snake2/Biblioteka/test/FoodTest.cpp"
 },
 {
+  "directory": "/home/student/CLionProjects/Snake2/cmake-build-debug/Biblioteka",
+  "command": "/usr/bin/g++   -I/home/student/CLionProjects/Snake2/Biblioteka/include   -std=c++14 -g3 -gdwarf-4   -std=gnu++11 -o CMakeFiles/TestSnake.dir/test/MenuTest.cpp.o -c /home/student/CLionProjects/Snake2/Biblioteka/test/MenuTest.cpp",
+  "file": "/home/student/CLionProjects/Snake2/Biblioteka/test/MenuTest.cpp"
+},
+{
   "directory": "/home/student/CLionProjects/Snake2/cmake-build-debug/Program",
   "command": "/usr/bin/g++   -I/home/student/CLionProjects/Snake2/Program/include -I/home/student/CLionProjects/Snake2/Biblioteka/include  -g3 -gdwarf-4   -std=gnu++14 -o CMakeFiles/Program.dir/src/main.cpp.o -c /home/student/CLionProjects/Snake2/Program/src/main.cpp",
   "file": "/home/student/CLionProjects/Snake2/Program/src/main.cpp"

@@ -16,5 +16,6 @@ void checkWalls(std::list<Snake> &, sf::RenderWindow &, bool &);
 void menuEvents(sf::Event &, Menu &, sf::RenderWindow &, bool & game);
 void textScores(sf::RenderWindow &, int &, sf::Text &, const sf::Font &);
 void drawScores(sf::RenderWindow &, sf::Text &);
+void drawSnake(sf::RenderWindow &, std::list<Snake> &);
 
 #endif //SNAKE_GAMEFUNCTIONS_H

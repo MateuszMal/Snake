@@ -155,12 +155,12 @@ Biblioteka/CMakeFiles/Biblioteka.dir/clean:
 Biblioteka/CMakeFiles/TestSnake.dir/all: Biblioteka/CMakeFiles/Biblioteka.dir/all
 	$(MAKE) -f Biblioteka/CMakeFiles/TestSnake.dir/build.make Biblioteka/CMakeFiles/TestSnake.dir/depend
 	$(MAKE) -f Biblioteka/CMakeFiles/TestSnake.dir/build.make Biblioteka/CMakeFiles/TestSnake.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/student/CLionProjects/Snake2/cmake-build-debug/CMakeFiles --progress-num=10,11,12,13 "Built target TestSnake"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/student/CLionProjects/Snake2/cmake-build-debug/CMakeFiles --progress-num=10,11,12,13,14 "Built target TestSnake"
 .PHONY : Biblioteka/CMakeFiles/TestSnake.dir/all
 
 # Build rule for subdir invocation for target.
 Biblioteka/CMakeFiles/TestSnake.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/student/CLionProjects/Snake2/cmake-build-debug/CMakeFiles 11
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/student/CLionProjects/Snake2/cmake-build-debug/CMakeFiles 12
 	$(MAKE) -f CMakeFiles/Makefile2 Biblioteka/CMakeFiles/TestSnake.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/student/CLionProjects/Snake2/cmake-build-debug/CMakeFiles 0
 .PHONY : Biblioteka/CMakeFiles/TestSnake.dir/rule

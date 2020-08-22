@@ -33,7 +33,6 @@ void snakeMove(std::list<Snake> & snake, sf::Time & remainingTime, Settings & se
             snake.push_front(S);
         }
         snake.begin()->move(vector);
-
         remainingTime -= sf::milliseconds(settings.getSpeed());
     }
 }
@@ -52,10 +51,7 @@ void collisions(std::list<Snake> & snake, FoodPtr & food, sf::Vector2f & vector,
 
 void checkWalls(std::list<Snake> & snake, sf::RenderWindow & window, bool & game) {
     //Check collisions with walls
-    for(auto & s : snake){
-        if(s.wallCollision(window)) game = false;
-        window.draw(s);
-    }
+    if(snake.begin()->wallCollision(window)) game = false;
 }
 
 void menuEvents(sf::Event & event, Menu & menu, sf::RenderWindow & window, bool & game) {
@@ -71,6 +67,7 @@ void menuEvents(sf::Event & event, Menu & menu, sf::RenderWindow & window, bool 
                 break;
             case 2:
                 window.close();
+                break;
         }
     }
 }
@@ -86,4 +83,10 @@ void textScores(sf::RenderWindow & window, int & score, sf::Text & text, const s
 
 void drawScores(sf::RenderWindow & window, sf::Text & text) {
     window.draw(text);
+}
+
+void drawSnake(sf::RenderWindow & window, std::list<Snake> & snake) {
+    for(auto & s : snake){
+        window.draw(s);
+    }
 }

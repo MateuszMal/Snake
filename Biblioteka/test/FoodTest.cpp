@@ -1,6 +1,4 @@
 #include <boost/test/unit_test.hpp>
-#include <SFML/Graphics.hpp>
-#include <iostream>
 #include "../include/Food.h"
 
 BOOST_AUTO_TEST_SUITE(FoodSuiteCorrect)

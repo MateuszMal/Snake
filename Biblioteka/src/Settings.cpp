@@ -26,7 +26,9 @@ void Settings::setSpeed(unsigned int speed) {
 
 const sf::Font &Settings::getFont() {
     std::string s = "../../font/OpenSans-Bold.ttf";
-    font.loadFromFile(s);
+    if(!font.loadFromFile(s)){
+//        //Zlapac wyjatek
+    }
     return font;
 }
 

@@ -331,6 +331,33 @@ test/FoodTest.cpp.s:
 	cd /home/student/CLionProjects/Snake2/cmake-build-debug && $(MAKE) -f Biblioteka/CMakeFiles/TestSnake.dir/build.make Biblioteka/CMakeFiles/TestSnake.dir/test/FoodTest.cpp.s
 .PHONY : test/FoodTest.cpp.s
 
+test/MenuTest.o: test/MenuTest.cpp.o
+
+.PHONY : test/MenuTest.o
+
+# target to build an object file
+test/MenuTest.cpp.o:
+	cd /home/student/CLionProjects/Snake2/cmake-build-debug && $(MAKE) -f Biblioteka/CMakeFiles/TestSnake.dir/build.make Biblioteka/CMakeFiles/TestSnake.dir/test/MenuTest.cpp.o
+.PHONY : test/MenuTest.cpp.o
+
+test/MenuTest.i: test/MenuTest.cpp.i
+
+.PHONY : test/MenuTest.i
+
+# target to preprocess a source file
+test/MenuTest.cpp.i:
+	cd /home/student/CLionProjects/Snake2/cmake-build-debug && $(MAKE) -f Biblioteka/CMakeFiles/TestSnake.dir/build.make Biblioteka/CMakeFiles/TestSnake.dir/test/MenuTest.cpp.i
+.PHONY : test/MenuTest.cpp.i
+
+test/MenuTest.s: test/MenuTest.cpp.s
+
+.PHONY : test/MenuTest.s
+
+# target to generate assembly for a file
+test/MenuTest.cpp.s:
+	cd /home/student/CLionProjects/Snake2/cmake-build-debug && $(MAKE) -f Biblioteka/CMakeFiles/TestSnake.dir/build.make Biblioteka/CMakeFiles/TestSnake.dir/test/MenuTest.cpp.s
+.PHONY : test/MenuTest.cpp.s
+
 test/SnakeTest.o: test/SnakeTest.cpp.o
 
 .PHONY : test/SnakeTest.o
@@ -418,6 +445,9 @@ help:
 	@echo "... test/FoodTest.o"
 	@echo "... test/FoodTest.i"
 	@echo "... test/FoodTest.s"
+	@echo "... test/MenuTest.o"
+	@echo "... test/MenuTest.i"
+	@echo "... test/MenuTest.s"
 	@echo "... test/SnakeTest.o"
 	@echo "... test/SnakeTest.i"
 	@echo "... test/SnakeTest.s"

@@ -18,7 +18,7 @@ int main(){
 
     RenderWindow Okno;
     Settings settings;
-    Menu menu(settings.getWWidth(), settings.getWHeight(), settings);
+    Menu menu(settings.getWWidth(), settings.getWHeight(), settings.getFont());
 
     //clock and accumulator time for timming
     Clock clock;
@@ -41,14 +41,15 @@ int main(){
     while(Okno.isOpen()) {
         while (Okno.pollEvent(Zdarzenie)) {
             checkEvents(Zdarzenie, Okno, moveDirect);
-            menuEvents(Zdarzenie, menu, Okno, game);
+            if(!game) menuEvents(Zdarzenie, menu, Okno, game);
         }
         Okno.clear(Color::Black);
 
         //Mozna by to wykorzystac do pauzy
-        if(!game) menu.draw(Okno);
-         else {
-
+        if(!game) {
+            menu.draw(Okno);}
+        else {
+            
              Okno.clear(Color::Black);
 
             // Add the time since the last update
@@ -60,8 +61,11 @@ int main(){
 
             checkWalls(weze,Okno,game);
 
-            std::cout << "Ilosc klatek: " <<settings.getSpeed() << std::endl;
-            std::cout << "Score: " << score << std::endl;
+            drawSnake(Okno, weze);
+
+//            std::cout << "Ilosc klatek: " <<settings.getSpeed() << std::endl;
+//            std::cout << "Score: " << score << std::endl;
+
             Okno.draw(*jablko);
 
             textScores(Okno,score,text, settings.getFont());
