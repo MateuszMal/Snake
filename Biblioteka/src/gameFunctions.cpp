@@ -1,3 +1,4 @@
+#include <iostream>
 #include "gameFunctions.h"
 
 
@@ -60,6 +61,7 @@ void menuEvents(sf::Event & event, Menu & menu, sf::RenderWindow & window, bool 
         switch (menu.getSelectedItem()){
             case 0:
                 game = true;
+                std::cout << "w menu: " << game << std::endl;
                 break;
             case 1:
                 break;

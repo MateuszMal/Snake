@@ -5,13 +5,9 @@ using namespace sf;
 
 Snake::Snake(unsigned int size) :  size(size), RectangleShape(Vector2f(size,size)){
 
-    setOrigin(size/2,size/2);
+    setOrigin((float)size/2,(float)size/2);
     setFillColor(Color::Green);
     setPosition(90,90);
-}
-
-Snake::~Snake() {
-
 }
 
 bool Snake::eatFood(sf::CircleShape & C) {
@@ -21,19 +17,17 @@ bool Snake::eatFood(sf::CircleShape & C) {
     }
     return false;
 }
-
+//Zmienic na snake.begin().getPosition().x
 bool Snake::wallCollision(sf::RenderWindow & Okno) {
-    if(getPosition().x >= Okno.getSize().x || getPosition().x <= 0
-                    || getPosition().y <= 0 || getPosition().y >= Okno.getSize().y){
-       setFillColor(Color::Red);
+    if(this->getPosition().x >= Okno.getSize().x || this->getPosition().x <= 0
+                    || this->getPosition().y <= 0 ||this-> getPosition().y >= Okno.getSize().y){
        return true;
     }
     return false;
 }
 
 bool Snake::eatYourself(Snake & S) {
-    if(S.getGlobalBounds().intersects(getGlobalBounds())) return true;
-    return false;
+    return S.getGlobalBounds().intersects(getGlobalBounds());
 }
 
 unsigned int Snake::getSize1() const {

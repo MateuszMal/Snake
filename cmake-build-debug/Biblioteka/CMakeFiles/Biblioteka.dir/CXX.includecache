@@ -6,24 +6,6 @@
 
 #IncludeRegexTransform: 
 
-../Biblioteka/include/Food.h
-SFML/Graphics.hpp
--
-list
--
-memory
--
-
-../Biblioteka/include/Menu.h
-SFML/Graphics.hpp
--
-Settings.h
-../Biblioteka/include/Settings.h
-
-../Biblioteka/include/Settings.h
-SFML/Graphics.hpp
--
-
 ../Biblioteka/include/Snake.h
 SFML/Graphics.hpp
 -
@@ -32,21 +14,7 @@ list
 vector
 -
 
-../Biblioteka/include/gameFunctions.h
-SFML/Graphics.hpp
--
-Settings.h
-../Biblioteka/include/Settings.h
-list
--
+/home/student/CLionProjects/Snake2/Biblioteka/src/Snake.cpp
 Snake.h
-../Biblioteka/include/Snake.h
-Food.h
-../Biblioteka/include/Food.h
-Menu.h
-../Biblioteka/include/Menu.h
-
-/home/student/CLionProjects/Snake2/Biblioteka/src/gameFunctions.cpp
-gameFunctions.h
-/home/student/CLionProjects/Snake2/Biblioteka/src/gameFunctions.h
+/home/student/CLionProjects/Snake2/Biblioteka/src/Snake.h
 
