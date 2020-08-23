@@ -7,6 +7,7 @@ set(CMAKE_DEPENDS_CHECK_CXX
   "/home/student/CLionProjects/Snake2/Biblioteka/test/FoodTest.cpp" "/home/student/CLionProjects/Snake2/cmake-build-debug/Biblioteka/CMakeFiles/TestSnake.dir/test/FoodTest.cpp.o"
   "/home/student/CLionProjects/Snake2/Biblioteka/test/MenuTest.cpp" "/home/student/CLionProjects/Snake2/cmake-build-debug/Biblioteka/CMakeFiles/TestSnake.dir/test/MenuTest.cpp.o"
   "/home/student/CLionProjects/Snake2/Biblioteka/test/SnakeTest.cpp" "/home/student/CLionProjects/Snake2/cmake-build-debug/Biblioteka/CMakeFiles/TestSnake.dir/test/SnakeTest.cpp.o"
+  "/home/student/CLionProjects/Snake2/Biblioteka/test/gameFunctionsTest.cpp" "/home/student/CLionProjects/Snake2/cmake-build-debug/Biblioteka/CMakeFiles/TestSnake.dir/test/gameFunctionsTest.cpp.o"
   "/home/student/CLionProjects/Snake2/Biblioteka/test/master.cpp" "/home/student/CLionProjects/Snake2/cmake-build-debug/Biblioteka/CMakeFiles/TestSnake.dir/test/master.cpp.o"
   )
 set(CMAKE_CXX_COMPILER_ID "GNU")

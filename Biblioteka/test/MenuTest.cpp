@@ -6,7 +6,7 @@
 
 BOOST_AUTO_TEST_SUITE()
 
-    BOOST_AUTO_TEST_CASE(MenuCreateTestCase){
+    BOOST_AUTO_TEST_CASE(MenuTestCase){
     sf::RenderWindow window;
     Settings settings;
     createWindow(window,settings);\
@@ -16,6 +16,8 @@ BOOST_AUTO_TEST_SUITE()
     BOOST_REQUIRE_EQUAL(menu.getSelectedItem(), 1);
     menu.moveDown();
     BOOST_REQUIRE_EQUAL(menu.getSelectedItem(), 2);
+    menu.moveDown();
+    BOOST_REQUIRE_EQUAL(menu.getSelectedItem(), 2);
     menu.moveUp();
     BOOST_REQUIRE_EQUAL(menu.getSelectedItem(), 1);
     menu.moveUp();
@@ -23,7 +25,5 @@ BOOST_AUTO_TEST_SUITE()
     menu.moveUp();
     BOOST_REQUIRE_EQUAL(menu.getSelectedItem(), 0);
 }
-
-
 
 BOOST_AUTO_TEST_SUITE_END()

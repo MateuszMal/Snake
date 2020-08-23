@@ -19,14 +19,12 @@ void createWindow(sf::RenderWindow & window, Settings & settings) {
     window.setKeyRepeatEnabled(false);
     window.setFramerateLimit(settings.getFrameLimit());
     window.setVerticalSyncEnabled(true);
-    window.setPosition(sf::Vector2i(10,650));
-
+    window.setPosition(sf::Vector2i(200,650));
 }
 
 void snakeMove(std::list<Snake> & snake, sf::Time & remainingTime, Settings & settings, Snake & S, sf::Vector2f & vector) {
     //Snake's moves
     while(remainingTime > sf::milliseconds(settings.getSpeed())) {
-
         if (snake.size() > 1) {
             snake.pop_back();
             S.setPosition(snake.begin()->getPosition());
@@ -67,6 +65,8 @@ void menuEvents(sf::Event & event, Menu & menu, sf::RenderWindow & window, bool 
                 break;
             case 2:
                 window.close();
+                break;
+            default:
                 break;
         }
     }

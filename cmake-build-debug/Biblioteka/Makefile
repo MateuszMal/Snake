@@ -385,6 +385,33 @@ test/SnakeTest.cpp.s:
 	cd /home/student/CLionProjects/Snake2/cmake-build-debug && $(MAKE) -f Biblioteka/CMakeFiles/TestSnake.dir/build.make Biblioteka/CMakeFiles/TestSnake.dir/test/SnakeTest.cpp.s
 .PHONY : test/SnakeTest.cpp.s
 
+test/gameFunctionsTest.o: test/gameFunctionsTest.cpp.o
+
+.PHONY : test/gameFunctionsTest.o
+
+# target to build an object file
+test/gameFunctionsTest.cpp.o:
+	cd /home/student/CLionProjects/Snake2/cmake-build-debug && $(MAKE) -f Biblioteka/CMakeFiles/TestSnake.dir/build.make Biblioteka/CMakeFiles/TestSnake.dir/test/gameFunctionsTest.cpp.o
+.PHONY : test/gameFunctionsTest.cpp.o
+
+test/gameFunctionsTest.i: test/gameFunctionsTest.cpp.i
+
+.PHONY : test/gameFunctionsTest.i
+
+# target to preprocess a source file
+test/gameFunctionsTest.cpp.i:
+	cd /home/student/CLionProjects/Snake2/cmake-build-debug && $(MAKE) -f Biblioteka/CMakeFiles/TestSnake.dir/build.make Biblioteka/CMakeFiles/TestSnake.dir/test/gameFunctionsTest.cpp.i
+.PHONY : test/gameFunctionsTest.cpp.i
+
+test/gameFunctionsTest.s: test/gameFunctionsTest.cpp.s
+
+.PHONY : test/gameFunctionsTest.s
+
+# target to generate assembly for a file
+test/gameFunctionsTest.cpp.s:
+	cd /home/student/CLionProjects/Snake2/cmake-build-debug && $(MAKE) -f Biblioteka/CMakeFiles/TestSnake.dir/build.make Biblioteka/CMakeFiles/TestSnake.dir/test/gameFunctionsTest.cpp.s
+.PHONY : test/gameFunctionsTest.cpp.s
+
 test/master.o: test/master.cpp.o
 
 .PHONY : test/master.o
@@ -451,6 +478,9 @@ help:
 	@echo "... test/SnakeTest.o"
 	@echo "... test/SnakeTest.i"
 	@echo "... test/SnakeTest.s"
+	@echo "... test/gameFunctionsTest.o"
+	@echo "... test/gameFunctionsTest.i"
+	@echo "... test/gameFunctionsTest.s"
 	@echo "... test/master.o"
 	@echo "... test/master.i"
 	@echo "... test/master.s"

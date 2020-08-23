@@ -65,6 +65,7 @@ int main(){
 
 //            std::cout << "Ilosc klatek: " <<settings.getSpeed() << std::endl;
 //            std::cout << "Score: " << score << std::endl;
+            std::cout << Okno.getPosition().x << std::endl;
 
             Okno.draw(*jablko);
 

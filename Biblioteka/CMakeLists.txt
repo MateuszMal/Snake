@@ -27,7 +27,7 @@ include_directories(
 set(SOURCE_TEST_Snake_FILES
         test/master.cpp
         test/SnakeTest.cpp
-        test/FoodTest.cpp test/MenuTest.cpp)
+        test/FoodTest.cpp test/MenuTest.cpp test/gameFunctionsTest.cpp)
 
 add_executable (TestSnake ${SOURCE_TEST_Snake_FILES} )
 

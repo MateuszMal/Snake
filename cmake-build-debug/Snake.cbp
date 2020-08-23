@@ -243,6 +243,9 @@
 		<Unit filename="/home/student/CLionProjects/Snake2/Biblioteka/test/SnakeTest.cpp">
 			<Option target="TestSnake"/>
 		</Unit>
+		<Unit filename="/home/student/CLionProjects/Snake2/Biblioteka/test/gameFunctionsTest.cpp">
+			<Option target="TestSnake"/>
+		</Unit>
 		<Unit filename="/home/student/CLionProjects/Snake2/Biblioteka/test/master.cpp">
 			<Option target="Biblioteka"/>
 			<Option target="TestSnake"/>

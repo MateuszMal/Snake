@@ -15,5 +15,12 @@ Biblioteka/CMakeFiles/TestSnake.dir/test/SnakeTest.cpp.o: ../Biblioteka/include/
 Biblioteka/CMakeFiles/TestSnake.dir/test/SnakeTest.cpp.o: ../Biblioteka/include/Food.h
 Biblioteka/CMakeFiles/TestSnake.dir/test/SnakeTest.cpp.o: ../Biblioteka/test/SnakeTest.cpp
 
+Biblioteka/CMakeFiles/TestSnake.dir/test/gameFunctionsTest.cpp.o: ../Biblioteka/include/Food.h
+Biblioteka/CMakeFiles/TestSnake.dir/test/gameFunctionsTest.cpp.o: ../Biblioteka/include/Menu.h
+Biblioteka/CMakeFiles/TestSnake.dir/test/gameFunctionsTest.cpp.o: ../Biblioteka/include/Settings.h
+Biblioteka/CMakeFiles/TestSnake.dir/test/gameFunctionsTest.cpp.o: ../Biblioteka/include/Snake.h
+Biblioteka/CMakeFiles/TestSnake.dir/test/gameFunctionsTest.cpp.o: ../Biblioteka/include/gameFunctions.h
+Biblioteka/CMakeFiles/TestSnake.dir/test/gameFunctionsTest.cpp.o: ../Biblioteka/test/gameFunctionsTest.cpp
+
 Biblioteka/CMakeFiles/TestSnake.dir/test/master.cpp.o: ../Biblioteka/test/master.cpp
 
