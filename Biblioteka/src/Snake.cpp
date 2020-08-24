@@ -19,11 +19,8 @@ bool Snake::eatFood(sf::CircleShape & C) {
 }
 //Zmienic na snake.begin().getPosition().x
 bool Snake::wallCollision(sf::RenderWindow & Okno) {
-    if(this->getPosition().x >= Okno.getSize().x || this->getPosition().x <= 0
-                    || this->getPosition().y <= 0 ||this-> getPosition().y >= Okno.getSize().y){
-       return true;
-    }
-    return false;
+    return this->getPosition().x >= Okno.getSize().x || this->getPosition().x <= 0
+           || this->getPosition().y <= 0 || this->getPosition().y >= Okno.getSize().y;
 }
 
 bool Snake::eatYourself(Snake & S) {

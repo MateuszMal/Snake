@@ -4,6 +4,7 @@
 Program/CMakeFiles/Program.dir/src/main.cpp.o
  ../Biblioteka/include/Food.h
  ../Biblioteka/include/Menu.h
+ ../Biblioteka/include/Options.h
  ../Biblioteka/include/Settings.h
  ../Biblioteka/include/Snake.h
  ../Biblioteka/include/gameFunctions.h

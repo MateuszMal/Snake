@@ -3,11 +3,13 @@
 #include <list>
 #include <memory>
 #include <string>
+#include <Options.h>
 #include "Settings.h"
 #include "Snake.h"
 #include "Food.h"
 #include "gameFunctions.h"
 #include "Menu.h"
+#include "Options.h"
 
 using namespace sf;
 
@@ -19,7 +21,6 @@ int main(){
     RenderWindow Okno;
     Settings settings;
     Menu menu(settings.getWWidth(), settings.getWHeight(), settings.getFont());
-
     //clock and accumulator time for timming
     Clock clock;
     Time remainingTime;
@@ -42,7 +43,6 @@ int main(){
         while (Okno.pollEvent(Zdarzenie)) {
             if(!game) menuEvents(Zdarzenie, menu, Okno, game);
             else checkEvents(Zdarzenie, Okno, moveDirect);
-
         }
         Okno.clear(Color::Black);
 
@@ -50,7 +50,7 @@ int main(){
         if(!game) {
             menu.draw(Okno);}
         else {
-            
+
              Okno.clear(Color::Black);
 
             // Add the time since the last update
@@ -65,10 +65,8 @@ int main(){
             checkWalls(weze,Okno,game);
             std::cout << "checkwalls: " << game << std::endl;
 
-
 //            std::cout << "Ilosc klatek: " <<settings.getSpeed() << std::endl;
 //            std::cout << "Score: " << score << std::endl;
-
 
             Okno.draw(*jablko);
 

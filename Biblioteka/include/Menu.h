@@ -10,7 +10,7 @@ private:
     sf::Text text[3];
 public:
     Menu(float width, float height, const sf::Font &);
-    ~Menu();
+    virtual ~Menu() = default;
     void draw(sf::RenderWindow &window);
     void moveUp();
     void moveDown();

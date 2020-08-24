@@ -6,6 +6,7 @@ set(CMAKE_DEPENDS_LANGUAGES
 set(CMAKE_DEPENDS_CHECK_CXX
   "/home/student/CLionProjects/Snake2/Biblioteka/src/Food.cpp" "/home/student/CLionProjects/Snake2/cmake-build-debug/Biblioteka/CMakeFiles/Biblioteka.dir/src/Food.cpp.o"
   "/home/student/CLionProjects/Snake2/Biblioteka/src/Menu.cpp" "/home/student/CLionProjects/Snake2/cmake-build-debug/Biblioteka/CMakeFiles/Biblioteka.dir/src/Menu.cpp.o"
+  "/home/student/CLionProjects/Snake2/Biblioteka/src/Options.cpp" "/home/student/CLionProjects/Snake2/cmake-build-debug/Biblioteka/CMakeFiles/Biblioteka.dir/src/Options.cpp.o"
   "/home/student/CLionProjects/Snake2/Biblioteka/src/Settings.cpp" "/home/student/CLionProjects/Snake2/cmake-build-debug/Biblioteka/CMakeFiles/Biblioteka.dir/src/Settings.cpp.o"
   "/home/student/CLionProjects/Snake2/Biblioteka/src/Snake.cpp" "/home/student/CLionProjects/Snake2/cmake-build-debug/Biblioteka/CMakeFiles/Biblioteka.dir/src/Snake.cpp.o"
   "/home/student/CLionProjects/Snake2/Biblioteka/src/gameFunctions.cpp" "/home/student/CLionProjects/Snake2/cmake-build-debug/Biblioteka/CMakeFiles/Biblioteka.dir/src/gameFunctions.cpp.o"

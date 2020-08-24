@@ -55,13 +55,13 @@ void checkWalls(std::list<Snake> & snake, sf::RenderWindow & window, bool & game
 
 void menuEvents(sf::Event & event, Menu & menu, sf::RenderWindow & window, bool & game) {
     //Reactions to events from keyboard in menu
+    if(event.type == sf::Event::Closed || sf::Keyboard::isKeyPressed(sf::Keyboard::Escape)) window.close();
     if(event.type == sf::Event::KeyReleased && event.key.code == sf::Keyboard::W) menu.moveUp();
     if(event.type == sf::Event::KeyReleased && event.key.code == sf::Keyboard::S) menu.moveDown();
     if(event.type == sf::Event::KeyReleased && event.key.code == sf::Keyboard::Return){
         switch (menu.getSelectedItem()){
             case 0:
                 game = true;
-                std::cout << "w menu: " << game << std::endl;
                 break;
             case 1:
                 break;

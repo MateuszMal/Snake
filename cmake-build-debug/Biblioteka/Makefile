@@ -223,6 +223,33 @@ src/Menu.cpp.s:
 	cd /home/student/CLionProjects/Snake2/cmake-build-debug && $(MAKE) -f Biblioteka/CMakeFiles/Biblioteka.dir/build.make Biblioteka/CMakeFiles/Biblioteka.dir/src/Menu.cpp.s
 .PHONY : src/Menu.cpp.s
 
+src/Options.o: src/Options.cpp.o
+
+.PHONY : src/Options.o
+
+# target to build an object file
+src/Options.cpp.o:
+	cd /home/student/CLionProjects/Snake2/cmake-build-debug && $(MAKE) -f Biblioteka/CMakeFiles/Biblioteka.dir/build.make Biblioteka/CMakeFiles/Biblioteka.dir/src/Options.cpp.o
+.PHONY : src/Options.cpp.o
+
+src/Options.i: src/Options.cpp.i
+
+.PHONY : src/Options.i
+
+# target to preprocess a source file
+src/Options.cpp.i:
+	cd /home/student/CLionProjects/Snake2/cmake-build-debug && $(MAKE) -f Biblioteka/CMakeFiles/Biblioteka.dir/build.make Biblioteka/CMakeFiles/Biblioteka.dir/src/Options.cpp.i
+.PHONY : src/Options.cpp.i
+
+src/Options.s: src/Options.cpp.s
+
+.PHONY : src/Options.s
+
+# target to generate assembly for a file
+src/Options.cpp.s:
+	cd /home/student/CLionProjects/Snake2/cmake-build-debug && $(MAKE) -f Biblioteka/CMakeFiles/Biblioteka.dir/build.make Biblioteka/CMakeFiles/Biblioteka.dir/src/Options.cpp.s
+.PHONY : src/Options.cpp.s
+
 src/Settings.o: src/Settings.cpp.o
 
 .PHONY : src/Settings.o
@@ -460,6 +487,9 @@ help:
 	@echo "... src/Menu.o"
 	@echo "... src/Menu.i"
 	@echo "... src/Menu.s"
+	@echo "... src/Options.o"
+	@echo "... src/Options.i"
+	@echo "... src/Options.s"
 	@echo "... src/Settings.o"
 	@echo "... src/Settings.i"
 	@echo "... src/Settings.s"

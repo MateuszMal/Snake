@@ -13,7 +13,7 @@ void createWindow(sf::RenderWindow &, Settings &);
 void snakeMove(std::list<Snake> &, sf::Time &, Settings &, Snake &, sf::Vector2f &);
 void collisions(std::list<Snake> &, FoodPtr &, sf::Vector2f &, Settings &, int &, Snake &);
 void checkWalls(std::list<Snake> &, sf::RenderWindow &, bool &);
-void menuEvents(sf::Event &, Menu &, sf::RenderWindow &, bool & game);
+void menuEvents(sf::Event &, Menu &, sf::RenderWindow &, bool &);
 void textScores(sf::RenderWindow &, int &, sf::Text &, const sf::Font &);
 void drawScores(sf::RenderWindow &, sf::Text &);
 void drawSnake(sf::RenderWindow &, std::list<Snake> &);

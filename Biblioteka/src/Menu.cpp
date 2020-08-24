@@ -20,10 +20,6 @@ Menu::Menu(float width, float height, const sf::Font & font) {
     selectedItem = 0;
 }
 
-Menu::~Menu() {
-
-}
-
 void Menu::draw(sf::RenderWindow &window) {
     for(int i=0; i < 3; i++){
         window.draw(text[i]);

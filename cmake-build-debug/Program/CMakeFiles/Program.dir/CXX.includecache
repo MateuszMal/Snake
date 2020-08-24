@@ -20,6 +20,14 @@ SFML/Graphics.hpp
 Settings.h
 ../Biblioteka/include/Settings.h
 
+../Biblioteka/include/Options.h
+SFML/Graphics.hpp
+-
+Settings.h
+../Biblioteka/include/Settings.h
+Menu.h
+../Biblioteka/include/Menu.h
+
 ../Biblioteka/include/Settings.h
 SFML/Graphics.hpp
 -
@@ -57,6 +65,8 @@ memory
 -
 string
 -
+Options.h
+-
 Settings.h
 /home/student/CLionProjects/Snake2/Program/src/Settings.h
 Snake.h
@@ -67,4 +77,6 @@ gameFunctions.h
 /home/student/CLionProjects/Snake2/Program/src/gameFunctions.h
 Menu.h
 /home/student/CLionProjects/Snake2/Program/src/Menu.h
+Options.h
+/home/student/CLionProjects/Snake2/Program/src/Options.h
 
