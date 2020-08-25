@@ -7,15 +7,17 @@
 #include "Snake.h"
 #include "Food.h"
 #include "Menu.h"
+#include "Options.h"
 
 void checkEvents(sf::Event &, sf::RenderWindow &, sf::Vector2f &);
 void createWindow(sf::RenderWindow &, Settings &);
 void snakeMove(std::list<Snake> &, sf::Time &, Settings &, Snake &, sf::Vector2f &);
 void collisions(std::list<Snake> &, FoodPtr &, sf::Vector2f &, Settings &, int &, Snake &);
-void checkWalls(std::list<Snake> &, sf::RenderWindow &, bool &);
-void menuEvents(sf::Event &, Menu &, sf::RenderWindow &, bool qdvdssdvv);
+void checkWalls(std::list<Snake> &, sf::RenderWindow &, Settings &);
+void menuEvents(sf::Event &, Menu &, sf::RenderWindow &, Settings &);
 void textScores(sf::RenderWindow &, int &, sf::Text &, const sf::Font &);
 void drawScores(sf::RenderWindow &, sf::Text &);
 void drawSnake(sf::RenderWindow &, std::list<Snake> &);
+void optionsEvents(sf::Event &, Options &,sf::RenderWindow &, Settings &);
 
 #endif //SNAKE_GAMEFUNCTIONS_H

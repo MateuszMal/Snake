@@ -48,12 +48,12 @@ void collisions(std::list<Snake> & snake, FoodPtr & food, sf::Vector2f & vector,
     }
 }
 
-void checkWalls(std::list<Snake> & snake, sf::RenderWindow & window, bool & game) {
+void checkWalls(std::list<Snake> & snake, sf::RenderWindow & window, Settings & settings) {
     //Check collisions with walls
-    if(snake.begin()->wallCollision(window)) game = false;
+    if(snake.begin()->wallCollision(window)) settings.setMenu(true);
 }
 
-void menuEvents(sf::Event & event, Menu & menu, sf::RenderWindow & window, bool & game) {
+void menuEvents(sf::Event & event, Menu & menu, sf::RenderWindow & window, Settings & settings) {
     //Reactions to events from keyboard in menu
     if(event.type == sf::Event::Closed || sf::Keyboard::isKeyPressed(sf::Keyboard::Escape)) window.close();
     if(event.type == sf::Event::KeyReleased && event.key.code == sf::Keyboard::W) menu.moveUp();
@@ -61,9 +61,10 @@ void menuEvents(sf::Event & event, Menu & menu, sf::RenderWindow & window, bool 
     if(event.type == sf::Event::KeyReleased && event.key.code == sf::Keyboard::Return){
         switch (menu.getSelectedItem()){
             case 0:
-                game = true;
+                settings.setMenu(false);
                 break;
             case 1:
+                settings.setOption(true);
                 break;
             case 2:
                 window.close();
@@ -92,3 +93,24 @@ void drawSnake(sf::RenderWindow & window, std::list<Snake> & snake) {
         window.draw(s);
     }
 }
+
+void optionsEvents(sf::Event & event, Options & options,sf::RenderWindow & window, Settings & settings) {
+    //Reactions to events from keyboard in Options
+    if(event.type == sf::Event::Closed || sf::Keyboard::isKeyPressed(sf::Keyboard::Escape)) window.close();
+    if(event.type == sf::Event::KeyReleased && event.key.code == sf::Keyboard::W) options.moveUp();
+    if(event.type == sf::Event::KeyReleased && event.key.code == sf::Keyboard::S) options.moveDown();
+    if(event.type == sf::Event::KeyReleased && event.key.code == sf::Keyboard::Return){
+        switch (options.getSelectedItem()){
+            case 0:
+                std::cout << "controls";
+                break;
+            case 1:
+                break;
+            case 2:
+                break;
+            default:
+                break;
+        }
+    }
+}
+

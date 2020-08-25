@@ -21,7 +21,7 @@ Menu::Menu(float width, float height, const sf::Font & font) {
 }
 
 void Menu::draw(sf::RenderWindow &window) {
-    for(int i=0; i < 3; i++){
+    for(int i=0; i < MAX_SELECTED_ITEM; i++){
         window.draw(text[i]);
     }
 }
@@ -44,4 +44,8 @@ void Menu::moveDown() {
 
 int Menu::getSelectedItem() const {
     return selectedItem;
+}
+
+void Menu::setSelectedItem(int selectedItem) {
+    Menu::selectedItem = selectedItem;
 }

@@ -32,3 +32,19 @@ const sf::Font &Settings::getFont() {
     return font;
 }
 
+bool Settings::isMenu() const {
+    return menu;
+}
+
+bool Settings::isOption() const {
+    return option;
+}
+
+void Settings::setMenu(bool game) {
+    Settings::menu = game;
+}
+
+void Settings::setOption(bool option) {
+    Settings::option = option;
+}
+

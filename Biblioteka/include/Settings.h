@@ -4,7 +4,7 @@
 #include <SFML/Graphics.hpp>
 
 class Settings {
-    //Window and game settings
+    //Window and menu settings
 private:
     unsigned int w_height = 640;
     unsigned int w_width = 560;
@@ -12,6 +12,8 @@ private:
     unsigned int speed = 200;
     unsigned int frameLimit = 60;
     sf::Font font;
+    bool menu = true;
+    bool option = false;
 
 public:
     unsigned int getWHeight() const;
@@ -25,8 +27,16 @@ public:
     unsigned int getFrameLimit() const;
 
     void setSpeed(unsigned int speed);
+
     const sf::Font &getFont();
 
+    bool isMenu() const;
+
+    bool isOption() const;
+
+    void setMenu(bool game);
+
+    void setOption(bool option);
 };
 
 

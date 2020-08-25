@@ -4,6 +4,8 @@
 #include <SFML/Graphics.hpp>
 #include "Settings.h"
 
+#define MAX_SELECTED_ITEM 3
+
 class Menu {
 private:
     int selectedItem;
@@ -11,11 +13,13 @@ private:
 public:
     Menu(float width, float height, const sf::Font &);
     virtual ~Menu() = default;
-    void draw(sf::RenderWindow &window);
-    void moveUp();
-    void moveDown();
+    virtual void draw(sf::RenderWindow &window);
+    virtual void moveUp();
+    virtual void moveDown();
 
     int getSelectedItem() const;
+
+    void setSelectedItem(int selectedItem);
 };
 
 

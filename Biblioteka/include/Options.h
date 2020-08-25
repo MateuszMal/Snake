@@ -5,14 +5,16 @@
 #include "Settings.h"
 #include "Menu.h"
 
-#define MAX_SELECTED_ITEM 2
-
 class Options : public Menu{
 private:
-    int selectedItem;
-    sf::Text text[MAX_SELECTED_ITEM];
+    sf::Text text[3];
 public:
     Options(float width, float height, const sf::Font &font);
+    void draw(sf::RenderWindow &);
+
+    void moveUp();
+
+    void moveDown();
 };
 
 
