@@ -2,10 +2,10 @@
 <project version="4">
   <component name="CMakeRunConfigurationManager" shouldGenerate="true" shouldDeleteObsolete="true">
     <generated>
-      <config projectName="Snake" targetName="TestSnake" />
       <config projectName="Snake" targetName="Program" />
-      <config projectName="Snake" targetName="Biblioteka" />
+      <config projectName="Snake" targetName="TestSnake" />
       <config projectName="Snake" targetName="check" />
+      <config projectName="Snake" targetName="Biblioteka" />
     </generated>
   </component>
   <component name="CMakeSettings">
@@ -15,103 +15,17 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="6a9496a7-2ed9-46e9-a509-3604079a333d" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Biblioteka/test/OptionsTest.cpp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Biblioteka/CMakeLists.txt" beforeDir="false" afterPath="$PROJECT_DIR$/Biblioteka/CMakeLists.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Biblioteka/include/Menu.h" beforeDir="false" afterPath="$PROJECT_DIR$/Biblioteka/include/Menu.h" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Biblioteka/include/Options.h" beforeDir="false" afterPath="$PROJECT_DIR$/Biblioteka/include/Options.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Biblioteka/include/Settings.h" beforeDir="false" afterPath="$PROJECT_DIR$/Biblioteka/include/Settings.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Biblioteka/include/gameFunctions.h" beforeDir="false" afterPath="$PROJECT_DIR$/Biblioteka/include/gameFunctions.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Biblioteka/src/Food.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Biblioteka/src/Food.cpp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Biblioteka/src/Menu.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Biblioteka/src/Menu.cpp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Biblioteka/src/Options.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Biblioteka/src/Options.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Biblioteka/src/Settings.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Biblioteka/src/Settings.cpp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Biblioteka/src/gameFunctions.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Biblioteka/src/gameFunctions.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Biblioteka/test/MenuTest.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Biblioteka/test/MenuTest.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Biblioteka/test/gameFunctionsTest.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Biblioteka/test/gameFunctionsTest.cpp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Program/src/main.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Program/src/main.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/Biblioteka/Biblioteka.cbp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/Biblioteka/CMakeFiles/Biblioteka.dir/CXX.includecache" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/Biblioteka/CMakeFiles/Biblioteka.dir/DependInfo.cmake" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/Biblioteka/CMakeFiles/Biblioteka.dir/build.make" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/Biblioteka/CMakeFiles/Biblioteka.dir/cmake_clean.cmake" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/Biblioteka/CMakeFiles/Biblioteka.dir/cmake_clean_target.cmake" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/Biblioteka/CMakeFiles/Biblioteka.dir/depend.internal" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/Biblioteka/CMakeFiles/Biblioteka.dir/depend.make" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/Biblioteka/CMakeFiles/Biblioteka.dir/flags.make" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/Biblioteka/CMakeFiles/Biblioteka.dir/link.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/Biblioteka/CMakeFiles/Biblioteka.dir/progress.make" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/Biblioteka/CMakeFiles/Biblioteka.dir/src/Food.cpp.o" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/Biblioteka/CMakeFiles/Biblioteka.dir/src/Menu.cpp.o" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/Biblioteka/CMakeFiles/Biblioteka.dir/src/Options.cpp.o" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/Biblioteka/CMakeFiles/Biblioteka.dir/src/Settings.cpp.o" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/Biblioteka/CMakeFiles/Biblioteka.dir/src/Snake.cpp.o" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/Biblioteka/CMakeFiles/Biblioteka.dir/src/gameFunctions.cpp.o" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/Biblioteka/CMakeFiles/Biblioteka.dir/test/master.cpp.o" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/Biblioteka/CMakeFiles/CMakeDirectoryInformation.cmake" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/Biblioteka/CMakeFiles/TestSnake.dir/CXX.includecache" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/Biblioteka/CMakeFiles/TestSnake.dir/DependInfo.cmake" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/Biblioteka/CMakeFiles/TestSnake.dir/build.make" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/Biblioteka/CMakeFiles/TestSnake.dir/cmake_clean.cmake" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/Biblioteka/CMakeFiles/TestSnake.dir/depend.internal" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/Biblioteka/CMakeFiles/TestSnake.dir/depend.make" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/Biblioteka/CMakeFiles/TestSnake.dir/flags.make" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/Biblioteka/CMakeFiles/TestSnake.dir/link.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/Biblioteka/CMakeFiles/TestSnake.dir/progress.make" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/Biblioteka/CMakeFiles/TestSnake.dir/test/FoodTest.cpp.o" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/Biblioteka/CMakeFiles/TestSnake.dir/test/MenuTest.cpp.o" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/Biblioteka/CMakeFiles/TestSnake.dir/test/SnakeTest.cpp.o" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/Biblioteka/CMakeFiles/TestSnake.dir/test/gameFunctionsTest.cpp.o" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/Biblioteka/CMakeFiles/TestSnake.dir/test/master.cpp.o" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/Biblioteka/CMakeFiles/check.dir/DependInfo.cmake" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/Biblioteka/CMakeFiles/check.dir/build.make" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/Biblioteka/CMakeFiles/check.dir/cmake_clean.cmake" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/Biblioteka/CMakeFiles/check.dir/progress.make" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/Biblioteka/CMakeFiles/progress.marks" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/Biblioteka/CTestTestfile.cmake" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/Biblioteka/Makefile" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/Biblioteka/TestSnake" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/Biblioteka/cmake_install.cmake" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/Biblioteka/libBiblioteka.a" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeCache.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/3.15.3/CMakeCCompiler.cmake" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/3.15.3/CMakeCXXCompiler.cmake" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/3.15.3/CMakeDetermineCompilerABI_C.bin" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/3.15.3/CMakeDetermineCompilerABI_CXX.bin" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/3.15.3/CMakeSystem.cmake" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/3.15.3/CompilerIdC/CMakeCCompilerId.c" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/3.15.3/CompilerIdC/a.out" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/3.15.3/CompilerIdCXX/CMakeCXXCompilerId.cpp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/3.15.3/CompilerIdCXX/a.out" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/CMakeDirectoryInformation.cmake" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/CMakeOutput.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/CMakeRuleHashes.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Makefile.cmake" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Makefile2" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/TargetDirectories.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/clion-environment.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/clion-log.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/cmake.check_cache" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/progress.marks" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CTestTestfile.cmake" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/Makefile" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/Program/CMakeFiles/CMakeDirectoryInformation.cmake" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/Program/CMakeFiles/Program.dir/CXX.includecache" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/Program/CMakeFiles/Program.dir/DependInfo.cmake" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/Program/CMakeFiles/Program.dir/build.make" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/Program/CMakeFiles/Program.dir/cmake_clean.cmake" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/Program/CMakeFiles/Program.dir/depend.internal" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/Program/CMakeFiles/Program.dir/depend.make" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/Program/CMakeFiles/Program.dir/flags.make" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/Program/CMakeFiles/Program.dir/link.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/Program/CMakeFiles/Program.dir/progress.make" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/Program/CMakeFiles/Program.dir/src/main.cpp.o" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/Program/CMakeFiles/progress.marks" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/Program/CTestTestfile.cmake" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/Program/Makefile" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/Program/Program" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/Program/Program.cbp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/Program/cmake_install.cmake" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/Snake.cbp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/cmake_install.cmake" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/compile_commands.json" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -125,9 +39,6 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
     <option name="ROOT_SYNC" value="DONT_SYNC" />
-  </component>
-  <component name="OCResolveContextSettings">
-    <option name="configuration" value="0-Debug-Biblioteka" />
   </component>
   <component name="ProjectId" id="1fT2UQ8P5VtiYdYOYynBUSUjWFk" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
@@ -147,7 +58,7 @@
       <recent name="$PROJECT_DIR$/Biblioteka/src" />
     </key>
   </component>
-  <component name="RunManager" selected="CMake Application.Program">
+  <component name="RunManager" selected="CMake Application.TestSnake">
     <configuration name="Biblioteka" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="Snake" TARGET_NAME="Biblioteka" CONFIG_NAME="Debug">
       <method v="2">
         <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
@@ -204,6 +115,7 @@
       <workItem from="1598300846645" duration="2707000" />
       <workItem from="1598371457207" duration="2998000" />
       <workItem from="1598380810559" duration="5910000" />
+      <workItem from="1598467842886" duration="1298000" />
     </task>
     <servers />
   </component>
@@ -232,26 +144,26 @@
       <screen x="0" y="0" width="1920" height="895" />
     </state>
     <state x="743" y="205" width="430" height="482" key="FileChooserDialogImpl/0.0.1920.895@0.0.1920.895" timestamp="1596971312859" />
-    <state width="1868" height="694" key="GridCell.Tab.0.bottom" timestamp="1598386954609">
+    <state width="1868" height="694" key="GridCell.Tab.0.bottom" timestamp="1598469144414">
       <screen x="0" y="0" width="1920" height="895" />
     </state>
     <state width="1868" height="226" key="GridCell.Tab.0.bottom/0.0.1920.885@0.0.1920.885" timestamp="1597346433137" />
-    <state width="1868" height="694" key="GridCell.Tab.0.bottom/0.0.1920.895@0.0.1920.895" timestamp="1598386954609" />
-    <state width="1868" height="694" key="GridCell.Tab.0.center" timestamp="1598386954608">
+    <state width="1868" height="694" key="GridCell.Tab.0.bottom/0.0.1920.895@0.0.1920.895" timestamp="1598469144414" />
+    <state width="1868" height="694" key="GridCell.Tab.0.center" timestamp="1598469144413">
       <screen x="0" y="0" width="1920" height="895" />
     </state>
     <state width="1868" height="226" key="GridCell.Tab.0.center/0.0.1920.885@0.0.1920.885" timestamp="1597346433136" />
-    <state width="1868" height="694" key="GridCell.Tab.0.center/0.0.1920.895@0.0.1920.895" timestamp="1598386954608" />
-    <state width="1868" height="694" key="GridCell.Tab.0.left" timestamp="1598386954607">
+    <state width="1868" height="694" key="GridCell.Tab.0.center/0.0.1920.895@0.0.1920.895" timestamp="1598469144413" />
+    <state width="1868" height="694" key="GridCell.Tab.0.left" timestamp="1598469144412">
       <screen x="0" y="0" width="1920" height="895" />
     </state>
     <state width="1868" height="226" key="GridCell.Tab.0.left/0.0.1920.885@0.0.1920.885" timestamp="1597346433134" />
-    <state width="1868" height="694" key="GridCell.Tab.0.left/0.0.1920.895@0.0.1920.895" timestamp="1598386954607" />
-    <state width="1868" height="694" key="GridCell.Tab.0.right" timestamp="1598386954609">
+    <state width="1868" height="694" key="GridCell.Tab.0.left/0.0.1920.895@0.0.1920.895" timestamp="1598469144412" />
+    <state width="1868" height="694" key="GridCell.Tab.0.right" timestamp="1598469144413">
       <screen x="0" y="0" width="1920" height="895" />
     </state>
     <state width="1868" height="226" key="GridCell.Tab.0.right/0.0.1920.885@0.0.1920.885" timestamp="1597346433136" />
-    <state width="1868" height="694" key="GridCell.Tab.0.right/0.0.1920.895@0.0.1920.895" timestamp="1598386954609" />
+    <state width="1868" height="694" key="GridCell.Tab.0.right/0.0.1920.895@0.0.1920.895" timestamp="1598469144413" />
     <state width="1868" height="280" key="GridCell.Tab.1.bottom" timestamp="1598175297462">
       <screen x="0" y="0" width="1920" height="895" />
     </state>

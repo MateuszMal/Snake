@@ -107,6 +107,7 @@ void optionsEvents(sf::Event & event, Options & options,sf::RenderWindow & windo
             case 1:
                 break;
             case 2:
+                settings.setOption(false);
                 break;
             default:
                 break;

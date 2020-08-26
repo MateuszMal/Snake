@@ -68,14 +68,13 @@ BOOST_AUTO_TEST_SUITE()
     sf::RenderWindow window;
     Settings settings;
     createWindow(window,settings);
-    bool game = true;
     snake.begin()->setPosition(0,0);
-    checkWalls(snake,window,game);
-    BOOST_REQUIRE_EQUAL(game, false);
+    checkWalls(snake,window,settings);
+    BOOST_REQUIRE_EQUAL(settings.isMenu(), true);
     snake.begin()->setPosition(50,50);
-    game = true;
-    checkWalls(snake,window,game);
-    BOOST_REQUIRE_EQUAL(game, true);
+    settings.setMenu(false);
+    checkWalls(snake,window,settings);
+    BOOST_REQUIRE_EQUAL(settings.isMenu(), false);
 }
 
 

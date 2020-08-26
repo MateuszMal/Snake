@@ -9,7 +9,7 @@ BOOST_AUTO_TEST_SUITE()
     BOOST_AUTO_TEST_CASE(MenuTestCase){
     sf::RenderWindow window;
     Settings settings;
-    createWindow(window,settings);\
+    createWindow(window,settings);
     Menu menu(settings.getWWidth(),settings.getWHeight(),settings.getFont());
     BOOST_REQUIRE_EQUAL(menu.getSelectedItem(), 0);
     menu.moveDown();

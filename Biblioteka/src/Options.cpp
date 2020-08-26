@@ -29,19 +29,19 @@ void Options::draw(sf::RenderWindow & window) {
         window.draw(text[i]);
     }
 }
-
-void Options::moveUp() {
-    if(getSelectedItem() - 1 >= 0){
-        text[getSelectedItem()].setColor(sf::Color::White);
-        setSelectedItem(getSelectedItem()-1);
-        text[getSelectedItem()].setColor(sf::Color::Red);
-    }
-}
-
-void Options::moveDown() {
-    if(getSelectedItem() +1 < 3){
-        text[getSelectedItem()].setColor(sf::Color::White);
-        setSelectedItem(getSelectedItem()+1);
-        text[getSelectedItem()].setColor(sf::Color::Red);
-    }
-}
+//
+//void Options::moveUp() {
+//    if(getSelectedItem() - 1 >= 0){
+//        text[getSelectedItem()].setColor(sf::Color::White);
+//        setSelectedItem(getSelectedItem()-1);
+//        text[getSelectedItem()].setColor(sf::Color::Red);
+//    }
+//}
+//
+//void Options::moveDown() {
+//    if(getSelectedItem() +1 < 3){
+//        text[getSelectedItem()].setColor(sf::Color::White);
+//        setSelectedItem(getSelectedItem()+1);
+//        text[getSelectedItem()].setColor(sf::Color::Red);
+//    }
+//}

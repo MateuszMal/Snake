@@ -14,7 +14,7 @@ public:
     Menu(float width, float height, const sf::Font &);
     virtual ~Menu() = default;
     virtual void draw(sf::RenderWindow &window);
-    virtual void moveUp();
+    void moveUp();
     virtual void moveDown();
 
     int getSelectedItem() const;

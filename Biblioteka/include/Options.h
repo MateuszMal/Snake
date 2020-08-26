@@ -5,16 +5,16 @@
 #include "Settings.h"
 #include "Menu.h"
 
-class Options : public Menu{
+class Options : public Menu {
 private:
     sf::Text text[3];
 public:
     Options(float width, float height, const sf::Font &font);
     void draw(sf::RenderWindow &);
-
-    void moveUp();
-
-    void moveDown();
+//
+//    virtual void moveUp();
+//
+//    virtual void moveDown();
 };
 
 

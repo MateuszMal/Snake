@@ -48,7 +48,7 @@ int main(){
                 else checkEvents(Zdarzenie, Okno, moveDirect);
             }
         }
-        Okno.clear(Color::Black);
+        //Okno.clear(Color::Black);
 
         //Mozna by to wykorzystac do pauzy
         if (settings.isOption()) options.draw(Okno);
@@ -71,7 +71,6 @@ int main(){
                     std:: cout << options.getSelectedItem() << std::endl;
 //            std::cout << "Ilosc klatek: " <<settings.getSpeed() << std::endl;
 //            std::cout << "Score: " << score << std::endl;
-
                     Okno.draw(*jablko);
 
                     textScores(Okno, score, text, settings.getFont());

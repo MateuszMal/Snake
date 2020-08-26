@@ -17,7 +17,7 @@ Menu::Menu(float width, float height, const sf::Font & font) {
     text[2].setString("Quit");
     text[2].setPosition(sf::Vector2f((width / 2) - 20,height / 4 * 3));
 
-    selectedItem = 0;
+    setSelectedItem(0);
 }
 
 void Menu::draw(sf::RenderWindow &window) {
@@ -26,19 +26,35 @@ void Menu::draw(sf::RenderWindow &window) {
     }
 }
 
+//void Menu::moveUp() {
+//    if(selectedItem - 1 >= 0){
+//        text[selectedItem].setColor(sf::Color::White);
+//        selectedItem --;
+//        text[selectedItem].setColor(sf::Color::Red);
+//    }
+//}
+//
+//void Menu::moveDown() {
+//    if(selectedItem + 1 < 3){
+//        text[selectedItem].setColor(sf::Color::White);
+//        selectedItem ++;
+//        text[selectedItem].setColor(sf::Color::Red);
+//    }
+//}
+
 void Menu::moveUp() {
-    if(selectedItem - 1 >= 0){
-        text[selectedItem].setColor(sf::Color::White);
-        selectedItem --;
-        text[selectedItem].setColor(sf::Color::Red);
+    if(getSelectedItem() - 1 >= 0){
+        text[getSelectedItem()].setColor(sf::Color::White);
+        setSelectedItem(getSelectedItem()-1);
+        text[getSelectedItem()].setColor(sf::Color::Red);
     }
 }
 
 void Menu::moveDown() {
-    if(selectedItem + 1 < 3){
-        text[selectedItem].setColor(sf::Color::White);
-        selectedItem ++;
-        text[selectedItem].setColor(sf::Color::Red);
+    if(getSelectedItem() +1 < 3){
+        text[getSelectedItem()].setColor(sf::Color::White);
+        setSelectedItem(getSelectedItem()+1);
+        text[getSelectedItem()].setColor(sf::Color::Red);
     }
 }
 
