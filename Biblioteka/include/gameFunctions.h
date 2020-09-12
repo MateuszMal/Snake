@@ -8,6 +8,7 @@
 #include "Food.h"
 #include "Menu.h"
 #include "Options.h"
+#include "Controls.h"
 
 void checkEvents(sf::Event &, sf::RenderWindow &, sf::Vector2f &);
 void createWindow(sf::RenderWindow &, Settings &);
@@ -19,6 +20,7 @@ void textScores(sf::RenderWindow &, int &, sf::Text &, const sf::Font &);
 void drawScores(sf::RenderWindow &, sf::Text &);
 void drawSnake(sf::RenderWindow &, std::list<Snake> &);
 void optionsEvents(sf::Event &, Options &,sf::RenderWindow &, Settings &);
+void controlsEvents(sf::Event &, Controls &, sf::RenderWindow &, Settings &);
 //void eatSnake(std::list<Snake> &, Snake &);
 
 #endif //SNAKE_GAMEFUNCTIONS_H

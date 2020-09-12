@@ -9,6 +9,7 @@
 #include "gameFunctions.h"
 #include "Menu.h"
 #include "Options.h"
+#include "Controls.h"
 
 using namespace sf;
 
@@ -26,6 +27,8 @@ int main(){
     menu.setText();
     Options options(settings.getWWidth(), settings.getWHeight(), settings.getFont());
     options.setText();
+    Controls controls(settings.getWWidth(), settings.getWHeight(), settings.getFont());
+    controls.setText();
     Clock clock;
     Time remainingTime;
 
@@ -59,6 +62,7 @@ int main(){
                     optionsEvents(Zdarzenie, options, Okno, settings);
                     break;
                 case gameState::CONTROLS:
+                    controlsEvents(Zdarzenie, controls, Okno, settings);
                     break;
                 case gameState::SCREEN_SIZE:
                     break;
@@ -94,6 +98,8 @@ int main(){
                 options.draw(Okno);
                 break;
             case gameState::CONTROLS:
+                Okno.clear(Color::Black);
+                controls.draw(Okno);
                 break;
             case gameState::SCREEN_SIZE:
                 break;

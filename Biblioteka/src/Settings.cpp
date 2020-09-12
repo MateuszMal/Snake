@@ -36,28 +36,8 @@ bool Settings::isMenu() const {
     return menu;
 }
 
-bool Settings::isOption() const {
-    return option;
-}
-
 void Settings::setMenu(bool game) {
     Settings::menu = game;
-}
-
-void Settings::setOption(bool option) {
-    Settings::option = option;
-}
-
-void Settings::setControls(bool controls) {
-    Settings::controls = controls;
-}
-
-bool Settings::isControls() const {
-    return controls;
-}
-
-int Settings::getChose() const {
-    return chose;
 }
 
 gameState Settings::getState() const {
@@ -66,6 +46,14 @@ gameState Settings::getState() const {
 
 void Settings::setState(gameState state) {
     Settings::state = state;
+}
+
+void Settings::setWHeight(unsigned int wHeight) {
+    w_height = wHeight;
+}
+
+void Settings::setWWidth(unsigned int wWidth) {
+    w_width = wWidth;
 }
 
 //Settings::Settings(gameState gameState){}

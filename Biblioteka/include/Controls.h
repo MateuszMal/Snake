@@ -9,13 +9,14 @@
 
 class Controls : public Menu{
 private:
-    sf::Text text[2];
+    sf::Text text[3];
 public:
     Controls(float width, float height, const sf::Font &font);
 
     virtual ~Controls();
 
     void setText() override;
+    void draw(sf::RenderWindow &) override ;
 
 };
 

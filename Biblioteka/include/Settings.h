@@ -22,16 +22,10 @@ private:
     sf::Font font;
 
     bool menu = true;
-    bool option = false;
-    bool controls = false;
-
-    int chose = 1;
 
     gameState state = gameState::MENU;
 public:
 
-//    Settings(gameState gameState=gameState::MENU);
-//
     unsigned int getWHeight() const;
 
     unsigned int getWWidth() const;
@@ -48,21 +42,15 @@ public:
 
     bool isMenu() const;
 
-    bool isOption() const;
-
     void setMenu(bool game);
-
-    void setOption(bool option);
-
-    void setControls(bool controls);
-
-    bool isControls() const;
-
-    int getChose() const;
 
     gameState getState() const;
 
     void setState(gameState state);
+
+    void setWHeight(unsigned int wHeight);
+
+    void setWWidth(unsigned int wWidth);
 
 };
 

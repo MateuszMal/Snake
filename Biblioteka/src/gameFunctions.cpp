@@ -106,10 +106,10 @@ void optionsEvents(sf::Event & event, Options & options,sf::RenderWindow & windo
     if(event.type == sf::Event::KeyReleased && event.key.code == sf::Keyboard::Return){
         switch (options.getSelectedItem()){
             case 0:
-                settings.setState(gameState::OPTIONS);
+                settings.setState(gameState::CONTROLS);
                 break;
             case 1:
-                settings.setState(gameState::CONTROLS);
+                settings.setState(gameState::SCREEN_SIZE);
             case 2:
                 settings.setState(gameState::MENU);
                 break;
@@ -117,6 +117,26 @@ void optionsEvents(sf::Event & event, Options & options,sf::RenderWindow & windo
     }
 }
 
+
+void controlsEvents(sf::Event & event, Controls & controls, sf::RenderWindow & window, Settings & settings) {
+    //Reactions to events from keyboard in Options
+    if(event.type == sf::Event::Closed || sf::Keyboard::isKeyPressed(sf::Keyboard::Escape)) window.close();
+    if(event.type == sf::Event::KeyReleased && event.key.code == sf::Keyboard::W) controls.moveUp();
+    if(event.type == sf::Event::KeyReleased && event.key.code == sf::Keyboard::S) controls.moveDown();
+    if(event.type == sf::Event::KeyReleased && event.key.code == sf::Keyboard::Return){
+        switch (controls.getSelectedItem()){
+            case 0:
+                settings.setState(gameState::CONTROLS);
+                break;
+            case 1:
+                settings.setState(gameState::SCREEN_SIZE);
+                break;
+            case 2:
+                settings.setState(gameState::OPTIONS);
+                break;
+        }
+    }
+}
 //void eatSnake(std::list<Snake> & snake, Snake & S) {
 //    if(S.getGlobalBounds().intersects(snake.begin()->getGlobalBounds())) std::cout << "AaAAAa\n";
 //}

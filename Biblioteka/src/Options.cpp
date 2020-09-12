@@ -40,7 +40,7 @@ void Options::setText() {
 
     text[1].setFont(getFont());
     text[1].setFillColor(sf::Color::White);
-    text[1].setString("Window size");
+    text[1].setString("Snake color");
     text[1].setPosition(sf::Vector2f((getWidth() / 2) - 90,getHeight() / 4 * 2));
 
     text[2].setFont(getFont());
