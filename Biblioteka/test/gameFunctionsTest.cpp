@@ -1,5 +1,7 @@
 #include <boost/test/unit_test.hpp>
 #include <SFML/Graphics.hpp>
+#include <iostream>
+#include <string>
 #include "Menu.h"
 #include "Settings.h"
 #include "gameFunctions.h"

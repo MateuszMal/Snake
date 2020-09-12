@@ -48,3 +48,25 @@ void Settings::setOption(bool option) {
     Settings::option = option;
 }
 
+void Settings::setControls(bool controls) {
+    Settings::controls = controls;
+}
+
+bool Settings::isControls() const {
+    return controls;
+}
+
+int Settings::getChose() const {
+    return chose;
+}
+
+gameState Settings::getState() const {
+    return state;
+}
+
+void Settings::setState(gameState state) {
+    Settings::state = state;
+}
+
+//Settings::Settings(gameState gameState){}
+

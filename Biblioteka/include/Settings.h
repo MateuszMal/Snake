@@ -3,6 +3,14 @@
 
 #include <SFML/Graphics.hpp>
 
+enum class gameState {
+    PLAY,
+    MENU,
+    OPTIONS,
+    CONTROLS,
+    SCREEN_SIZE
+};
+
 class Settings {
     //Window and menu settings
 private:
@@ -12,10 +20,18 @@ private:
     unsigned int speed = 200;
     unsigned int frameLimit = 60;
     sf::Font font;
+
     bool menu = true;
     bool option = false;
+    bool controls = false;
 
+    int chose = 1;
+
+    gameState state = gameState::MENU;
 public:
+
+//    Settings(gameState gameState=gameState::MENU);
+//
     unsigned int getWHeight() const;
 
     unsigned int getWWidth() const;
@@ -37,6 +53,17 @@ public:
     void setMenu(bool game);
 
     void setOption(bool option);
+
+    void setControls(bool controls);
+
+    bool isControls() const;
+
+    int getChose() const;
+
+    gameState getState() const;
+
+    void setState(gameState state);
+
 };
 
 

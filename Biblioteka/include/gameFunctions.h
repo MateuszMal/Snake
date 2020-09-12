@@ -19,5 +19,6 @@ void textScores(sf::RenderWindow &, int &, sf::Text &, const sf::Font &);
 void drawScores(sf::RenderWindow &, sf::Text &);
 void drawSnake(sf::RenderWindow &, std::list<Snake> &);
 void optionsEvents(sf::Event &, Options &,sf::RenderWindow &, Settings &);
+//void eatSnake(std::list<Snake> &, Snake &);
 
 #endif //SNAKE_GAMEFUNCTIONS_H

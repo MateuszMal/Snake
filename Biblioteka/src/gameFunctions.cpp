@@ -50,7 +50,7 @@ void collisions(std::list<Snake> & snake, FoodPtr & food, sf::Vector2f & vector,
 
 void checkWalls(std::list<Snake> & snake, sf::RenderWindow & window, Settings & settings) {
     //Check collisions with walls
-    if(snake.begin()->wallCollision(window)) settings.setMenu(true);
+    if(snake.begin()->wallCollision(window)) settings.setState(gameState::MENU);
 }
 
 void menuEvents(sf::Event & event, Menu & menu, sf::RenderWindow & window, Settings & settings) {
@@ -61,10 +61,14 @@ void menuEvents(sf::Event & event, Menu & menu, sf::RenderWindow & window, Setti
     if(event.type == sf::Event::KeyReleased && event.key.code == sf::Keyboard::Return){
         switch (menu.getSelectedItem()){
             case 0:
-                settings.setMenu(false);
+                settings.setState(gameState::PLAY);
+//                if(settings.getState() == gameState::PLAY) std::cout << "PLay";
+//                else std::cout << "NOOOOO";
+                //settings.setMenu(false);
                 break;
             case 1:
-                settings.setOption(true);
+                settings.setState(gameState::OPTIONS);
+                //settings.setOption(true);
                 break;
             case 2:
                 window.close();
@@ -102,16 +106,18 @@ void optionsEvents(sf::Event & event, Options & options,sf::RenderWindow & windo
     if(event.type == sf::Event::KeyReleased && event.key.code == sf::Keyboard::Return){
         switch (options.getSelectedItem()){
             case 0:
-                std::cout << "controls";
+                settings.setState(gameState::OPTIONS);
                 break;
             case 1:
-                break;
+                settings.setState(gameState::CONTROLS);
             case 2:
-                settings.setOption(false);
-                break;
-            default:
+                settings.setState(gameState::MENU);
                 break;
         }
     }
 }
+
+//void eatSnake(std::list<Snake> & snake, Snake & S) {
+//    if(S.getGlobalBounds().intersects(snake.begin()->getGlobalBounds())) std::cout << "AaAAAa\n";
+//}
 

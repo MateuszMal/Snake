@@ -24,6 +24,7 @@ BOOST_AUTO_TEST_SUITE()
     BOOST_REQUIRE_EQUAL(menu.getSelectedItem(), 0);
     menu.moveUp();
     BOOST_REQUIRE_EQUAL(menu.getSelectedItem(), 0);
+
 }
 
 BOOST_AUTO_TEST_SUITE_END()

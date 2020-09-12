@@ -2,10 +2,10 @@
 <project version="4">
   <component name="CMakeRunConfigurationManager" shouldGenerate="true" shouldDeleteObsolete="true">
     <generated>
-      <config projectName="Snake" targetName="Program" />
       <config projectName="Snake" targetName="TestSnake" />
-      <config projectName="Snake" targetName="check" />
+      <config projectName="Snake" targetName="Program" />
       <config projectName="Snake" targetName="Biblioteka" />
+      <config projectName="Snake" targetName="check" />
     </generated>
   </component>
   <component name="CMakeSettings">
@@ -15,13 +15,17 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="6a9496a7-2ed9-46e9-a509-3604079a333d" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/Biblioteka/test/OptionsTest.cpp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Biblioteka/include/Controls.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Biblioteka/src/Controls.cpp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Biblioteka/CMakeLists.txt" beforeDir="false" afterPath="$PROJECT_DIR$/Biblioteka/CMakeLists.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Biblioteka/include/Menu.h" beforeDir="false" afterPath="$PROJECT_DIR$/Biblioteka/include/Menu.h" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Biblioteka/include/Options.h" beforeDir="false" afterPath="$PROJECT_DIR$/Biblioteka/include/Options.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Biblioteka/include/Settings.h" beforeDir="false" afterPath="$PROJECT_DIR$/Biblioteka/include/Settings.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Biblioteka/include/gameFunctions.h" beforeDir="false" afterPath="$PROJECT_DIR$/Biblioteka/include/gameFunctions.h" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Biblioteka/src/Menu.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Biblioteka/src/Menu.cpp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Biblioteka/src/Options.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Biblioteka/src/Options.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Biblioteka/src/Settings.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Biblioteka/src/Settings.cpp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Biblioteka/src/gameFunctions.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Biblioteka/src/gameFunctions.cpp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Biblioteka/test/MenuTest.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Biblioteka/test/MenuTest.cpp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Biblioteka/test/gameFunctionsTest.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Biblioteka/test/gameFunctionsTest.cpp" afterDir="false" />
@@ -34,6 +38,20 @@
   </component>
   <component name="ClangdSettings">
     <option name="formatViaClangd" value="false" />
+  </component>
+  <component name="DatabaseView">
+    <option name="SHOW_INTERMEDIATE" value="true" />
+    <option name="GROUP_DATA_SOURCES" value="true" />
+    <option name="GROUP_SCHEMA" value="true" />
+    <option name="GROUP_CONTENTS" value="false" />
+    <option name="SORT_POSITIONED" value="false" />
+    <option name="SHOW_EMPTY_GROUPS" value="false" />
+    <option name="AUTO_SCROLL_FROM_SOURCE" value="false" />
+    <option name="HIDDEN_KINDS">
+      <set />
+    </option>
+    <expand />
+    <select />
   </component>
   <component name="ExecutionTargetManager" SELECTED_TARGET="CMakeBuildProfile:Debug" />
   <component name="Git.Settings">
@@ -50,7 +68,7 @@
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../wypo" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../wypo/pobiz_mkar_ni_02" />
     <property name="settings.editor.selected.configurable" value="configurable.group.build.tools" />
   </component>
   <component name="RecentsManager">
@@ -58,7 +76,7 @@
       <recent name="$PROJECT_DIR$/Biblioteka/src" />
     </key>
   </component>
-  <component name="RunManager" selected="CMake Application.TestSnake">
+  <component name="RunManager" selected="CMake Application.Program">
     <configuration name="Biblioteka" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="Snake" TARGET_NAME="Biblioteka" CONFIG_NAME="Debug">
       <method v="2">
         <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
@@ -115,7 +133,14 @@
       <workItem from="1598300846645" duration="2707000" />
       <workItem from="1598371457207" duration="2998000" />
       <workItem from="1598380810559" duration="5910000" />
-      <workItem from="1598467842886" duration="1298000" />
+      <workItem from="1598467842886" duration="6980000" />
+      <workItem from="1598904601335" duration="6147000" />
+      <workItem from="1598992393208" duration="2246000" />
+      <workItem from="1599076116230" duration="1810000" />
+      <workItem from="1599325378831" duration="407000" />
+      <workItem from="1599511511508" duration="2393000" />
+      <workItem from="1599766566281" duration="2723000" />
+      <workItem from="1599927017068" duration="3251000" />
     </task>
     <servers />
   </component>
@@ -136,34 +161,34 @@
       <screen x="0" y="0" width="1920" height="895" />
     </state>
     <state x="418" y="105" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1920.895@0.0.1920.895" timestamp="1598386291809" />
-    <state x="767" y="166" width="475" height="560" key="#com.intellij.ide.util.MemberChooser" timestamp="1598386664772">
+    <state x="767" y="166" width="475" height="560" key="#com.intellij.ide.util.MemberChooser" timestamp="1599769478175">
       <screen x="0" y="0" width="1920" height="895" />
     </state>
-    <state x="767" y="166" width="475" height="560" key="#com.intellij.ide.util.MemberChooser/0.0.1920.895@0.0.1920.895" timestamp="1598386664772" />
-    <state x="743" y="205" width="430" height="482" key="FileChooserDialogImpl" timestamp="1596971312859">
+    <state x="767" y="166" width="475" height="560" key="#com.intellij.ide.util.MemberChooser/0.0.1920.895@0.0.1920.895" timestamp="1599769478175" />
+    <state x="743" y="205" width="430" height="482" key="FileChooserDialogImpl" timestamp="1599325496042">
       <screen x="0" y="0" width="1920" height="895" />
     </state>
-    <state x="743" y="205" width="430" height="482" key="FileChooserDialogImpl/0.0.1920.895@0.0.1920.895" timestamp="1596971312859" />
-    <state width="1868" height="694" key="GridCell.Tab.0.bottom" timestamp="1598469144414">
+    <state x="743" y="205" width="430" height="482" key="FileChooserDialogImpl/0.0.1920.895@0.0.1920.895" timestamp="1599325496042" />
+    <state width="1868" height="694" key="GridCell.Tab.0.bottom" timestamp="1599930702025">
       <screen x="0" y="0" width="1920" height="895" />
     </state>
     <state width="1868" height="226" key="GridCell.Tab.0.bottom/0.0.1920.885@0.0.1920.885" timestamp="1597346433137" />
-    <state width="1868" height="694" key="GridCell.Tab.0.bottom/0.0.1920.895@0.0.1920.895" timestamp="1598469144414" />
-    <state width="1868" height="694" key="GridCell.Tab.0.center" timestamp="1598469144413">
+    <state width="1868" height="694" key="GridCell.Tab.0.bottom/0.0.1920.895@0.0.1920.895" timestamp="1599930702025" />
+    <state width="1868" height="694" key="GridCell.Tab.0.center" timestamp="1599930702025">
       <screen x="0" y="0" width="1920" height="895" />
     </state>
     <state width="1868" height="226" key="GridCell.Tab.0.center/0.0.1920.885@0.0.1920.885" timestamp="1597346433136" />
-    <state width="1868" height="694" key="GridCell.Tab.0.center/0.0.1920.895@0.0.1920.895" timestamp="1598469144413" />
-    <state width="1868" height="694" key="GridCell.Tab.0.left" timestamp="1598469144412">
+    <state width="1868" height="694" key="GridCell.Tab.0.center/0.0.1920.895@0.0.1920.895" timestamp="1599930702025" />
+    <state width="1868" height="694" key="GridCell.Tab.0.left" timestamp="1599930702024">
       <screen x="0" y="0" width="1920" height="895" />
     </state>
     <state width="1868" height="226" key="GridCell.Tab.0.left/0.0.1920.885@0.0.1920.885" timestamp="1597346433134" />
-    <state width="1868" height="694" key="GridCell.Tab.0.left/0.0.1920.895@0.0.1920.895" timestamp="1598469144412" />
-    <state width="1868" height="694" key="GridCell.Tab.0.right" timestamp="1598469144413">
+    <state width="1868" height="694" key="GridCell.Tab.0.left/0.0.1920.895@0.0.1920.895" timestamp="1599930702024" />
+    <state width="1868" height="694" key="GridCell.Tab.0.right" timestamp="1599930702025">
       <screen x="0" y="0" width="1920" height="895" />
     </state>
     <state width="1868" height="226" key="GridCell.Tab.0.right/0.0.1920.885@0.0.1920.885" timestamp="1597346433136" />
-    <state width="1868" height="694" key="GridCell.Tab.0.right/0.0.1920.895@0.0.1920.895" timestamp="1598469144413" />
+    <state width="1868" height="694" key="GridCell.Tab.0.right/0.0.1920.895@0.0.1920.895" timestamp="1599930702025" />
     <state width="1868" height="280" key="GridCell.Tab.1.bottom" timestamp="1598175297462">
       <screen x="0" y="0" width="1920" height="895" />
     </state>
@@ -184,6 +209,10 @@
       <screen x="0" y="0" width="1920" height="895" />
     </state>
     <state x="449" y="82" key="SettingsEditor/0.0.1920.895@0.0.1920.895" timestamp="1597948844040" />
+    <state x="621" y="201" key="run.anything.popup" timestamp="1598905222708">
+      <screen x="0" y="0" width="1920" height="895" />
+    </state>
+    <state x="621" y="201" key="run.anything.popup/0.0.1920.895@0.0.1920.895" timestamp="1598905222708" />
     <state x="623" y="192" width="672" height="678" key="search.everywhere.popup" timestamp="1597414156446">
       <screen x="0" y="0" width="1920" height="895" />
     </state>

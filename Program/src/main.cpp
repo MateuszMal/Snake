@@ -16,14 +16,16 @@ int main(){
 
     //TODO zrobic funkcje zakonczajaca gre
 
-    srand(time(NULL));
+    srand(time(nullptr));
     setlocale(LC_ALL, "");
 
     RenderWindow Okno;
     Settings settings;
+    //gameState state = gameState::MENU;
     Menu menu(settings.getWWidth(), settings.getWHeight(), settings.getFont());
+    menu.setText();
     Options options(settings.getWWidth(), settings.getWHeight(), settings.getFont());
-    //clock and accumulator time for timming
+    options.setText();
     Clock clock;
     Time remainingTime;
 
@@ -42,42 +44,98 @@ int main(){
 
     while(Okno.isOpen()) {
         while (Okno.pollEvent(Zdarzenie)) {
-            if (settings.isOption()) optionsEvents(Zdarzenie, options, Okno, settings);
-            else {
-                if (settings.isMenu()) menuEvents(Zdarzenie, menu, Okno, settings);
-                else checkEvents(Zdarzenie, Okno, moveDirect);
+//            if (settings.isOption()) optionsEvents(Zdarzenie, options, Okno, settings);
+//            else {
+//                if (settings.isMenu()) menuEvents(Zdarzenie, menu, Okno, settings);
+//                else checkEvents(Zdarzenie, Okno, moveDirect);
+            switch(settings.getState()){
+                case gameState::PLAY:
+                    checkEvents(Zdarzenie, Okno, moveDirect);
+                    break;
+                case gameState::MENU:
+                    menuEvents(Zdarzenie, menu, Okno, settings);
+                    break;
+                case gameState::OPTIONS:
+                    optionsEvents(Zdarzenie, options, Okno, settings);
+                    break;
+                case gameState::CONTROLS:
+                    break;
+                case gameState::SCREEN_SIZE:
+                    break;
+
             }
         }
-        //Okno.clear(Color::Black);
+        switch(settings.getState()) {
+            case gameState::PLAY:
+                Okno.clear(Color::Black);
 
-        //Mozna by to wykorzystac do pauzy
-        if (settings.isOption()) options.draw(Okno);
-            else {
-            if (settings.isMenu()) menu.draw(Okno);
-                else {
-                    Okno.clear(Color::Black);
+                // Add the time since the last update
+                remainingTime += clock.restart();
 
-                    // Add the time since the last update
-                    remainingTime += clock.restart();
+                drawSnake(Okno, weze);
 
-                    drawSnake(Okno, weze);
+                snakeMove(weze, remainingTime, settings, waz, moveDirect);
 
-                    snakeMove(weze, remainingTime, settings, waz, moveDirect);
+                collisions(weze, jablko, moveDirect, settings, score, waz);
 
-                    collisions(weze, jablko, moveDirect, settings, score, waz);
+                checkWalls(weze, Okno, settings);
 
-                    checkWalls(weze, Okno, settings);
-                    std::cout << "checkwalls: " << settings.isMenu() << std::endl;
-                    std:: cout << options.getSelectedItem() << std::endl;
-//            std::cout << "Ilosc klatek: " <<settings.getSpeed() << std::endl;
-//            std::cout << "Score: " << score << std::endl;
-                    Okno.draw(*jablko);
+                Okno.draw(*jablko);
 
-                    textScores(Okno, score, text, settings.getFont());
-                    drawScores(Okno, text);
+                textScores(Okno, score, text, settings.getFont());
+                drawScores(Okno, text);
+                break;
+            case gameState::MENU:
+                Okno.clear(Color::Black);
+                menu.draw(Okno);
+                break;
+            case gameState::OPTIONS:
+                Okno.clear(Color::Black);
+                options.draw(Okno);
+                break;
+            case gameState::CONTROLS:
+                break;
+            case gameState::SCREEN_SIZE:
+                break;
+        }
 
-                }
-            }
+//        //Mozna by to wykorzystac do pauzy
+//        if (settings.getState() == gameState::OPTIONS) {
+//            Okno.clear(Color::Black);
+//            options.draw(Okno);
+//        }
+//        else {
+//            if (settings.getState() == gameState::MENU) {
+//                Okno.clear(Color::Black);
+//                menu.draw(Okno);
+//            }
+//            else {
+//                    Okno.clear(Color::Black);
+//
+//                    // Add the time since the last update
+//                    remainingTime += clock.restart();
+//
+//                    drawSnake(Okno, weze);
+//
+//                    snakeMove(weze, remainingTime, settings, waz, moveDirect);
+//
+//                    collisions(weze, jablko, moveDirect, settings, score, waz);
+//
+//                    checkWalls(weze, Okno, settings);
+////                    std::cout << "checkwalls: " << settings.isMenu() << std::endl;
+////                    std:: cout << options.getSelectedItem() << std::endl;
+//
+////                    eatSnake(weze, waz);
+//
+////            std::cout << "Ilosc klatek: " <<settings.getSpeed() << std::endl;
+////            std::cout << "Score: " << score << std::endl;
+//                    Okno.draw(*jablko);
+//
+//                    textScores(Okno, score, text, settings.getFont());
+//                    drawScores(Okno, text);
+//
+//                }
+//            }
         Okno.display();
     }
     return 0;
