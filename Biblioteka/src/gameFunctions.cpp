@@ -121,8 +121,8 @@ void optionsEvents(sf::Event & event, Options & options,sf::RenderWindow & windo
 }
 
 
-void changeColor(sf::Event & event, Controls & controls, sf::RenderWindow & window, Settings & settings, FoodPtr & shape) {
-    //Reactions to events from keyboard in Options
+void changeFruitColor(sf::Event & event, Controls & controls, sf::RenderWindow & window, Settings & settings, FoodPtr & shape) {
+    //Reactions to events from keyboard in Controls
 //    if(event.type == sf::Event::Closed || sf::Keyboard::isKeyPressed(sf::Keyboard::Escape)) window.close();
 //    if(event.type == sf::Event::KeyReleased && event.key.code == sf::Keyboard::W) controls.moveUp();
 //    if(event.type == sf::Event::KeyReleased && event.key.code == sf::Keyboard::S) controls.moveDown();
@@ -131,6 +131,7 @@ void changeColor(sf::Event & event, Controls & controls, sf::RenderWindow & wind
         switch (controls.getSelectedItem()){
             case 0:
                 shape->setFillColor(sf::Color::Yellow);
+                settings.setState(gameState::OPTIONS);
                 break;
             case 1:
                 shape->setFillColor(sf::Color::Red);
@@ -143,6 +144,7 @@ void changeColor(sf::Event & event, Controls & controls, sf::RenderWindow & wind
 }
 
 void textMoves(sf::Event & event, Menu & menu, sf::RenderWindow & window) {
+    //Check keyboard events
     if(event.type == sf::Event::Closed || sf::Keyboard::isKeyPressed(sf::Keyboard::Escape)) window.close();
     if(event.type == sf::Event::KeyReleased && event.key.code == sf::Keyboard::W) menu.moveUp();
     if(event.type == sf::Event::KeyReleased && event.key.code == sf::Keyboard::S) menu.moveDown();

@@ -6,7 +6,7 @@
 
 using namespace sf;
 
-Food::Food(int size) : CircleShape(size){
+Food::Food(float size) : CircleShape(size){
     this->setFillColor(Color::Red);
     this->setOrigin(size/2,size/2);
     this->setPosition(rand()%560 - size*2,rand()%640 - size*2);

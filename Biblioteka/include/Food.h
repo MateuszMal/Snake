@@ -11,7 +11,7 @@
 
 class Food : public sf::CircleShape{
 public:
-    Food(int size);
+    Food(float size);
     ~Food() = default;
     //Czy potrzebne??
     bool isColision(std::list<sf::RectangleShape> & waz);

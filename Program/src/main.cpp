@@ -62,7 +62,7 @@ int main(){
                     optionsEvents(Zdarzenie, options, Okno, settings);
                     break;
                 case gameState::FRUIT_COLOR:
-                    changeColor(Zdarzenie, controls, Okno, settings, jablko);
+                    changeFruitColor(Zdarzenie, controls, Okno, settings, jablko);
                     break;
                 case gameState::SNAKE_COLOR:
                     break;
