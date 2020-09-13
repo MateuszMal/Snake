@@ -167,6 +167,7 @@ void gameOver(sf::RenderWindow & window, Settings & settings) {
 }
 
 void gameOverEvents(sf::Event & event, sf::RenderWindow & window) {
+    //Showing game over screen
     if(event.type == sf::Event::Closed || sf::Keyboard::isKeyPressed(sf::Keyboard::Escape)
     || sf::Keyboard::isKeyPressed(sf::Keyboard::Return)) window.close();
 }
