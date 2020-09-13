@@ -34,7 +34,6 @@ int main(){
 
     createWindow(Okno, settings);
 
-   // int score = 0;
     Text text;
     Snake waz(20);
     std::list<Snake> weze;
@@ -47,10 +46,7 @@ int main(){
 
     while(Okno.isOpen()) {
         while (Okno.pollEvent(Zdarzenie)) {
-//            if (settings.isOption()) optionsEvents(Zdarzenie, options, Okno, settings);
-//            else {
-//                if (settings.isMenu()) menuEvents(Zdarzenie, menu, Okno, settings);
-//                else checkEvents(Zdarzenie, Okno, moveDirect);
+
             switch(settings.getState()){
                 case gameState::PLAY:
                     checkEvents(Zdarzenie, Okno, moveDirect);
@@ -112,43 +108,7 @@ int main(){
                 break;
         }
 
-//        //Mozna by to wykorzystac do pauzy
-//        if (settings.getState() == gameState::OPTIONS) {
-//            Okno.clear(Color::Black);
-//            options.draw(Okno);
-//        }
-//        else {
-//            if (settings.getState() == gameState::MENU) {
-//                Okno.clear(Color::Black);
-//                menu.draw(Okno);
-//            }
-//            else {
-//                    Okno.clear(Color::Black);
-//
-//                    // Add the time since the last update
-//                    remainingTime += clock.restart();
-//
-//                    drawSnake(Okno, weze);
-//
-//                    snakeMove(weze, remainingTime, settings, waz, moveDirect);
-//
-//                    collisions(weze, jablko, moveDirect, settings, score, waz);
-//
-//                    checkWalls(weze, Okno, settings);
-////                    std::cout << "checkwalls: " << settings.isMenu() << std::endl;
-////                    std:: cout << options.getSelectedItem() << std::endl;
-//
-////                    eatSnake(weze, waz);
-//
-////            std::cout << "Ilosc klatek: " <<settings.getSpeed() << std::endl;
-////            std::cout << "Score: " << score << std::endl;
-//                    Okno.draw(*jablko);
-//
-//                    textScores(Okno, score, text, settings.getFont());
-//                    drawScores(Okno, text);
-//
-//                }
-//            }
+
         Okno.display();
     }
     return 0;

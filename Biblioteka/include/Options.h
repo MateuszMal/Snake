@@ -1,7 +1,7 @@
 #ifndef SNAKE_OPTIONS_H
 #define SNAKE_OPTIONS_H
 
-//#include <SFML/Graphics.hpp>
+
 #include "Settings.h"
 #include "Menu.h"
 

@@ -64,5 +64,4 @@ void Settings::setScore(int score) {
     Settings::score = score;
 }
 
-//Settings::Settings(gameState gameState){}
 

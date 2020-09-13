@@ -24,6 +24,5 @@ void changeColor(sf::Event &, Menu &, sf::RenderWindow &, Settings &, sf::Shape 
 void textMoves(sf::Event &, Menu &, sf::RenderWindow &);
 void gameOverEvents(sf::Event &, sf::RenderWindow &);
 void gameOver(sf::RenderWindow &, Settings &);
-//void eatSnake(std::list<Snake> &, Snake &);
 
 #endif //SNAKE_GAMEFUNCTIONS_H
