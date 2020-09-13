@@ -55,9 +55,10 @@ void checkWalls(std::list<Snake> & snake, sf::RenderWindow & window, Settings & 
 
 void menuEvents(sf::Event & event, Menu & menu, sf::RenderWindow & window, Settings & settings) {
     //Reactions to events from keyboard in menu
-    if(event.type == sf::Event::Closed || sf::Keyboard::isKeyPressed(sf::Keyboard::Escape)) window.close();
-    if(event.type == sf::Event::KeyReleased && event.key.code == sf::Keyboard::W) menu.moveUp();
-    if(event.type == sf::Event::KeyReleased && event.key.code == sf::Keyboard::S) menu.moveDown();
+//    if(event.type == sf::Event::Closed || sf::Keyboard::isKeyPressed(sf::Keyboard::Escape)) window.close();
+//    if(event.type == sf::Event::KeyReleased && event.key.code == sf::Keyboard::W) menu.moveUp();
+//    if(event.type == sf::Event::KeyReleased && event.key.code == sf::Keyboard::S) menu.moveDown();
+    textMoves(event,menu,window);
     if(event.type == sf::Event::KeyReleased && event.key.code == sf::Keyboard::Return){
         switch (menu.getSelectedItem()){
             case 0:
@@ -100,16 +101,18 @@ void drawSnake(sf::RenderWindow & window, std::list<Snake> & snake) {
 
 void optionsEvents(sf::Event & event, Options & options,sf::RenderWindow & window, Settings & settings) {
     //Reactions to events from keyboard in Options
-    if(event.type == sf::Event::Closed || sf::Keyboard::isKeyPressed(sf::Keyboard::Escape)) window.close();
-    if(event.type == sf::Event::KeyReleased && event.key.code == sf::Keyboard::W) options.moveUp();
-    if(event.type == sf::Event::KeyReleased && event.key.code == sf::Keyboard::S) options.moveDown();
+//    if(event.type == sf::Event::Closed || sf::Keyboard::isKeyPressed(sf::Keyboard::Escape)) window.close();
+//    if(event.type == sf::Event::KeyReleased && event.key.code == sf::Keyboard::W) options.moveUp();
+//    if(event.type == sf::Event::KeyReleased && event.key.code == sf::Keyboard::S) options.moveDown();
+    textMoves(event,options,window);
     if(event.type == sf::Event::KeyReleased && event.key.code == sf::Keyboard::Return){
         switch (options.getSelectedItem()){
             case 0:
-                settings.setState(gameState::CONTROLS);
+                settings.setState(gameState::FRUIT_COLOR);
                 break;
             case 1:
-                settings.setState(gameState::SCREEN_SIZE);
+                settings.setState(gameState::SNAKE_COLOR);
+                break;
             case 2:
                 settings.setState(gameState::MENU);
                 break;
@@ -118,24 +121,31 @@ void optionsEvents(sf::Event & event, Options & options,sf::RenderWindow & windo
 }
 
 
-void controlsEvents(sf::Event & event, Controls & controls, sf::RenderWindow & window, Settings & settings) {
+void changeColor(sf::Event & event, Controls & controls, sf::RenderWindow & window, Settings & settings, FoodPtr & shape) {
     //Reactions to events from keyboard in Options
-    if(event.type == sf::Event::Closed || sf::Keyboard::isKeyPressed(sf::Keyboard::Escape)) window.close();
-    if(event.type == sf::Event::KeyReleased && event.key.code == sf::Keyboard::W) controls.moveUp();
-    if(event.type == sf::Event::KeyReleased && event.key.code == sf::Keyboard::S) controls.moveDown();
+//    if(event.type == sf::Event::Closed || sf::Keyboard::isKeyPressed(sf::Keyboard::Escape)) window.close();
+//    if(event.type == sf::Event::KeyReleased && event.key.code == sf::Keyboard::W) controls.moveUp();
+//    if(event.type == sf::Event::KeyReleased && event.key.code == sf::Keyboard::S) controls.moveDown();
+    textMoves(event,controls,window);
     if(event.type == sf::Event::KeyReleased && event.key.code == sf::Keyboard::Return){
         switch (controls.getSelectedItem()){
             case 0:
-                settings.setState(gameState::CONTROLS);
+                shape->setFillColor(sf::Color::Yellow);
                 break;
             case 1:
-                settings.setState(gameState::SCREEN_SIZE);
+                shape->setFillColor(sf::Color::Red);
                 break;
             case 2:
                 settings.setState(gameState::OPTIONS);
                 break;
         }
     }
+}
+
+void textMoves(sf::Event & event, Menu & menu, sf::RenderWindow & window) {
+    if(event.type == sf::Event::Closed || sf::Keyboard::isKeyPressed(sf::Keyboard::Escape)) window.close();
+    if(event.type == sf::Event::KeyReleased && event.key.code == sf::Keyboard::W) menu.moveUp();
+    if(event.type == sf::Event::KeyReleased && event.key.code == sf::Keyboard::S) menu.moveDown();
 }
 //void eatSnake(std::list<Snake> & snake, Snake & S) {
 //    if(S.getGlobalBounds().intersects(snake.begin()->getGlobalBounds())) std::cout << "AaAAAa\n";

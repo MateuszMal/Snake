@@ -61,10 +61,10 @@ int main(){
                 case gameState::OPTIONS:
                     optionsEvents(Zdarzenie, options, Okno, settings);
                     break;
-                case gameState::CONTROLS:
-                    controlsEvents(Zdarzenie, controls, Okno, settings);
+                case gameState::FRUIT_COLOR:
+                    changeColor(Zdarzenie, controls, Okno, settings, jablko);
                     break;
-                case gameState::SCREEN_SIZE:
+                case gameState::SNAKE_COLOR:
                     break;
 
             }
@@ -97,11 +97,11 @@ int main(){
                 Okno.clear(Color::Black);
                 options.draw(Okno);
                 break;
-            case gameState::CONTROLS:
+            case gameState::FRUIT_COLOR:
                 Okno.clear(Color::Black);
                 controls.draw(Okno);
                 break;
-            case gameState::SCREEN_SIZE:
+            case gameState::SNAKE_COLOR:
                 break;
         }
 

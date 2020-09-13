@@ -20,7 +20,8 @@ void textScores(sf::RenderWindow &, int &, sf::Text &, const sf::Font &);
 void drawScores(sf::RenderWindow &, sf::Text &);
 void drawSnake(sf::RenderWindow &, std::list<Snake> &);
 void optionsEvents(sf::Event &, Options &,sf::RenderWindow &, Settings &);
-void controlsEvents(sf::Event &, Controls &, sf::RenderWindow &, Settings &);
+void changeColor(sf::Event &, Controls &, sf::RenderWindow &, Settings &, FoodPtr &);
+void textMoves(sf::Event &, Menu &, sf::RenderWindow &);
 //void eatSnake(std::list<Snake> &, Snake &);
 
 #endif //SNAKE_GAMEFUNCTIONS_H

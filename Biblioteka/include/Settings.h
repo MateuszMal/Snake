@@ -7,8 +7,8 @@ enum class gameState {
     PLAY,
     MENU,
     OPTIONS,
-    CONTROLS,
-    SCREEN_SIZE
+    FRUIT_COLOR,
+    SNAKE_COLOR
 };
 
 class Settings {

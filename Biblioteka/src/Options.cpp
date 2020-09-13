@@ -35,16 +35,16 @@ void Options::moveDown() {
 void Options::setText() {
     text[0].setFont(getFont());
     text[0].setFillColor(sf::Color::Red);
-    text[0].setString("Controls");
+    text[0].setString("Fruit color");
     text[0].setPosition(sf::Vector2f((getWidth() / 2) - 65 ,getHeight() / 4 * 1));
 
     text[1].setFont(getFont());
     text[1].setFillColor(sf::Color::White);
     text[1].setString("Snake color");
-    text[1].setPosition(sf::Vector2f((getWidth() / 2) - 90,getHeight() / 4 * 2));
+    text[1].setPosition(sf::Vector2f((getWidth() / 2) - 70,getHeight() / 4 * 2));
 
     text[2].setFont(getFont());
     text[2].setFillColor(sf::Color::White);
     text[2].setString("Back");
-    text[2].setPosition(sf::Vector2f((getWidth() / 2) - 40,getHeight() / 4 * 3));
+    text[2].setPosition(sf::Vector2f((getWidth() / 2) - 35,getHeight() / 4 * 3));
 }

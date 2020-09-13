@@ -13,10 +13,14 @@ private:
 public:
     Controls(float width, float height, const sf::Font &font);
 
-    virtual ~Controls();
+    void draw(sf::RenderWindow &) override ;
+
+    void moveUp()override ;
+
+    void moveDown() override ;
 
     void setText() override;
-    void draw(sf::RenderWindow &) override ;
+
 
 };
 
