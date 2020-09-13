@@ -120,21 +120,22 @@ void optionsEvents(sf::Event & event, Options & options,sf::RenderWindow & windo
     }
 }
 
-
-void changeFruitColor(sf::Event & event, Controls & controls, sf::RenderWindow & window, Settings & settings, FoodPtr & shape) {
+//template <typename T>
+void changeColor(sf::Event & event, Menu & menu, sf::RenderWindow & window, Settings & settings, sf::Shape & shape) {
     //Reactions to events from keyboard in Controls
 //    if(event.type == sf::Event::Closed || sf::Keyboard::isKeyPressed(sf::Keyboard::Escape)) window.close();
 //    if(event.type == sf::Event::KeyReleased && event.key.code == sf::Keyboard::W) controls.moveUp();
 //    if(event.type == sf::Event::KeyReleased && event.key.code == sf::Keyboard::S) controls.moveDown();
-    textMoves(event,controls,window);
+    textMoves(event,menu,window);
     if(event.type == sf::Event::KeyReleased && event.key.code == sf::Keyboard::Return){
-        switch (controls.getSelectedItem()){
+        switch (menu.getSelectedItem()){
             case 0:
-                shape->setFillColor(sf::Color::Yellow);
+                shape.setFillColor(sf::Color::Yellow);
                 settings.setState(gameState::OPTIONS);
                 break;
             case 1:
-                shape->setFillColor(sf::Color::Red);
+                shape.setFillColor(sf::Color::Red);
+                settings.setState(gameState::OPTIONS);
                 break;
             case 2:
                 settings.setState(gameState::OPTIONS);

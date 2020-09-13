@@ -20,7 +20,8 @@ void textScores(sf::RenderWindow &, int &, sf::Text &, const sf::Font &);
 void drawScores(sf::RenderWindow &, sf::Text &);
 void drawSnake(sf::RenderWindow &, std::list<Snake> &);
 void optionsEvents(sf::Event &, Options &,sf::RenderWindow &, Settings &);
-void changeFruitColor(sf::Event &event, Controls &controls, sf::RenderWindow &window, Settings &settings, FoodPtr &shape);
+//template <typename T>
+void changeColor(sf::Event &, Menu &, sf::RenderWindow &, Settings &, sf::Shape &);
 void textMoves(sf::Event &, Menu &, sf::RenderWindow &);
 //void eatSnake(std::list<Snake> &, Snake &);
 
