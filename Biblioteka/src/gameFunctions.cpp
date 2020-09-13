@@ -36,13 +36,14 @@ void snakeMove(std::list<Snake> & snake, sf::Time & remainingTime, Settings & se
     }
 }
 
-void collisions(std::list<Snake> & snake, FoodPtr & food, sf::Vector2f & vector, Settings & settings, int & score, Snake & S) {
+void collisions(std::list<Snake> & snake, FoodPtr & food, sf::Vector2f & vector, Settings & settings, Snake & S) {
     //Check collisions with food
     if (snake.begin()->eatFood(*food)) {
         S.setPosition(snake.back().getPosition().x - vector.x,
                         snake.back().getPosition().y - vector.y);
         snake.push_back(S);
-        score += 100;
+        int score = settings.getScore() + 100;
+        settings.setScore(score);
         //Increase snake's speed
         if(settings.getSpeed() > 60) settings.setSpeed(settings.getSpeed() - snake.size() * 1.5);
     }
@@ -50,7 +51,7 @@ void collisions(std::list<Snake> & snake, FoodPtr & food, sf::Vector2f & vector,
 
 void checkWalls(std::list<Snake> & snake, sf::RenderWindow & window, Settings & settings) {
     //Check collisions with walls
-    if(snake.begin()->wallCollision(window)) settings.setState(gameState::MENU);
+    if (snake.begin()->wallCollision(window)) settings.setState(gameState::GAME_OVER);
 }
 
 void menuEvents(sf::Event & event, Menu & menu, sf::RenderWindow & window, Settings & settings) {
@@ -80,11 +81,11 @@ void menuEvents(sf::Event & event, Menu & menu, sf::RenderWindow & window, Setti
     }
 }
 
-void textScores(sf::RenderWindow & window, int & score, sf::Text & text, const sf::Font & font) {
+void textScores(sf::RenderWindow & window, Settings & settings, sf::Text & text) {
     //Prepare text to draw
-    text.setFont(font);
+    text.setFont(settings.getFont());
     text.setColor(sf::Color::White);
-    text.setString(std::to_string(score));
+    text.setString(std::to_string(settings.getScore()));
     text.setPosition(window.getSize().x/2,window.getSize().y - 35);
     text.setCharacterSize(25);
 }
@@ -120,7 +121,6 @@ void optionsEvents(sf::Event & event, Options & options,sf::RenderWindow & windo
     }
 }
 
-//template <typename T>
 void changeColor(sf::Event & event, Menu & menu, sf::RenderWindow & window, Settings & settings, sf::Shape & shape) {
     //Reactions to events from keyboard in Controls
 //    if(event.type == sf::Event::Closed || sf::Keyboard::isKeyPressed(sf::Keyboard::Escape)) window.close();
@@ -149,6 +149,36 @@ void textMoves(sf::Event & event, Menu & menu, sf::RenderWindow & window) {
     if(event.type == sf::Event::Closed || sf::Keyboard::isKeyPressed(sf::Keyboard::Escape)) window.close();
     if(event.type == sf::Event::KeyReleased && event.key.code == sf::Keyboard::W) menu.moveUp();
     if(event.type == sf::Event::KeyReleased && event.key.code == sf::Keyboard::S) menu.moveDown();
+}
+
+void gameOver(sf::RenderWindow & window, Settings & settings) {
+    window.clear();
+    sf::Text text;
+    text.setFont(settings.getFont());
+    text.setFillColor(sf::Color::Red);
+    text.setString("GAME OVER");
+    text.setPosition(window.getSize().x / 2 - 80, window.getSize().y / 4 * 1);
+    window.draw(text);
+
+    sf::Text text2;
+    text2.setFont(settings.getFont());
+    text2.setFillColor(sf::Color::White);
+    std::string wynik = std::to_string(settings.getScore());
+    text2.setString("Your Score: " + wynik);
+    text2.setPosition(window.getSize().x / 2 - 105, window.getSize().y / 4 * 2);
+    window.draw(text2);
+
+    sf::Text text3;
+    text3.setFont(settings.getFont());
+    text3.setFillColor(sf::Color::White);
+    text3.setString("Press ESC");
+    text3.setPosition(window.getSize().x / 2 - 65, window.getSize().y / 4 * 3);
+    window.draw(text3);
+
+}
+
+void gameOverEvents(sf::Event & event, sf::RenderWindow & window) {
+    if(event.type == sf::Event::Closed || sf::Keyboard::isKeyPressed(sf::Keyboard::Escape)) window.close();
 }
 //void eatSnake(std::list<Snake> & snake, Snake & S) {
 //    if(S.getGlobalBounds().intersects(snake.begin()->getGlobalBounds())) std::cout << "AaAAAa\n";

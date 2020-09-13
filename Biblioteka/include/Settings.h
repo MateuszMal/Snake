@@ -8,7 +8,8 @@ enum class gameState {
     MENU,
     OPTIONS,
     FRUIT_COLOR,
-    SNAKE_COLOR
+    SNAKE_COLOR,
+    GAME_OVER
 };
 
 class Settings {
@@ -20,6 +21,14 @@ private:
     unsigned int speed = 200;
     unsigned int frameLimit = 60;
     sf::Font font;
+    int score;
+public:
+    void setScore(int score);
+
+public:
+    int getScore() const;
+
+private:
 
     bool menu = true;
 

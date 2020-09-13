@@ -56,5 +56,13 @@ void Settings::setWWidth(unsigned int wWidth) {
     w_width = wWidth;
 }
 
+int Settings::getScore() const {
+    return score;
+}
+
+void Settings::setScore(int score) {
+    Settings::score = score;
+}
+
 //Settings::Settings(gameState gameState){}
 

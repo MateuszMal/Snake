@@ -34,7 +34,7 @@ int main(){
 
     createWindow(Okno, settings);
 
-    int score = 0;
+   // int score = 0;
     Text text;
     Snake waz(20);
     std::list<Snake> weze;
@@ -67,6 +67,10 @@ int main(){
                 case gameState::SNAKE_COLOR:
                     changeColor(Zdarzenie, controls, Okno, settings, waz);
                     break;
+                case gameState ::GAME_OVER:
+                    gameOver(Okno, settings);
+                    gameOverEvents(Zdarzenie, Okno);
+                    break;
 
             }
         }
@@ -81,13 +85,13 @@ int main(){
 
                 snakeMove(weze, remainingTime, settings, waz, moveDirect);
 
-                collisions(weze, jablko, moveDirect, settings, score, waz);
+                collisions(weze, jablko, moveDirect, settings, waz);
 
                 checkWalls(weze, Okno, settings);
 
                 Okno.draw(*jablko);
 
-                textScores(Okno, score, text, settings.getFont());
+                textScores(Okno, settings,text);
                 drawScores(Okno, text);
                 break;
             case gameState::MENU:
