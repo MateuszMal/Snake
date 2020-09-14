@@ -1,8 +1,6 @@
 #include <boost/test/unit_test.hpp>
 #include <SFML/Graphics.hpp>
-#include <iostream>
 #include <string>
-#include "Menu.h"
 #include "Settings.h"
 #include "gameFunctions.h"
 #include "Food.h"
@@ -17,9 +15,6 @@ BOOST_AUTO_TEST_SUITE()
     BOOST_REQUIRE_EQUAL(window.getSize().x, settings.getWWidth());
     BOOST_REQUIRE_EQUAL(window.getSize().y, settings.getWHeight());
     BOOST_REQUIRE_EQUAL(window.setActive(), true);
-    //Czemu inne wymiary ???
-//    BOOST_REQUIRE_EQUAL(window.getPosition().x, 200);
-//    BOOST_REQUIRE_EQUAL(window.getPosition().y, 650);
 }
 
     BOOST_AUTO_TEST_CASE(checkEventsTestCase){
@@ -34,49 +29,49 @@ BOOST_AUTO_TEST_SUITE()
 
     BOOST_AUTO_TEST_CASE(SnakeMoveTestCase){
     Settings  settings;
-    Snake waz(20);
+    SnakePtr waz = std::make_shared<Snake>(20);
     sf::Time time = sf::milliseconds(201);
     sf::Vector2f vector(20,20);
-    std::list<Snake> snake;
+    std::list<SnakePtr> snake;
     snake.push_back(waz);
     snake.push_back(waz);
-    int positionX = snake.begin()->getPosition().x;
-    int positionY = snake.begin()->getPosition().y;
-    snakeMove(snake,time,settings,waz,vector);
-    BOOST_REQUIRE_EQUAL(snake.begin()->getPosition().x, positionX + vector.x);
-    BOOST_REQUIRE_EQUAL(snake.begin()->getPosition().y, positionY + vector.y);
+    int positionX = (*snake.begin())->getPosition().x;
+    int positionY = (*snake.begin())->getPosition().y;
+    snakeMove(snake,time,settings,vector);
+    BOOST_REQUIRE_EQUAL((*snake.begin())->getPosition().x, positionX + vector.x);
+    BOOST_REQUIRE_EQUAL((*snake.begin())->getPosition().y, positionY + vector.y);
 }
 
     BOOST_AUTO_TEST_CASE(CollisionsTestCase){
-    int score = 0;
+//    int score = 0;
     Settings settings;
-    Snake waz(20);
-    std::list<Snake> snake;
+    SnakePtr waz = std::make_shared<Snake>(20);
+    std::list<SnakePtr> snake;
     snake.push_back(waz);
     FoodPtr food = std::make_shared<Food>(10);
     sf::Vector2f vector(20,20);
     food->setPosition(100,100);
-    snake.begin()->setPosition(100,100);
-    collisions(snake,food,vector,settings,score,waz);
+    (*snake.begin())->setPosition(100,100);
+    collisions(snake,food,vector,settings);
     BOOST_REQUIRE_EQUAL(snake.size(), 2);
-    BOOST_REQUIRE_EQUAL(score, 100);
+    BOOST_REQUIRE_EQUAL(settings.getScore(), 100);
     BOOST_REQUIRE_EQUAL(settings.getSpeed(), 197);
 }
 
     BOOST_AUTO_TEST_CASE(CheckWallsTestCase){
-    Snake waz(20);
-    std::list<Snake> snake;
+    SnakePtr waz = std::make_shared<Snake>(20);
+    std::list<SnakePtr> snake;
     snake.push_back(waz);
     sf::RenderWindow window;
     Settings settings;
     createWindow(window,settings);
-    snake.begin()->setPosition(0,0);
+    (*snake.begin())->setPosition(0,0);
     checkWalls(snake,window,settings);
-    BOOST_REQUIRE_EQUAL(settings.isMenu(), true);
-    snake.begin()->setPosition(50,50);
-    settings.setMenu(false);
+    BOOST_CHECK(settings.getState() == gameState::GAME_OVER);
+    (*snake.begin())->setPosition(50,50);
+    settings.setState(gameState::PLAY);
     checkWalls(snake,window,settings);
-    BOOST_REQUIRE_EQUAL(settings.isMenu(), false);
+    BOOST_CHECK(settings.getState() ==gameState::PLAY);
 }
 
 

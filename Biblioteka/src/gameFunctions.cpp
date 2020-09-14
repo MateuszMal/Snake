@@ -25,11 +25,13 @@ void createWindow(sf::RenderWindow & window, Settings & settings) {
 
 void snakeMove(std::list<SnakePtr> & snakeList, sf::Time & remainingTime, Settings & settings,
             sf::Vector2f & vector) {
-    //Snake's moves
+    //Snake's moves. Removes last object from list and add it to front of list
     while(remainingTime > sf::milliseconds(settings.getSpeed())) {
         if (snakeList.size() > 1) {
             snakeList.pop_back();
+            // Create SnakePtr and add it at front of list
             SnakePtr snake = std::make_shared<Snake>(20);
+            // Take first object position
             (*snake).setPosition((*snakeList.begin())->getPosition());
             snakeList.push_front(snake);
         }
@@ -45,8 +47,7 @@ void collisions(std::list<SnakePtr> & snakeList, FoodPtr & food, sf::Vector2f & 
         (*snake).setPosition(snakeList.back()->getPosition().x - vector.x,
                         snakeList.back()->getPosition().y - vector.y);
         snakeList.push_back(snake);
-        int score = settings.getScore() + 100;
-        settings.setScore(score);
+        settings.setScore(settings.getScore() + 100);
         //Increase snake's speed
         if(settings.getSpeed() > 60) settings.setSpeed(settings.getSpeed() - snakeList.size() * 1.5);
     }
@@ -77,7 +78,7 @@ void menuEvents(sf::Event & event, Menu & menu, sf::RenderWindow & window, Setti
 }
 
 void textScores(sf::RenderWindow & window, Settings & settings, sf::Text & text) {
-    //Prepare text to draw
+    //Prepare score's text to draw
     text.setFont(settings.getFont());
     text.setColor(sf::Color::White);
     text.setString(std::to_string(settings.getScore()));

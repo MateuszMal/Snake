@@ -1,10 +1,10 @@
 #include "Settings.h"
 
-unsigned int Settings::getWHeight() const {
+float Settings::getWHeight() const {
     return w_height;
 }
 
-unsigned int Settings::getWWidth() const {
+float Settings::getWWidth() const {
     return w_width;
 }
 
@@ -20,8 +20,8 @@ unsigned int Settings::getFrameLimit() const {
     return frameLimit;
 }
 
-void Settings::setSpeed(unsigned int speed) {
-    Settings::speed = speed;
+void Settings::setSpeed(unsigned int _speed) {
+    Settings::speed = _speed;
 }
 
 const sf::Font &Settings::getFont() {
@@ -32,28 +32,12 @@ const sf::Font &Settings::getFont() {
     return font;
 }
 
-bool Settings::isMenu() const {
-    return menu;
-}
-
-void Settings::setMenu(bool game) {
-    Settings::menu = game;
-}
-
 gameState Settings::getState() const {
     return state;
 }
 
 void Settings::setState(gameState state) {
     Settings::state = state;
-}
-
-void Settings::setWHeight(unsigned int wHeight) {
-    w_height = wHeight;
-}
-
-void Settings::setWWidth(unsigned int wWidth) {
-    w_width = wWidth;
 }
 
 int Settings::getScore() const {

@@ -1,4 +1,3 @@
-#include <iostream>
 #include <SFML/Graphics.hpp>
 #include <list>
 #include <memory>
@@ -34,9 +33,7 @@ int main(){
     createWindow(Okno, settings);
 
     Text text;
-    //Snake waz(20);
     SnakePtr waz = std::make_shared<Snake>(20);
-    //std::list<Snake> weze;
     std::list<SnakePtr> weze;
     weze.push_back(waz);
     FoodPtr jablko = std::make_shared<Food>(10);

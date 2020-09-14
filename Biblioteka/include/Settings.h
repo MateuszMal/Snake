@@ -15,29 +15,22 @@ enum class gameState {
 class Settings {
     //Window and menu settings
 private:
-    unsigned int w_height = 640;
-    unsigned int w_width = 560;
+    float w_height = 640;
+    float w_width = 560;
     unsigned int w_bitsPerPixel = 32;
     unsigned int speed = 200;
     unsigned int frameLimit = 60;
     sf::Font font;
-    int score;
+    int score = 0;
+    gameState state = gameState::MENU;
 public:
     void setScore(int score);
 
-public:
     int getScore() const;
 
-private:
+    float getWHeight() const;
 
-    bool menu = true;
-
-    gameState state = gameState::MENU;
-public:
-
-    unsigned int getWHeight() const;
-
-    unsigned int getWWidth() const;
+    float getWWidth() const;
 
     unsigned int getWBitsPerPixel() const;
 
@@ -45,23 +38,15 @@ public:
 
     unsigned int getFrameLimit() const;
 
-    void setSpeed(unsigned int speed);
+    void setSpeed(unsigned int _speed);
 
     const sf::Font &getFont();
-
-    bool isMenu() const;
-
-    void setMenu(bool game);
 
     gameState getState() const;
 
     void setState(gameState state);
 
-    void setWHeight(unsigned int wHeight);
-
-    void setWWidth(unsigned int wWidth);
-
-};
+    };
 
 
 #endif //SNAKE_SETTINGS_H
