@@ -4,6 +4,7 @@
 #include <SFML/Graphics.hpp>
 #include <list>
 #include <vector>
+#include <memory>
 
 class Snake : public sf::RectangleShape{
     unsigned int size;
@@ -17,6 +18,8 @@ public:
 
     unsigned int getSize1() const;
 };
+
+typedef std::shared_ptr<Snake> SnakePtr;
 
 
 #endif //SNAKE_SNAKE_H

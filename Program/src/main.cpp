@@ -34,8 +34,10 @@ int main(){
     createWindow(Okno, settings);
 
     Text text;
-    Snake waz(20);
-    std::list<Snake> weze;
+    //Snake waz(20);
+    SnakePtr waz = std::make_shared<Snake>(20);
+    //std::list<Snake> weze;
+    std::list<SnakePtr> weze;
     weze.push_back(waz);
     FoodPtr jablko = std::make_shared<Food>(10);
 
@@ -60,7 +62,7 @@ int main(){
                     changeColor(Zdarzenie, controls, Okno, settings, *jablko);
                     break;
                 case gameState::SNAKE_COLOR:
-                    changeColor(Zdarzenie, controls, Okno, settings, waz);
+                    changeColor(Zdarzenie, controls, Okno, settings, *waz);
                     break;
                 case gameState ::GAME_OVER:
                     gameOverEvents(Zdarzenie, Okno, settings,weze,waz,moveDirect);
@@ -77,9 +79,9 @@ int main(){
 
                 drawSnake(Okno, weze);
 
-                snakeMove(weze, remainingTime, settings, waz, moveDirect);
+                snakeMove(weze, remainingTime, settings, moveDirect);
 
-                collisions(weze, jablko, moveDirect, settings, waz);
+                collisions(weze, jablko, moveDirect, settings);
 
                 checkWalls(weze, Okno, settings);
 

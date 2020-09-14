@@ -23,36 +23,38 @@ void createWindow(sf::RenderWindow & window, Settings & settings) {
     window.setPosition(sf::Vector2i(200,650));
 }
 
-void snakeMove(std::list<Snake> & snake, sf::Time & remainingTime, Settings & settings,
-                Snake & S, sf::Vector2f & vector) {
+void snakeMove(std::list<SnakePtr> & snakeList, sf::Time & remainingTime, Settings & settings,
+            sf::Vector2f & vector) {
     //Snake's moves
     while(remainingTime > sf::milliseconds(settings.getSpeed())) {
-        if (snake.size() > 1) {
-            snake.pop_back();
-            S.setPosition(snake.begin()->getPosition());
-            snake.push_front(S);
+        if (snakeList.size() > 1) {
+            snakeList.pop_back();
+            SnakePtr snake = std::make_shared<Snake>(20);
+            (*snake).setPosition((*snakeList.begin())->getPosition());
+            snakeList.push_front(snake);
         }
-        snake.begin()->move(vector);
+        (*snakeList.begin())->move(vector);
         remainingTime -= sf::milliseconds(settings.getSpeed());
     }
 }
 
-void collisions(std::list<Snake> & snake, FoodPtr & food, sf::Vector2f & vector, Settings & settings, Snake & S) {
+void collisions(std::list<SnakePtr> & snakeList, FoodPtr & food, sf::Vector2f & vector, Settings & settings) {
     //Check collisions with food
-    if (snake.begin()->eatFood(*food)) {
-        S.setPosition(snake.back().getPosition().x - vector.x,
-                        snake.back().getPosition().y - vector.y);
-        snake.push_back(S);
+    if ((*snakeList.begin())->eatFood(*food)) {
+        SnakePtr snake = std::make_shared<Snake>(20);
+        (*snake).setPosition(snakeList.back()->getPosition().x - vector.x,
+                        snakeList.back()->getPosition().y - vector.y);
+        snakeList.push_back(snake);
         int score = settings.getScore() + 100;
         settings.setScore(score);
         //Increase snake's speed
-        if(settings.getSpeed() > 60) settings.setSpeed(settings.getSpeed() - snake.size() * 1.5);
+        if(settings.getSpeed() > 60) settings.setSpeed(settings.getSpeed() - snakeList.size() * 1.5);
     }
 }
 
-void checkWalls(std::list<Snake> & snake, sf::RenderWindow & window, Settings & settings) {
+void checkWalls(std::list<SnakePtr> & snake, sf::RenderWindow & window, Settings & settings) {
     //Check collisions with walls
-    if (snake.begin()->wallCollision(window)) settings.setState(gameState::GAME_OVER);
+    if ((*snake.begin())->wallCollision(window)) settings.setState(gameState::GAME_OVER);
 }
 
 void menuEvents(sf::Event & event, Menu & menu, sf::RenderWindow & window, Settings & settings) {
@@ -87,9 +89,9 @@ void drawScores(sf::RenderWindow & window, sf::Text & text) {
     window.draw(text);
 }
 
-void drawSnake(sf::RenderWindow & window, std::list<Snake> & snake) {
+void drawSnake(sf::RenderWindow & window, std::list<SnakePtr> & snake) {
     for(auto & s : snake){
-        window.draw(s);
+        window.draw(*s);
     }
 }
 
@@ -168,7 +170,7 @@ void gameOver(sf::RenderWindow & window, Settings & settings) {
 }
 
 void gameOverEvents(sf::Event & event, sf::RenderWindow & window, Settings & settings,
-                    std::list<Snake> & snakeList, Snake & Snake, sf::Vector2f & vector) {
+                    std::list<SnakePtr> & snakeList, SnakePtr & Snake, sf::Vector2f & vector) {
     //Showing game over screen
     if(event.type == sf::Event::Closed || sf::Keyboard::isKeyPressed(sf::Keyboard::Escape)) window.close();
     if(event.type == sf::Event::KeyReleased && event.key.code == sf::Keyboard::Return) {
@@ -178,9 +180,9 @@ void gameOverEvents(sf::Event & event, sf::RenderWindow & window, Settings & set
 
 }
 
-void newGame(std::list<Snake> & snakeList, Settings & settings, sf::Vector2f & vector, Snake & snake) {
+void newGame(std::list<SnakePtr> & snakeList, Settings & settings, sf::Vector2f & vector, SnakePtr & snake) {
     //Reset game's achievements
-    snake.setPosition(90,90);
+    snake->setPosition(90,90);
     snakeList.clear();
     snakeList.push_back(snake);
     settings.setSpeed(200);
