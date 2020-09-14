@@ -22,7 +22,6 @@ int main(){
 
     RenderWindow Okno;
     Settings settings;
-    //gameState state = gameState::MENU;
     Menu menu(settings.getWWidth(), settings.getWHeight(), settings.getFont());
     menu.setText();
     Options options(settings.getWWidth(), settings.getWHeight(), settings.getFont());
@@ -64,8 +63,7 @@ int main(){
                     changeColor(Zdarzenie, controls, Okno, settings, waz);
                     break;
                 case gameState ::GAME_OVER:
-                    gameOver(Okno, settings);
-                    gameOverEvents(Zdarzenie, Okno);
+                    gameOverEvents(Zdarzenie, Okno, settings,weze,waz,moveDirect);
                     break;
 
             }
@@ -106,9 +104,9 @@ int main(){
                 Okno.clear(Color::Black);
                 controls.draw(Okno);
                 break;
-        }
-
-
+            case gameState ::GAME_OVER:
+                gameOver(Okno, settings);
+                }
         Okno.display();
     }
     return 0;

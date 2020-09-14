@@ -22,7 +22,8 @@ void drawSnake(sf::RenderWindow &, std::list<Snake> &);
 void optionsEvents(sf::Event &, Options &,sf::RenderWindow &, Settings &);
 void changeColor(sf::Event &, Menu &, sf::RenderWindow &, Settings &, sf::Shape &);
 void textMoves(sf::Event &, Menu &, sf::RenderWindow &);
-void gameOverEvents(sf::Event &, sf::RenderWindow &);
+void gameOverEvents(sf::Event &, sf::RenderWindow &, Settings &, std::list<Snake> &, Snake &, sf::Vector2f &);
 void gameOver(sf::RenderWindow &, Settings &);
+void newGame(std::list<Snake> &, Settings &, sf::Vector2f &, Snake &);
 
 #endif //SNAKE_GAMEFUNCTIONS_H

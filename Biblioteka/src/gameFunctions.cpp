@@ -23,7 +23,8 @@ void createWindow(sf::RenderWindow & window, Settings & settings) {
     window.setPosition(sf::Vector2i(200,650));
 }
 
-void snakeMove(std::list<Snake> & snake, sf::Time & remainingTime, Settings & settings, Snake & S, sf::Vector2f & vector) {
+void snakeMove(std::list<Snake> & snake, sf::Time & remainingTime, Settings & settings,
+                Snake & S, sf::Vector2f & vector) {
     //Snake's moves
     while(remainingTime > sf::milliseconds(settings.getSpeed())) {
         if (snake.size() > 1) {
@@ -60,7 +61,6 @@ void menuEvents(sf::Event & event, Menu & menu, sf::RenderWindow & window, Setti
         switch (menu.getSelectedItem()){
             case 0:
                 settings.setState(gameState::PLAY);
-
                 break;
             case 1:
                 settings.setState(gameState::OPTIONS);
@@ -141,6 +141,7 @@ void textMoves(sf::Event & event, Menu & menu, sf::RenderWindow & window) {
 }
 
 void gameOver(sf::RenderWindow & window, Settings & settings) {
+
     window.clear();
     sf::Text text;
     text.setFont(settings.getFont());
@@ -166,10 +167,25 @@ void gameOver(sf::RenderWindow & window, Settings & settings) {
 
 }
 
-void gameOverEvents(sf::Event & event, sf::RenderWindow & window) {
+void gameOverEvents(sf::Event & event, sf::RenderWindow & window, Settings & settings,
+                    std::list<Snake> & snakeList, Snake & Snake, sf::Vector2f & vector) {
     //Showing game over screen
-    if(event.type == sf::Event::Closed || sf::Keyboard::isKeyPressed(sf::Keyboard::Escape)
-    || sf::Keyboard::isKeyPressed(sf::Keyboard::Return)) window.close();
+    if(event.type == sf::Event::Closed || sf::Keyboard::isKeyPressed(sf::Keyboard::Escape)) window.close();
+    if(event.type == sf::Event::KeyReleased && event.key.code == sf::Keyboard::Return) {
+        newGame(snakeList,settings,vector,Snake);
+        settings.setState(gameState::MENU);
+    }
+
+}
+
+void newGame(std::list<Snake> & snakeList, Settings & settings, sf::Vector2f & vector, Snake & snake) {
+    //Reset game's achievements
+    snake.setPosition(90,90);
+    snakeList.clear();
+    snakeList.push_back(snake);
+    settings.setSpeed(200);
+    settings.setScore(0);
+    vector = sf::Vector2f(0,0);
 }
 
 
