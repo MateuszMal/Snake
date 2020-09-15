@@ -5,6 +5,7 @@
 #include <list>
 #include <vector>
 #include <memory>
+#include "GameExceptions.h"
 
 class Snake : public sf::RectangleShape{
     unsigned int size;

@@ -2,10 +2,10 @@
 <project version="4">
   <component name="CMakeRunConfigurationManager" shouldGenerate="true" shouldDeleteObsolete="true">
     <generated>
-      <config projectName="Snake" targetName="TestSnake" />
       <config projectName="Snake" targetName="Program" />
-      <config projectName="Snake" targetName="Biblioteka" />
+      <config projectName="Snake" targetName="TestSnake" />
       <config projectName="Snake" targetName="check" />
+      <config projectName="Snake" targetName="Biblioteka" />
     </generated>
   </component>
   <component name="CMakeSettings">
@@ -15,13 +15,18 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="6a9496a7-2ed9-46e9-a509-3604079a333d" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/Biblioteka/include/GameExceptions.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Biblioteka/src/GameExceptions.cpp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Biblioteka/CMakeLists.txt" beforeDir="false" afterPath="$PROJECT_DIR$/Biblioteka/CMakeLists.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Biblioteka/include/Food.h" beforeDir="false" afterPath="$PROJECT_DIR$/Biblioteka/include/Food.h" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Biblioteka/include/Settings.h" beforeDir="false" afterPath="$PROJECT_DIR$/Biblioteka/include/Settings.h" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Biblioteka/include/Snake.h" beforeDir="false" afterPath="$PROJECT_DIR$/Biblioteka/include/Snake.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Biblioteka/include/gameFunctions.h" beforeDir="false" afterPath="$PROJECT_DIR$/Biblioteka/include/gameFunctions.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Biblioteka/src/Controls.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Biblioteka/src/Controls.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Biblioteka/src/Food.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Biblioteka/src/Food.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Biblioteka/src/Menu.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Biblioteka/src/Menu.cpp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Biblioteka/src/Settings.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Biblioteka/src/Settings.cpp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Biblioteka/src/Snake.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Biblioteka/src/Snake.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Biblioteka/src/gameFunctions.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Biblioteka/src/gameFunctions.cpp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Program/src/main.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Program/src/main.cpp" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -50,6 +55,9 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
     <option name="ROOT_SYNC" value="DONT_SYNC" />
+  </component>
+  <component name="OCResolveContextSettings">
+    <option name="configuration" value="0-Debug-Biblioteka" />
   </component>
   <component name="ProjectId" id="1fT2UQ8P5VtiYdYOYynBUSUjWFk" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
@@ -137,7 +145,7 @@
       <workItem from="1599988524884" duration="12114000" />
       <workItem from="1600025856012" duration="6294000" />
       <workItem from="1600111096712" duration="7097000" />
-      <workItem from="1600197598916" duration="1654000" />
+      <workItem from="1600197598916" duration="3280000" />
     </task>
     <servers />
   </component>
@@ -166,30 +174,30 @@
       <screen x="0" y="0" width="1920" height="895" />
     </state>
     <state x="718" y="99" key="#xdebugger.evaluate/0.0.1920.895@0.0.1920.895" timestamp="1600029802441" />
-    <state x="743" y="205" width="430" height="482" key="FileChooserDialogImpl" timestamp="1599325496042">
+    <state x="743" y="205" width="430" height="482" key="FileChooserDialogImpl" timestamp="1600199430514">
       <screen x="0" y="0" width="1920" height="895" />
     </state>
-    <state x="743" y="205" width="430" height="482" key="FileChooserDialogImpl/0.0.1920.895@0.0.1920.895" timestamp="1599325496042" />
-    <state width="1868" height="694" key="GridCell.Tab.0.bottom" timestamp="1600199166360">
+    <state x="743" y="205" width="430" height="482" key="FileChooserDialogImpl/0.0.1920.895@0.0.1920.895" timestamp="1600199430514" />
+    <state width="1868" height="694" key="GridCell.Tab.0.bottom" timestamp="1600200295902">
       <screen x="0" y="0" width="1920" height="895" />
     </state>
     <state width="1868" height="226" key="GridCell.Tab.0.bottom/0.0.1920.885@0.0.1920.885" timestamp="1597346433137" />
-    <state width="1868" height="694" key="GridCell.Tab.0.bottom/0.0.1920.895@0.0.1920.895" timestamp="1600199166360" />
-    <state width="1868" height="694" key="GridCell.Tab.0.center" timestamp="1600199166359">
+    <state width="1868" height="694" key="GridCell.Tab.0.bottom/0.0.1920.895@0.0.1920.895" timestamp="1600200295902" />
+    <state width="1868" height="694" key="GridCell.Tab.0.center" timestamp="1600200295900">
       <screen x="0" y="0" width="1920" height="895" />
     </state>
     <state width="1868" height="226" key="GridCell.Tab.0.center/0.0.1920.885@0.0.1920.885" timestamp="1597346433136" />
-    <state width="1868" height="694" key="GridCell.Tab.0.center/0.0.1920.895@0.0.1920.895" timestamp="1600199166359" />
-    <state width="1868" height="694" key="GridCell.Tab.0.left" timestamp="1600199166358">
+    <state width="1868" height="694" key="GridCell.Tab.0.center/0.0.1920.895@0.0.1920.895" timestamp="1600200295900" />
+    <state width="1868" height="694" key="GridCell.Tab.0.left" timestamp="1600200295900">
       <screen x="0" y="0" width="1920" height="895" />
     </state>
     <state width="1868" height="226" key="GridCell.Tab.0.left/0.0.1920.885@0.0.1920.885" timestamp="1597346433134" />
-    <state width="1868" height="694" key="GridCell.Tab.0.left/0.0.1920.895@0.0.1920.895" timestamp="1600199166358" />
-    <state width="1868" height="694" key="GridCell.Tab.0.right" timestamp="1600199166359">
+    <state width="1868" height="694" key="GridCell.Tab.0.left/0.0.1920.895@0.0.1920.895" timestamp="1600200295900" />
+    <state width="1868" height="694" key="GridCell.Tab.0.right" timestamp="1600200295901">
       <screen x="0" y="0" width="1920" height="895" />
     </state>
     <state width="1868" height="226" key="GridCell.Tab.0.right/0.0.1920.885@0.0.1920.885" timestamp="1597346433136" />
-    <state width="1868" height="694" key="GridCell.Tab.0.right/0.0.1920.895@0.0.1920.895" timestamp="1600199166359" />
+    <state width="1868" height="694" key="GridCell.Tab.0.right/0.0.1920.895@0.0.1920.895" timestamp="1600200295901" />
     <state width="1868" height="280" key="GridCell.Tab.1.bottom" timestamp="1600032567830">
       <screen x="0" y="0" width="1920" height="895" />
     </state>
@@ -214,9 +222,9 @@
       <screen x="0" y="0" width="1920" height="895" />
     </state>
     <state x="621" y="201" key="run.anything.popup/0.0.1920.895@0.0.1920.895" timestamp="1598905222708" />
-    <state x="623" y="192" width="672" height="678" key="search.everywhere.popup" timestamp="1599931058574">
+    <state x="623" y="192" width="672" height="678" key="search.everywhere.popup" timestamp="1600200442016">
       <screen x="0" y="0" width="1920" height="895" />
     </state>
-    <state x="623" y="192" width="672" height="678" key="search.everywhere.popup/0.0.1920.895@0.0.1920.895" timestamp="1599931058574" />
+    <state x="623" y="192" width="672" height="678" key="search.everywhere.popup/0.0.1920.895@0.0.1920.895" timestamp="1600200442016" />
   </component>
 </project>

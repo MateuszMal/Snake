@@ -4,6 +4,7 @@
 using namespace sf;
 
 Snake::Snake(unsigned int size, sf::Color & color) :  size(size), RectangleShape(Vector2f(size,size)){
+    if(size <= 0) throw GameExceptions(GameExceptions::exceptionGameExceptionWrongValue);
 
     setOrigin((float)size/2,(float)size/2);
     setFillColor(color);
@@ -17,7 +18,7 @@ bool Snake::eatFood(sf::CircleShape & C) {
     }
     return false;
 }
-//Zmienic na snake.begin().getPosition().x
+
 bool Snake::wallCollision(sf::RenderWindow & Okno) {
     return this->getPosition().x >= Okno.getSize().x || this->getPosition().x <= 0
            || this->getPosition().y <= 0 || this->getPosition().y >= Okno.getSize().y;

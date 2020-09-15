@@ -1,4 +1,3 @@
-#include <iostream>
 #include "Menu.h"
 
 Menu::Menu(float width, float height, const sf::Font & font) : width(width), height(height), font(font),
@@ -15,7 +14,6 @@ void Menu::draw(sf::RenderWindow &window) {
 void Menu::moveUp() {
     if(getSelectedItem() - 1 >= 0){
         text[getSelectedItem()].setFillColor(sf::Color::White);
-        //std::cout << "gora" << std::endl;
         setSelectedItem(getSelectedItem()-1);
         text[getSelectedItem()].setFillColor(sf::Color::Red);
     }
@@ -24,7 +22,6 @@ void Menu::moveUp() {
 void Menu::moveDown() {
     if(getSelectedItem() +1 < 3){
         text[getSelectedItem()].setFillColor(sf::Color::White);
-        //std::cout << "dol" << std::endl;
         setSelectedItem(getSelectedItem()+1);
         text[getSelectedItem()].setFillColor(sf::Color::Red);
     }

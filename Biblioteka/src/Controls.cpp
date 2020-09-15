@@ -35,7 +35,6 @@ void Controls::draw(sf::RenderWindow & window) {
 void Controls::moveUp() {
     if(getSelectedItem() - 1 >= 0){
         text[getSelectedItem()].setFillColor(sf::Color::White);
-        //std::cout << "gora" << std::endl;
         setSelectedItem(getSelectedItem()-1);
         text[getSelectedItem()].setFillColor(sf::Color::Red);
     }
@@ -44,7 +43,6 @@ void Controls::moveUp() {
 void Controls::moveDown() {
     if(getSelectedItem() +1 < 3){
         text[getSelectedItem()].setFillColor(sf::Color::White);
-        //std::cout << "dol" << std::endl;
         setSelectedItem(getSelectedItem()+1);
         text[getSelectedItem()].setFillColor(sf::Color::Red);
     }

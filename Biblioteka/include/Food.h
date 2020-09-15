@@ -8,6 +8,7 @@
 #include <SFML/Graphics.hpp>
 #include <list>
 #include <memory>
+#include "GameExceptions.h"
 
 class Food : public sf::CircleShape{
 public:

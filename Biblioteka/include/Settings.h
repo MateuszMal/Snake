@@ -2,6 +2,7 @@
 #define SNAKE_SETTINGS_H
 
 #include <SFML/Graphics.hpp>
+#include "GameExceptions.h"
 
 enum class gameState {
     PLAY,
