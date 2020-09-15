@@ -9,7 +9,7 @@
 class Snake : public sf::RectangleShape{
     unsigned int size;
 public:
-    Snake(unsigned int size);
+    Snake(unsigned int size, sf::Color &);
     ~Snake() = default;
     bool eatFood(sf::CircleShape & C);
     bool wallCollision(sf::RenderWindow & Okno);

@@ -17,9 +17,11 @@
     <list default="true" id="6a9496a7-2ed9-46e9-a509-3604079a333d" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Biblioteka/include/Settings.h" beforeDir="false" afterPath="$PROJECT_DIR$/Biblioteka/include/Settings.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Biblioteka/include/Snake.h" beforeDir="false" afterPath="$PROJECT_DIR$/Biblioteka/include/Snake.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Biblioteka/include/gameFunctions.h" beforeDir="false" afterPath="$PROJECT_DIR$/Biblioteka/include/gameFunctions.h" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Biblioteka/src/Settings.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Biblioteka/src/Settings.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Biblioteka/src/Snake.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Biblioteka/src/Snake.cpp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Biblioteka/src/gameFunctions.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Biblioteka/src/gameFunctions.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Biblioteka/test/gameFunctionsTest.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Biblioteka/test/gameFunctionsTest.cpp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Program/src/main.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Program/src/main.cpp" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -67,7 +69,7 @@
       <recent name="$PROJECT_DIR$/Biblioteka/src" />
     </key>
   </component>
-  <component name="RunManager" selected="CMake Application.TestSnake">
+  <component name="RunManager" selected="CMake Application.Program">
     <configuration name="Biblioteka" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="Snake" TARGET_NAME="Biblioteka" CONFIG_NAME="Debug">
       <method v="2">
         <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
@@ -134,7 +136,8 @@
       <workItem from="1599927017068" duration="7702000" />
       <workItem from="1599988524884" duration="12114000" />
       <workItem from="1600025856012" duration="6294000" />
-      <workItem from="1600111096712" duration="6619000" />
+      <workItem from="1600111096712" duration="7097000" />
+      <workItem from="1600197598916" duration="1654000" />
     </task>
     <servers />
   </component>
@@ -155,10 +158,10 @@
       <screen x="0" y="0" width="1920" height="895" />
     </state>
     <state x="418" y="105" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1920.895@0.0.1920.895" timestamp="1598386291809" />
-    <state x="767" y="166" width="475" height="560" key="#com.intellij.ide.util.MemberChooser" timestamp="1600111759538">
+    <state x="767" y="166" width="475" height="560" key="#com.intellij.ide.util.MemberChooser" timestamp="1600198093070">
       <screen x="0" y="0" width="1920" height="895" />
     </state>
-    <state x="767" y="166" width="475" height="560" key="#com.intellij.ide.util.MemberChooser/0.0.1920.895@0.0.1920.895" timestamp="1600111759538" />
+    <state x="767" y="166" width="475" height="560" key="#com.intellij.ide.util.MemberChooser/0.0.1920.895@0.0.1920.895" timestamp="1600198093070" />
     <state x="718" y="99" key="#xdebugger.evaluate" timestamp="1600029802441">
       <screen x="0" y="0" width="1920" height="895" />
     </state>
@@ -167,26 +170,26 @@
       <screen x="0" y="0" width="1920" height="895" />
     </state>
     <state x="743" y="205" width="430" height="482" key="FileChooserDialogImpl/0.0.1920.895@0.0.1920.895" timestamp="1599325496042" />
-    <state width="1868" height="694" key="GridCell.Tab.0.bottom" timestamp="1600117806475">
+    <state width="1868" height="694" key="GridCell.Tab.0.bottom" timestamp="1600199166360">
       <screen x="0" y="0" width="1920" height="895" />
     </state>
     <state width="1868" height="226" key="GridCell.Tab.0.bottom/0.0.1920.885@0.0.1920.885" timestamp="1597346433137" />
-    <state width="1868" height="694" key="GridCell.Tab.0.bottom/0.0.1920.895@0.0.1920.895" timestamp="1600117806475" />
-    <state width="1868" height="694" key="GridCell.Tab.0.center" timestamp="1600117806474">
+    <state width="1868" height="694" key="GridCell.Tab.0.bottom/0.0.1920.895@0.0.1920.895" timestamp="1600199166360" />
+    <state width="1868" height="694" key="GridCell.Tab.0.center" timestamp="1600199166359">
       <screen x="0" y="0" width="1920" height="895" />
     </state>
     <state width="1868" height="226" key="GridCell.Tab.0.center/0.0.1920.885@0.0.1920.885" timestamp="1597346433136" />
-    <state width="1868" height="694" key="GridCell.Tab.0.center/0.0.1920.895@0.0.1920.895" timestamp="1600117806474" />
-    <state width="1868" height="694" key="GridCell.Tab.0.left" timestamp="1600117806474">
+    <state width="1868" height="694" key="GridCell.Tab.0.center/0.0.1920.895@0.0.1920.895" timestamp="1600199166359" />
+    <state width="1868" height="694" key="GridCell.Tab.0.left" timestamp="1600199166358">
       <screen x="0" y="0" width="1920" height="895" />
     </state>
     <state width="1868" height="226" key="GridCell.Tab.0.left/0.0.1920.885@0.0.1920.885" timestamp="1597346433134" />
-    <state width="1868" height="694" key="GridCell.Tab.0.left/0.0.1920.895@0.0.1920.895" timestamp="1600117806474" />
-    <state width="1868" height="694" key="GridCell.Tab.0.right" timestamp="1600117806475">
+    <state width="1868" height="694" key="GridCell.Tab.0.left/0.0.1920.895@0.0.1920.895" timestamp="1600199166358" />
+    <state width="1868" height="694" key="GridCell.Tab.0.right" timestamp="1600199166359">
       <screen x="0" y="0" width="1920" height="895" />
     </state>
     <state width="1868" height="226" key="GridCell.Tab.0.right/0.0.1920.885@0.0.1920.885" timestamp="1597346433136" />
-    <state width="1868" height="694" key="GridCell.Tab.0.right/0.0.1920.895@0.0.1920.895" timestamp="1600117806475" />
+    <state width="1868" height="694" key="GridCell.Tab.0.right/0.0.1920.895@0.0.1920.895" timestamp="1600199166359" />
     <state width="1868" height="280" key="GridCell.Tab.1.bottom" timestamp="1600032567830">
       <screen x="0" y="0" width="1920" height="895" />
     </state>

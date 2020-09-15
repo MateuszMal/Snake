@@ -30,7 +30,7 @@ void snakeMove(std::list<SnakePtr> & snakeList, sf::Time & remainingTime, Settin
         if (snakeList.size() > 1) {
             snakeList.pop_back();
             // Create SnakePtr and add it at front of list
-            SnakePtr snake = std::make_shared<Snake>(20);
+            SnakePtr snake = std::make_shared<Snake>(20,settings.getSnakeColor());
             // Take first object position
             (*snake).setPosition((*snakeList.begin())->getPosition());
             snakeList.push_front(snake);
@@ -43,7 +43,7 @@ void snakeMove(std::list<SnakePtr> & snakeList, sf::Time & remainingTime, Settin
 void collisions(std::list<SnakePtr> & snakeList, FoodPtr & food, sf::Vector2f & vector, Settings & settings) {
     //Check collisions with food
     if ((*snakeList.begin())->eatFood(*food)) {
-        SnakePtr snake = std::make_shared<Snake>(20);
+        SnakePtr snake = std::make_shared<Snake>(20,settings.getSnakeColor());
         (*snake).setPosition(snakeList.back()->getPosition().x - vector.x,
                         snakeList.back()->getPosition().y - vector.y);
         snakeList.push_back(snake);
@@ -115,7 +115,7 @@ void optionsEvents(sf::Event & event, Options & options,sf::RenderWindow & windo
     }
 }
 
-void changeColor(sf::Event & event, Menu & menu, sf::RenderWindow & window, Settings & settings, sf::Shape & shape) {
+void changeColor(sf::Event & event, Menu & menu, sf::RenderWindow & window, Settings & settings, sf::CircleShape & shape) {
     //Reactions to events from keyboard in Controls
 
     textMoves(event,menu,window);
@@ -127,6 +127,27 @@ void changeColor(sf::Event & event, Menu & menu, sf::RenderWindow & window, Sett
                 break;
             case 1:
                 shape.setFillColor(sf::Color::Red);
+                settings.setState(gameState::OPTIONS);
+                break;
+            case 2:
+                settings.setState(gameState::OPTIONS);
+                break;
+        }
+    }
+}
+
+void changeColor(sf::Event & event, Menu & menu, sf::RenderWindow & window, Settings & settings, sf::RectangleShape & shape) {
+    //Reactions to events from keyboard in Controls
+
+    textMoves(event,menu,window);
+    if(event.type == sf::Event::KeyReleased && event.key.code == sf::Keyboard::Return){
+        switch (menu.getSelectedItem()){
+            case 0:
+                settings.setSnakeColor(sf::Color::Yellow);
+                settings.setState(gameState::OPTIONS);
+                break;
+            case 1:
+                settings.setSnakeColor(sf::Color::Red);
                 settings.setState(gameState::OPTIONS);
                 break;
             case 2:

@@ -3,10 +3,10 @@
 
 using namespace sf;
 
-Snake::Snake(unsigned int size) :  size(size), RectangleShape(Vector2f(size,size)){
+Snake::Snake(unsigned int size, sf::Color & color) :  size(size), RectangleShape(Vector2f(size,size)){
 
     setOrigin((float)size/2,(float)size/2);
-    setFillColor(Color::Green);
+    setFillColor(color);
     setPosition(90,90);
 }
 

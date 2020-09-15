@@ -23,6 +23,7 @@ private:
     sf::Font font;
     int score = 0;
     gameState state = gameState::MENU;
+    sf::Color snakeColor = sf::Color::Green;
 public:
     void setScore(int score);
 
@@ -46,7 +47,11 @@ public:
 
     void setState(gameState state);
 
-    };
+    sf::Color &getSnakeColor();
+
+    void setSnakeColor(const sf::Color &snakeColor);
+
+};
 
 
 #endif //SNAKE_SETTINGS_H

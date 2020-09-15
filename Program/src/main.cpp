@@ -33,7 +33,7 @@ int main(){
     createWindow(Okno, settings);
 
     Text text;
-    SnakePtr waz = std::make_shared<Snake>(20);
+    SnakePtr waz = std::make_shared<Snake>(20,settings.getSnakeColor());
     std::list<SnakePtr> weze;
     weze.push_back(waz);
     FoodPtr jablko = std::make_shared<Food>(10);

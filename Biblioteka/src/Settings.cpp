@@ -48,4 +48,12 @@ void Settings::setScore(int score) {
     Settings::score = score;
 }
 
+sf::Color &Settings::getSnakeColor(){
+    return snakeColor;
+}
+
+void Settings::setSnakeColor(const sf::Color &snakeColor) {
+    Settings::snakeColor = snakeColor;
+}
+
 
